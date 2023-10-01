@@ -32,6 +32,10 @@ body {
   z-index: 1000;
 }
 
+.navbar-toggler {
+  background-color: #000;
+}
+
 header:hover {
   transition: 0.2s;
 }
