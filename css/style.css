@@ -21,6 +21,7 @@ body {
 }
 
 .navbar-brand {
+  transition: 600ms;
   color: darkmagenta;
 }
 
@@ -33,13 +34,13 @@ body {
 }
 
 .navbar-toggler {
-  background-color: #000;
+  transition: 600ms;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-right: 0.625rem;
 }
 
-header:hover {
-  transition: 0.2s;
-}
 header img {
+  transition: 600ms;
   border-radius: 50%;
   transition: border-radius 600ms;
 }
@@ -65,7 +66,6 @@ header .d-flex {
 }
 .nav-tabs :hover {
   color: deeppink;
-  background-color: rgba(211, 211, 211, 0.4);
   font-weight: bold;
 }
 @media (max-width: 991px) {
@@ -283,6 +283,20 @@ footer {
   }
   .cara2 h1 {
     display: none;
+  }
+  .fav-txt {
+    display: none;
+  }
+  .back-to-top {
+    margin-bottom: 3.125rem;
+  }
+  header nav img {
+    justify-content: center;
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+  header nav .navbar-brand {
+    font-size: 1rem;
   }
 }
 

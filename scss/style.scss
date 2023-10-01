@@ -1,6 +1,8 @@
 $color-principal-oscuro: darkmagenta;
 $color-principal-claro: deeppink;
 $color-bordes: rgba(255, 20, 145, 0.5);
+$bg-nav: rgba(255, 255, 255, 0.8);
+$hover-nav: rgba(211, 211, 211, 0.4);
 html {
     scroll-behavior: smooth;
 }
@@ -16,12 +18,13 @@ body{
 
 .float__nav {
     float: right;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $bg-nav;
     padding: .3125rem 0 .3125rem 2.5rem;
     border-radius: 3.125rem 0 0 3.125rem;
 }
 
 .navbar-brand {
+    transition: 600ms;
     color: $color-principal-oscuro;
 }
 
@@ -34,13 +37,13 @@ body{
     
 }
 .navbar-toggler{
-    background-color: #000;
+    transition: 600ms;
+    background-color: $bg-nav;
+    margin-right: .625rem;
 }
 header {
-    &:hover {
-        transition: 0.2s;
-    }
     img {
+        transition: 600ms;
         border-radius: 50%;
         transition: border-radius 600ms;
         &:hover {
@@ -48,7 +51,7 @@ header {
         }
     }
     .d-flex {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: $bg-nav;
         padding: .3125rem 0 .3125rem 2.5rem;
         border-radius: 0 3.125rem 3.125rem 0 ;
     }
@@ -65,7 +68,6 @@ header {
     }
     :hover {
         color: $color-principal-claro;
-        background-color: rgba(211, 211, 211, 0.4);
         font-weight: bold;
     }
     
@@ -73,8 +75,6 @@ header {
         margin-top: .625rem;
     }
 }
-
-
 
 .presentacion {
     height: 40.625rem;
@@ -276,5 +276,23 @@ footer {
     }
     .cara2 h1{
         display: none;
+    }
+    .fav-txt {
+        display: none;
+    }
+    .back-to-top {
+        margin-bottom: 3.125rem;
+    }
+    header {
+        nav {
+            img {
+                justify-content: center;
+                height: 1.875rem;
+                width: 1.875rem;
+            }
+            .navbar-brand{
+                font-size: 1rem;    
+            }
+        }
     }
 }
