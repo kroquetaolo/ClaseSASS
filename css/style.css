@@ -113,6 +113,16 @@ header .d-flex {
   text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
 }
 
+.accordion .accordion-button {
+  background-color: deeppink;
+  font-weight: bold;
+  color: black;
+}
+.accordion .accordion-button:focus {
+  box-shadow: none;
+  color: white;
+}
+
 footer {
   background-color: rgb(255, 224, 247);
 }

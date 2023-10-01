@@ -114,10 +114,21 @@ header {
     text-shadow: .125rem .125rem .25rem rgba(0, 0, 0, 0.3); 
 }
 
+.accordion{
+    .accordion-button{
+        background-color: $color-principal-claro;
+        font-weight: bold;
+        color: black;
+        &:focus{
+            box-shadow: none;
+            color: white;
+        }
+    }
+}
+
 footer {
     background-color: rgb(255, 224, 247);
 }
-
 
 .color-facebook {
     background-color: #3b5998;
