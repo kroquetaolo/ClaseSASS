@@ -75,21 +75,24 @@ header .d-flex {
 }
 
 .lobos {
-  height: 43.75rem;
+  height: 38.75rem;
+  filter: drop-shadow(0 15px 13px rgba(255, 20, 147, 0.45));
 }
 
 .presentacion {
   height: 40.625rem;
   color: white;
-  background-image: linear-gradient(to right, rgba(242, 63, 165, 0.25), rgba(241, 57, 179, 0.25), rgba(237, 53, 195, 0.25), rgba(230, 53, 212, 0.25), rgba(219, 57, 230, 0.25), rgba(207, 61, 238, 0.25), rgba(194, 66, 247, 0.25), rgba(178, 71, 255, 0.25), rgba(163, 73, 255, 0.25), rgba(146, 76, 255, 0.25), rgba(129, 77, 254, 0.25), rgba(109, 79, 253, 0.25)), url(../assets/fondo-presentacion.jpg);
+  padding: 3.125rem;
+  background-image: linear-gradient(to right, rgba(242, 63, 165, 0.1), rgba(241, 57, 179, 0.1), rgba(237, 53, 195, 0.1), rgba(230, 53, 212, 0.1), rgba(219, 57, 230, 0.1), rgba(207, 61, 238, 0.1), rgba(194, 66, 247, 0.1), rgba(178, 71, 255, 0.1), rgba(163, 73, 255, 0.1), rgba(146, 76, 255, 0.1), rgba(129, 77, 254, 0.1), rgba(109, 79, 253, 0.1)), url(../assets/fondo-presentacion.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3.125rem;
-  z-index: 1;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 93.69%, 1.33% 93.44%, 2.67% 93.17%, 4% 92.9%, 5.33% 92.61%, 6.67% 92.32%, 8% 92.02%, 9.33% 91.72%, 10.67% 91.42%, 12% 91.12%, 13.33% 90.83%, 14.67% 90.54%, 16% 90.26%, 17.33% 89.98%, 18.67% 89.72%, 20% 89.48%, 21.33% 89.24%, 22.67% 89.03%, 24% 88.83%, 25.33% 88.65%, 26.67% 88.5%, 28% 88.36%, 29.33% 88.25%, 30.67% 88.16%, 32% 88.1%, 33.33% 88.06%, 34.67% 88.05%, 36% 88.06%, 37.33% 88.1%, 38.67% 88.16%, 40% 88.24%, 41.33% 88.35%, 42.67% 88.49%, 44% 88.64%, 45.33% 88.82%, 46.67% 89.01%, 48% 89.22%, 49.33% 89.46%, 50.67% 89.7%, 52% 89.96%, 53.33% 90.23%, 54.67% 90.51%, 56% 90.8%, 57.33% 91.1%, 58.67% 91.4%, 60% 91.7%, 61.33% 92%, 62.67% 92.29%, 64% 92.59%, 65.33% 92.87%, 66.67% 93.15%, 68% 93.42%, 69.33% 93.67%, 70.67% 93.91%, 72% 94.13%, 73.33% 94.34%, 74.67% 94.53%, 76% 94.69%, 77.33% 94.84%, 78.67% 94.96%, 80% 95.06%, 81.33% 95.14%, 82.67% 95.19%, 84% 95.22%, 85.33% 95.22%, 86.67% 95.19%, 88% 95.14%, 89.33% 95.07%, 90.67% 94.97%, 92% 94.85%, 93.33% 94.71%, 94.67% 94.54%, 96% 94.36%, 97.33% 94.15%, 98.67% 93.93%, 100% 93.69%);
 }
 .presentacion h1 {
   font-weight: bold;
+  font-size: 3.25rem;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 91, 192, 0.8);
 }
 
 .banco_y_comercio {
@@ -113,11 +116,6 @@ header .d-flex {
   border-color: rgba(255, 20, 145, 0.5);
 }
 
-.text-center h1 {
-  font-size: 2.25rem;
-  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
-}
-
 .accordion .accordion-button {
   background-color: deeppink;
   font-weight: bold;
@@ -128,12 +126,6 @@ header .d-flex {
   color: white;
 }
 
-main .wave {
-  position: relative;
-  transform: translateY(-6.375rem);
-  background: none;
-}
-
 .wave {
   background-color: rgba(0, 0, 0, 0.6);
   height: 9.375rem;
@@ -142,13 +134,11 @@ main .wave {
 .wave svg {
   height: 100%;
   width: 100%;
+  filter: drop-shadow(-0.3125rem -0.3125rem 0.9375rem rgba(255, 20, 147, 0.45));
 }
 .wave svg path {
   stroke: none;
   fill: rgb(255, 224, 247);
-}
-.wave svg .path-header {
-  fill: white;
 }
 
 footer {
