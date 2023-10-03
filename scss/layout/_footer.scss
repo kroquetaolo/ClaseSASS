@@ -1,64 +1,24 @@
 
 footer {
     background-color: $bg-footer;
-}
-
-.color-facebook {
-    background-color: #3b5998;
-    color: white;
-    &:hover {
-        background-color: white;
-        color: #3b5998;
-    }
-}
-
-.color-twitter {
-    transition: color 500ms, background-color 1s;
-    background-color: #55acee;
-    color: white;
-    &:hover {
-        background-color: white;
-        color: #55acee;
-    }
-    
-}
-
-.color-instagram {
-    transition: color 500ms, background-color 1s;
-    background-color: #ac2bac;
-    color: white;
-    &:hover {
-        background-color: white;
-        color: #ac2bac;
-    }
-}
-
-.color-linkedin {
-    transition: color 500ms, background-color 1s;
-    background-color: #0082ca;
-    color: white;
-    &:hover {
-        background-color: white;
-        color: #0082ca;
-    }    
-}
-
-.color-github {
-    transition: color 500ms, background-color 1s;
-    background-color: #333333;
-    color: white;
-    &:hover {
-        background-color: white;
-        color: #333333;
-    }
-}
-
-.color-discord {
-    transition: color 500ms, background-color 1s;
-    background-color: #1900ff;
-    color: white;
-    &:hover {
-        background-color: white;
-        color: #1900ff;
+    .redes div {     
+            &:nth-child(1) {
+                @include fav-icon(#3b5998);
+            }
+            &:nth-child(2) {
+                @include fav-icon(#55acee);
+            }
+            &:nth-child(3) {
+                @include fav-icon(#ac2bac);
+            }
+            &:nth-child(4) {
+                @include fav-icon(#0082ca);
+            }
+            &:nth-child(5) {
+                @include fav-icon(#333333);
+            }
+            &:nth-child(6) {
+                @include fav-icon(#1900ff);
+            }
     }
 }

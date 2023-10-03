@@ -132,63 +132,58 @@ header .d-flex {
 footer {
   background-color: rgb(255, 224, 247);
 }
-
-.color-facebook {
-  background-color: #3b5998;
+footer .redes div:nth-child(1) a {
+  transition: color 500ms, background-color 1s;
   color: white;
+  background-color: #3b5998;
 }
-.color-facebook:hover {
-  background-color: white;
+footer .redes div:nth-child(1) a:hover {
+  background: white;
   color: #3b5998;
 }
-
-.color-twitter {
+footer .redes div:nth-child(2) a {
   transition: color 500ms, background-color 1s;
-  background-color: #55acee;
   color: white;
+  background-color: #55acee;
 }
-.color-twitter:hover {
-  background-color: white;
+footer .redes div:nth-child(2) a:hover {
+  background: white;
   color: #55acee;
 }
-
-.color-instagram {
+footer .redes div:nth-child(3) a {
   transition: color 500ms, background-color 1s;
-  background-color: #ac2bac;
   color: white;
+  background-color: #ac2bac;
 }
-.color-instagram:hover {
-  background-color: white;
+footer .redes div:nth-child(3) a:hover {
+  background: white;
   color: #ac2bac;
 }
-
-.color-linkedin {
+footer .redes div:nth-child(4) a {
   transition: color 500ms, background-color 1s;
-  background-color: #0082ca;
   color: white;
+  background-color: #0082ca;
 }
-.color-linkedin:hover {
-  background-color: white;
+footer .redes div:nth-child(4) a:hover {
+  background: white;
   color: #0082ca;
 }
-
-.color-github {
+footer .redes div:nth-child(5) a {
   transition: color 500ms, background-color 1s;
-  background-color: #333333;
   color: white;
+  background-color: #333333;
 }
-.color-github:hover {
-  background-color: white;
+footer .redes div:nth-child(5) a:hover {
+  background: white;
   color: #333333;
 }
-
-.color-discord {
+footer .redes div:nth-child(6) a {
   transition: color 500ms, background-color 1s;
-  background-color: #1900ff;
   color: white;
+  background-color: #1900ff;
 }
-.color-discord:hover {
-  background-color: white;
+footer .redes div:nth-child(6) a:hover {
+  background: white;
   color: #1900ff;
 }
 
@@ -217,7 +212,6 @@ footer {
   text-decoration: none;
   border-radius: 0.3125rem;
 }
-
 .back-to-top:hover {
   background-color: #555;
 }
@@ -230,6 +224,12 @@ footer {
   background: #000;
   border-radius: 0.9375rem;
   box-shadow: 0 0.9375rem 3.75rem rgba(0, 0, 0, 0.5);
+}
+.tarjeta:hover .cara2 {
+  height: 3.75rem;
+}
+.tarjeta:hover h1 {
+  display: none;
 }
 
 .mes {
@@ -267,6 +267,16 @@ footer {
   border-radius: 15px;
   transition: 0.5s;
 }
+.cara2 h1 {
+  color: white;
+}
+.cara2 h2 {
+  text-decoration: none;
+  font-size: auto;
+  color: #fff;
+  text-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
 
 .core {
   background-image: linear-gradient(0deg, #ffe600 0%, #ff7300 45%, #ff0000 100%);
@@ -277,34 +287,13 @@ footer {
   background-color: black;
   border: 0.1875rem red solid;
 }
-
-.importante {
-  color: red;
-  font-style: italic;
-}
-
-.cara2 h1 {
-  color: white;
-}
-
-.cara2 h2 {
-  text-decoration: none;
-  font-size: auto;
-  color: #fff;
-  text-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-
 .cyrodiil h1 {
   color: red;
 }
 
-.tarjeta:hover .cara2 {
-  height: 3.75rem;
-}
-
-.tarjeta:hover h1 {
-  display: none;
+.importante {
+  color: red;
+  font-style: italic;
 }
 
 @media (max-width: 991px) {

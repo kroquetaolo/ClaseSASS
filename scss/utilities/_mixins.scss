@@ -1,0 +1,11 @@
+@mixin fav-icon($color){
+    a{
+        transition: color 500ms, background-color 1s;
+        color: white;
+        background-color: $color;
+        &:hover {
+            background: white;
+            color: $color;
+        }
+    }
+}
