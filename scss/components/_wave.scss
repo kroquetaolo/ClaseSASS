@@ -1,0 +1,14 @@
+.wave {
+    background-color: rgb(0, 0, 0, 0.6);
+    height: 9.375rem; 
+    overflow: hidden;
+    svg{
+        height: 100%;
+        width: 100%;
+        filter: drop-shadow(0 -0.0625rem .625rem black) drop-shadow(-0.3125rem -0.3125rem .9375rem $sombra-principal-claro);
+        path{
+            stroke: none;
+            fill: $bg-footer;
+        }
+    }
+}

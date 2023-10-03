@@ -1,0 +1,64 @@
+
+footer {
+    background-color: $bg-footer;
+}
+
+.color-facebook {
+    background-color: #3b5998;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: #3b5998;
+    }
+}
+
+.color-twitter {
+    transition: color 500ms, background-color 1s;
+    background-color: #55acee;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: #55acee;
+    }
+    
+}
+
+.color-instagram {
+    transition: color 500ms, background-color 1s;
+    background-color: #ac2bac;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: #ac2bac;
+    }
+}
+
+.color-linkedin {
+    transition: color 500ms, background-color 1s;
+    background-color: #0082ca;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: #0082ca;
+    }    
+}
+
+.color-github {
+    transition: color 500ms, background-color 1s;
+    background-color: #333333;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: #333333;
+    }
+}
+
+.color-discord {
+    transition: color 500ms, background-color 1s;
+    background-color: #1900ff;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: #1900ff;
+    }
+}

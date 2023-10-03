@@ -1,0 +1,60 @@
+.float__nav {
+    float: right;
+    background-color: $bg-nav;
+    padding: .3125rem 0 .3125rem 2.5rem;
+    border-radius: 3.125rem 0 0 3.125rem;
+}
+
+.navbar-brand {
+    transition: 600ms;
+    color: $color-principal-oscuro;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    
+}
+.navbar-toggler{
+    transition: 600ms;
+    background-color: $bg-nav;
+    margin-right: .625rem;
+}
+header {                
+
+    img {
+        transition: 600ms;
+        border-radius: 50%;
+        transition: border-radius 600ms;
+        &:hover {
+            border-radius: 5%;
+        }
+    }
+    .d-flex {
+        background-color: $bg-nav;
+        padding: .3125rem 0 .3125rem 2.5rem;
+        border-radius: 0 3.125rem 3.125rem 0 ;
+    }
+}
+
+.nav-link{
+    border-color: $color-bordes;
+    padding-right: 1.25rem;
+}
+.nav-tabs{
+    border-color: $color-bordes;
+    a{
+        color: $color-principal-oscuro;
+    }
+    :hover {
+        color: $color-principal-claro;
+        font-weight: bold;
+    }
+    
+    @media (max-width: 991px) {
+        margin-top: .625rem;
+    }
+}

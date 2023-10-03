@@ -30,7 +30,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 99999;
 }
 
 .navbar-toggler {
@@ -76,7 +76,7 @@ header .d-flex {
 
 .lobos {
   height: 38.75rem;
-  filter: drop-shadow(0 15px 13px rgba(255, 20, 147, 0.45));
+  filter: drop-shadow(0 0.3125rem 0.3125rem black) drop-shadow(-0.625rem 0.9375rem 0.8125rem rgba(255, 20, 147, 0.45));
 }
 
 .presentacion {
@@ -93,6 +93,9 @@ header .d-flex {
   font-weight: bold;
   font-size: 3.25rem;
   text-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 91, 192, 0.8);
+  padding: 1.25rem 3.125rem;
+  border-radius: 0.625rem 5rem;
+  backdrop-filter: blur(0.25rem);
 }
 
 .banco_y_comercio {
@@ -124,21 +127,6 @@ header .d-flex {
 .accordion .accordion-button:focus {
   box-shadow: none;
   color: white;
-}
-
-.wave {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 9.375rem;
-  overflow: hidden;
-}
-.wave svg {
-  height: 100%;
-  width: 100%;
-  filter: drop-shadow(-0.3125rem -0.3125rem 0.9375rem rgba(255, 20, 147, 0.45));
-}
-.wave svg path {
-  stroke: none;
-  fill: rgb(255, 224, 247);
 }
 
 footer {
@@ -204,6 +192,21 @@ footer {
   color: #1900ff;
 }
 
+.wave {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 9.375rem;
+  overflow: hidden;
+}
+.wave svg {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(0 -0.0625rem 0.625rem black) drop-shadow(-0.3125rem -0.3125rem 0.9375rem rgba(255, 20, 147, 0.45));
+}
+.wave svg path {
+  stroke: none;
+  fill: rgb(255, 224, 247);
+}
+
 .back-to-top {
   position: fixed;
   bottom: 1.25rem;
@@ -219,7 +222,6 @@ footer {
   background-color: #555;
 }
 
-/* cards calendario */
 .tarjeta {
   position: relative;
   width: 25rem;
