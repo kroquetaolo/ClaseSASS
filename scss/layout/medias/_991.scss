@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+    .cara2 {
+    height: 3.75rem;
+    }
+    .cara2 h1{
+        display: none;
+    }
+    .fav-txt {
+        display: none;
+    }
+    .back-to-top {
+        margin-bottom: 3.125rem;
+    }
+    header {
+        nav {
+            img {
+                justify-content: center;
+                height: 1.875rem;
+                width: 1.875rem;
+            }
+            .navbar-brand{
+                font-size: 1rem;    
+            }
+        }
+    }
+}
