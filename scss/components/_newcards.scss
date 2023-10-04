@@ -31,11 +31,33 @@
 
     background-size:
     100% .0625rem, 100% .1875rem, 100% .3125rem, 100% .5rem, 100% .5rem, 100% .3125rem, 100% .1875rem, 100% .0625rem,
-    .0625rem 100%, .1875rem 100%, 5px 100%, .5rem 100%, .5rem 100%, .3125rem 100%, .1875rem 100%, .0625rem 100%;
+    .0625rem 100%, .1875rem 100%, .3125rem 100%, .5rem 100%, .5rem 100%, .3125rem 100%, .1875rem 100%, .0625rem 100%;
     background-position:
-    0 10%, 0 15%, 0 20%, 0 25%, 0 30%, 0 35%, 0 40%, 0 45%,
-    10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0, ;
+    0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem,
+    12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0 ;
     background-repeat: no-repeat;
+    
+    @media (max-width: 530px) {
+        
+        background-image: 
+        linear-gradient(to right, $color-child1, $color-child2),
+        linear-gradient(to right, $color-child2, $color-child3),
+        linear-gradient(to right, $color-child3, $color-child4),
+        linear-gradient(to right, $color-child4, $color-child5),
+        linear-gradient(to right, $color-child5, $color-child6),
+        linear-gradient(to right, $color-child6, $color-child7),
+        linear-gradient(to right, $color-child7, $color-child8),
+        linear-gradient(to right, $color-child8, $color-child1),
+        linear-gradient($color-child1, $color-child1),
+        linear-gradient($color-child2, $color-child2),
+        linear-gradient($color-child3, $color-child3),
+        linear-gradient($color-child4, $color-child4),
+        linear-gradient($color-child5, $color-child5),
+        linear-gradient($color-child6, $color-child6),
+        linear-gradient($color-child7, $color-child7),
+        linear-gradient($color-child8, $color-child8);
+        background-attachment: fixed;
+    }
     
     .newcard:nth-child(1) { 
             //background-color: $color-child2;
@@ -117,7 +139,7 @@
 
     .newcard {
         position: relative;
-        width: 500px;
+        width: 31.25rem;
         height: $altura-cards;
         overflow: hidden;
         border-radius: .375rem;
@@ -126,7 +148,7 @@
             radial-gradient(circle .875rem at 25rem top,#0000 98%,#000) top right,
             radial-gradient(circle .875rem at 25rem bottom ,#0000 100%,#000) bottom right;
         mask-size: 100% 50%;
-        mask-repeat:no-repeat;
+        mask-repeat: no-repeat;
         h2 {
             z-index: 99;
             position: absolute;
@@ -152,7 +174,7 @@
             text-align: center;
             transition: all 0.2s;
         }
-        .social {
+        .informacion {
             z-index: 99;
             position: absolute;
             color: white;
@@ -200,13 +222,11 @@
             font-size: 2.5em;
             transition: all 0.2s;
         }
-
         &:hover button {
             transform: scale(14);
         }
         &:hover .fa-arrow-right {
             opacity: 1;
-            -webkit-transform: scale(1);
             transform: scale(1);
         }
         &:hover .dia {
@@ -219,7 +239,7 @@
             opacity: 0.7;
             transform: translateY(135px);
         }
-        &:hover .social {
+        &:hover .informacion {
             p {
                 opacity: 1;
             }

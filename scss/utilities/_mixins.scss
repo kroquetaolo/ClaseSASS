@@ -25,4 +25,7 @@
     border: none;
     border-radius: 1.875rem;
     transition: all 300ms;
+    @media (max-width: 530px) {
+        right: 2.5rem;
+    }
 }

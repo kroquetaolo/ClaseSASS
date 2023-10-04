@@ -1,5 +1,5 @@
 .wave {
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: $bg-footer;
     height: 9.375rem; 
     overflow: hidden;
     svg{
@@ -25,9 +25,22 @@
     linear-gradient($color-child7, $color-child6),
     linear-gradient($color-child8, $color-child7),
     linear-gradient($color-child1, $color-child8);
+    
 
-    background-size: 1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
-    background-position:10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0, ;
+    background-size: .0625rem 100%, .1875rem 100%, .3125rem 100%, .5rem 100%, .5rem 100%, .3125rem 100%, .1875rem 100%, .0625rem 100%;
+    background-position: 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0 ;
     background-repeat: no-repeat;
+    
+    @media (max-width: 530px) {
+        background-image: 
+        linear-gradient($color-child1, $color-child1),
+        linear-gradient($color-child2, $color-child2),
+        linear-gradient($color-child3, $color-child3),
+        linear-gradient($color-child4, $color-child4),
+        linear-gradient($color-child5, $color-child5),
+        linear-gradient($color-child6, $color-child6),
+        linear-gradient($color-child7, $color-child7),
+        linear-gradient($color-child8, $color-child8);
+    }
     
 }
