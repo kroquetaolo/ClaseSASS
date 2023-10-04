@@ -3,10 +3,10 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 50px 20px;
+    gap: 3.125rem 1.25rem;
     width: 100%;
     height: 100%;
-    padding: 80px 0;
+    padding: 5rem 0;
     background-color: $bg-calendario;
     
     background-image: 
@@ -30,8 +30,8 @@
     linear-gradient($color-child8, $color-child1);
 
     background-size:
-    100% 1px, 100% 3px, 100% 5px, 100% 8px, 100% 8px, 100% 5px, 100% 3px, 100% 1px,
-    1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
+    100% .0625rem, 100% .1875rem, 100% .3125rem, 100% .5rem, 100% .5rem, 100% .3125rem, 100% .1875rem, 100% .0625rem,
+    .0625rem 100%, .1875rem 100%, 5px 100%, .5rem 100%, .5rem 100%, .3125rem 100%, .1875rem 100%, .0625rem 100%;
     background-position:
     0 10%, 0 15%, 0 20%, 0 25%, 0 30%, 0 35%, 0 40%, 0 45%,
     10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0, ;
@@ -123,15 +123,15 @@
         border-radius: .375rem;
         background-color: rgb(219, 219, 219);
         mask:
-            radial-gradient(circle 14px at 400px top,#0000 98%,#000) top right,
-            radial-gradient(circle 14px at 400px bottom ,#0000 100%,#000) bottom right;
+            radial-gradient(circle .875rem at 25rem top,#0000 98%,#000) top right,
+            radial-gradient(circle .875rem at 25rem bottom ,#0000 100%,#000) bottom right;
         mask-size: 100% 50%;
         mask-repeat:no-repeat;
         h2 {
             z-index: 99;
             position: absolute;
-            right: 130px;
-            font-size: 64px;
+            right: 8.125rem;
+            font-size: 4em;
             font-weight: bold;
             color: white;
             transition: all 0.2s;
@@ -140,12 +140,12 @@
         .dia {
             z-index: 99;
             position: absolute;
-            top: 20px;
-            right: 45px;
+            top: 1.25rem;
+            right: 2.8125rem;
             color: rgba(51, 51, 51, 0.7);
-            font-size: 12px;
-            letter-spacing: 2px;
-            width: 12px;
+            font-size: .75em;
+            letter-spacing: .125rem;
+            width: .75rem;
             text-transform: uppercase;
             font-weight: bold;
             word-wrap: break-word;
@@ -156,11 +156,11 @@
             z-index: 99;
             position: absolute;
             color: white;
-            width: 300px;
-            left: 10px;
-            top: 15px;
+            width: 18.75rem;
+            left: .625rem;
+            top: .9375rem;
             text-align: center;
-            border-radius: 80px;
+            border-radius: 5rem;
             p {
                 opacity: 0;
                 font-weight: 600;
@@ -181,7 +181,7 @@
         }
         .pic {
             z-index: 100;
-            width: 400px;
+            width: 25rem;
             height: $altura-cards;
             background-size: 100% 100%;
             filter: grayscale(100%);
@@ -190,14 +190,14 @@
 
         .fa-arrow-right {
             opacity: 0;
-            font-size: 18px;
+            font-size: 1.125em;
             color: #fff;
             transform: scale(0.1);
             z-index: 100;
             position: absolute;
-            right: 80px;
-            bottom: 25px;
-            font-size: 40px;
+            right: 5rem;
+            bottom: 1.5625rem;
+            font-size: 2.5em;
             transition: all 0.2s;
         }
 
@@ -233,11 +233,4 @@
             }
         }
     }
-}
-
-.dr {
-    position: absolute;
-    bottom: 16px; 
-    right: 16px;
-    width: 100px;
 }
