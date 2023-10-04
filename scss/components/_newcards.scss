@@ -1,19 +1,41 @@
-$color-child1: rgba(218, 29, 218, 0.58);
-$color-child2: rgba(29, 218, 29, 0.58);
-$color-child3: rgba(218, 29, 29, 0.58);
-$color-child4: rgba(218, 29, 29, 0.58);
-$color-child5: rgba(218, 29, 29, 0.58);
-$color-child6: rgba(218, 29, 29, 0.58);
-$color-child7: rgba(218, 29, 29, 0.58);
-
 .contenedor {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 3px 20px;
     width: 100%;
     height: 100%;
+    padding-top: 6px;
+    padding-bottom: 300px;
+    background-color: #666666;
+    background-image: 
+
+    linear-gradient(to right, $color-child1, $color-child2),
+    linear-gradient(to right, $color-child2, $color-child3),
+    linear-gradient(to right, $color-child3, $color-child4),
+    linear-gradient(to right, $color-child4, $color-child5),
+    linear-gradient(to right, $color-child5, $color-child6),
+    linear-gradient(to right, $color-child6, $color-child7),
+    linear-gradient(to right, $color-child7, $color-child8),
+    linear-gradient(to right, $color-child8, $color-child1),
+
+    linear-gradient($color-child1, $color-child2),
+    linear-gradient($color-child2, $color-child3),
+    linear-gradient($color-child3, $color-child4),
+    linear-gradient($color-child4, $color-child5),
+    linear-gradient($color-child5, $color-child6),
+    linear-gradient($color-child6, $color-child7),
+    linear-gradient($color-child7, $color-child8),
+    linear-gradient($color-child8, $color-child1);
+
+    background-size:
+    100% 1px, 100% 3px, 100% 5px, 100% 8px, 100% 8px, 100% 5px, 100% 3px, 100% 1px,
+    1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
+    background-position:
+    0 10%, 0 15%, 0 20%, 0 25%, 0 30%, 0 35%, 0 40%, 0 45%,
+    10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0, ;
+    background-repeat: no-repeat;
     
     :nth-child(1) button {
         @include botton-newcard;        
@@ -39,14 +61,34 @@ $color-child7: rgba(218, 29, 29, 0.58);
         @include botton-newcard;        
         background-color: $color-child6;
     }
+    :nth-child(7) button {
+        @include botton-newcard;        
+        background-color: $color-child7;
+    }
+    :nth-child(8) button {
+        @include botton-newcard;        
+        background-color: $color-child8;
+    }
+    :nth-child(9) button {
+        @include botton-newcard;        
+        background-color: $color-child1;
+    }
+    :nth-child(10) button {
+        @include botton-newcard;        
+        background-color: $color-child2;
+    }
+    :nth-child(11) button {
+        @include botton-newcard;        
+        background-color: $color-child3;
+    }
 
     .newcard {
         position: relative;
         width: 500px;
-        height: 200px;
-        background-color: rgb(168, 168, 168);
+        height: $altura-cards;
         overflow: hidden;
-
+        border-radius: .375rem;
+        background-color: #fff;
         &:before {
             z-index: 99;
             content: "";
@@ -56,7 +98,7 @@ $color-child7: rgba(218, 29, 29, 0.58);
             width: 16px;
             height: 16px;
             border-radius: 16px;
-            background-color: white;
+            background-color: #666666;
         }
         &:after {
             content: "";
@@ -68,7 +110,7 @@ $color-child7: rgba(218, 29, 29, 0.58);
             width: 16px;
             height: 16px;
             border-radius: 16px;
-            background-color: white;
+            background-color: #666666;
         }
         h2 {
             z-index: 99;
@@ -106,6 +148,8 @@ $color-child7: rgba(218, 29, 29, 0.58);
             border-radius: 80px;
             p {
                 opacity: 0;
+                font-weight: 600;
+                text-shadow: 2px 2px 2px $sombra-principal-claro;
                 transition: all 0.4s;
             }
             
@@ -114,6 +158,8 @@ $color-child7: rgba(218, 29, 29, 0.58);
                 transition: all 0.4s;
             }
             h3{
+                text-align: center;
+                font-weight: bold;
                 transform: translateY(68px);
                 transition: all 0.4s;
             }
@@ -121,7 +167,7 @@ $color-child7: rgba(218, 29, 29, 0.58);
         .pic {
             z-index: 100;
             width: 400px;
-            height: 200px;
+            height: $altura-cards;
             background-size: 100% 100%;
             filter: grayscale(100%);
             transition: all 0.2s;
@@ -156,7 +202,7 @@ $color-child7: rgba(218, 29, 29, 0.58);
         }
         &:hover h2{
             opacity: 0.7;
-            transform: translateY(110px);
+            transform: translateY(135px);
         }
         &:hover .social {
             p {

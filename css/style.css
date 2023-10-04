@@ -224,19 +224,27 @@ footer .redes div:nth-child(6) div {
   margin-top: 0.9375rem;
 }
 
-.wave {
+.wave, .wave-calendario {
   background-color: rgba(0, 0, 0, 0.6);
   height: 9.375rem;
   overflow: hidden;
 }
-.wave svg {
+.wave svg, .wave-calendario svg {
   height: 100%;
   width: 100%;
   filter: drop-shadow(0 -0.0625rem 0.625rem black) drop-shadow(-0.3125rem -0.3125rem 0.9375rem rgba(255, 20, 147, 0.45));
 }
-.wave svg path {
+.wave svg path, .wave-calendario svg path {
   stroke: none;
   fill: rgb(255, 224, 247);
+}
+
+.wave-calendario {
+  background-color: #666666;
+  background-image: linear-gradient(rgba(255, 145, 0, 0.58), rgba(247, 50, 50, 0.58)), linear-gradient(rgba(218, 215, 29, 0.58), rgba(255, 145, 0, 0.58)), linear-gradient(rgba(29, 218, 45, 0.58), rgba(218, 215, 29, 0.58)), linear-gradient(rgba(29, 212, 218, 0.58), rgba(29, 218, 45, 0.58)), linear-gradient(rgba(57, 29, 218, 0.58), rgba(29, 212, 218, 0.58)), linear-gradient(rgba(141, 17, 199, 0.58), rgba(57, 29, 218, 0.58)), linear-gradient(rgba(255, 0, 234, 0.58), rgba(141, 17, 199, 0.58)), linear-gradient(rgba(247, 50, 50, 0.58), rgba(255, 0, 234, 0.58));
+  background-size: 1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
+  background-position: 10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0;
+  background-repeat: no-repeat;
 }
 
 .back-to-top {
@@ -253,94 +261,21 @@ footer .redes div:nth-child(6) div {
   background-color: #555;
 }
 
-.tarjeta {
-  position: relative;
-  width: 25rem;
-  height: 600px;
-  margin: 2.1875rem;
-  background: #000;
-  border-radius: 0.9375rem;
-  box-shadow: 0 0.9375rem 3.75rem rgba(0, 0, 0, 0.5);
-}
-.tarjeta:hover .cara2 {
-  height: 3.75rem;
-}
-.tarjeta:hover h1 {
-  display: none;
-}
-
-.mes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.cara {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding: 0 1.875rem;
-  width: 100%;
-  height: 100%;
-  color: rgb(131, 239, 253);
-}
-
-.decorado {
-  background-color: black;
-  color: white;
-  margin: 30px;
-  text-decoration: underline;
-}
-
-.texto__suave {
-  color: rgba(82, 235, 255, 0.637);
-  font-style: italic;
-}
-
-.cara2 {
-  text-align: center;
-  background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
-  border-radius: 15px;
-  transition: 0.5s;
-}
-.cara2 h1 {
-  color: white;
-}
-.cara2 h2 {
-  text-decoration: none;
-  font-size: auto;
-  color: #fff;
-  text-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-
-.core {
-  background-image: linear-gradient(0deg, #ffe600 0%, #ff7300 45%, #ff0000 100%);
-}
-
-.cyrodiil {
-  background-image: none;
-  background-color: black;
-  border: 0.1875rem red solid;
-}
-.cyrodiil h1 {
-  color: red;
-}
-
-.importante {
-  color: red;
-  font-style: italic;
-}
-
 .contenedor {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 3px 20px;
   width: 100%;
   height: 100%;
+  padding-top: 6px;
+  padding-bottom: 300px;
+  background-color: #666666;
+  background-image: linear-gradient(to right, rgba(247, 50, 50, 0.58), rgba(255, 145, 0, 0.58)), linear-gradient(to right, rgba(255, 145, 0, 0.58), rgba(218, 215, 29, 0.58)), linear-gradient(to right, rgba(218, 215, 29, 0.58), rgba(29, 218, 45, 0.58)), linear-gradient(to right, rgba(29, 218, 45, 0.58), rgba(29, 212, 218, 0.58)), linear-gradient(to right, rgba(29, 212, 218, 0.58), rgba(57, 29, 218, 0.58)), linear-gradient(to right, rgba(57, 29, 218, 0.58), rgba(141, 17, 199, 0.58)), linear-gradient(to right, rgba(141, 17, 199, 0.58), rgba(255, 0, 234, 0.58)), linear-gradient(to right, rgba(255, 0, 234, 0.58), rgba(247, 50, 50, 0.58)), linear-gradient(rgba(247, 50, 50, 0.58), rgba(255, 145, 0, 0.58)), linear-gradient(rgba(255, 145, 0, 0.58), rgba(218, 215, 29, 0.58)), linear-gradient(rgba(218, 215, 29, 0.58), rgba(29, 218, 45, 0.58)), linear-gradient(rgba(29, 218, 45, 0.58), rgba(29, 212, 218, 0.58)), linear-gradient(rgba(29, 212, 218, 0.58), rgba(57, 29, 218, 0.58)), linear-gradient(rgba(57, 29, 218, 0.58), rgba(141, 17, 199, 0.58)), linear-gradient(rgba(141, 17, 199, 0.58), rgba(255, 0, 234, 0.58)), linear-gradient(rgba(255, 0, 234, 0.58), rgba(247, 50, 50, 0.58));
+  background-size: 100% 1px, 100% 3px, 100% 5px, 100% 8px, 100% 8px, 100% 5px, 100% 3px, 100% 1px, 1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
+  background-position: 0 10%, 0 15%, 0 20%, 0 25%, 0 30%, 0 35%, 0 40%, 0 45%, 10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0;
+  background-repeat: no-repeat;
 }
 .contenedor :nth-child(1) button {
   position: absolute;
@@ -351,7 +286,7 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(218, 29, 218, 0.58);
+  background-color: rgba(247, 50, 50, 0.58);
 }
 .contenedor :nth-child(2) button {
   position: absolute;
@@ -362,7 +297,7 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(29, 218, 29, 0.58);
+  background-color: rgba(255, 145, 0, 0.58);
 }
 .contenedor :nth-child(3) button {
   position: absolute;
@@ -373,7 +308,7 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(218, 29, 29, 0.58);
+  background-color: rgba(218, 215, 29, 0.58);
 }
 .contenedor :nth-child(4) button {
   position: absolute;
@@ -384,7 +319,7 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(218, 29, 29, 0.58);
+  background-color: rgba(29, 218, 45, 0.58);
 }
 .contenedor :nth-child(5) button {
   position: absolute;
@@ -395,7 +330,7 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(218, 29, 29, 0.58);
+  background-color: rgba(29, 212, 218, 0.58);
 }
 .contenedor :nth-child(6) button {
   position: absolute;
@@ -406,14 +341,70 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(218, 29, 29, 0.58);
+  background-color: rgba(57, 29, 218, 0.58);
+}
+.contenedor :nth-child(7) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(141, 17, 199, 0.58);
+}
+.contenedor :nth-child(8) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(255, 0, 234, 0.58);
+}
+.contenedor :nth-child(9) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(247, 50, 50, 0.58);
+}
+.contenedor :nth-child(10) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(255, 145, 0, 0.58);
+}
+.contenedor :nth-child(11) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(218, 215, 29, 0.58);
 }
 .contenedor .newcard {
   position: relative;
   width: 500px;
-  height: 200px;
-  background-color: rgb(168, 168, 168);
+  height: 225px;
   overflow: hidden;
+  border-radius: 0.375rem;
+  background-color: #fff;
 }
 .contenedor .newcard:before {
   z-index: 99;
@@ -424,7 +415,7 @@ footer .redes div:nth-child(6) div {
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: white;
+  background-color: #666666;
 }
 .contenedor .newcard:after {
   content: "";
@@ -436,7 +427,7 @@ footer .redes div:nth-child(6) div {
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: white;
+  background-color: #666666;
 }
 .contenedor .newcard h2 {
   z-index: 99;
@@ -474,6 +465,8 @@ footer .redes div:nth-child(6) div {
 }
 .contenedor .newcard .social p {
   opacity: 0;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgba(255, 20, 147, 0.45);
   transition: all 0.4s;
 }
 .contenedor .newcard .social hr {
@@ -481,13 +474,15 @@ footer .redes div:nth-child(6) div {
   transition: all 0.4s;
 }
 .contenedor .newcard .social h3 {
+  text-align: center;
+  font-weight: bold;
   transform: translateY(68px);
   transition: all 0.4s;
 }
 .contenedor .newcard .pic {
   z-index: 100;
   width: 400px;
-  height: 200px;
+  height: 225px;
   background-size: 100% 100%;
   filter: grayscale(100%);
   transition: all 0.2s;
@@ -520,7 +515,7 @@ footer .redes div:nth-child(6) div {
 }
 .contenedor .newcard:hover h2 {
   opacity: 0.7;
-  transform: translateY(110px);
+  transform: translateY(135px);
 }
 .contenedor .newcard:hover .social p {
   opacity: 1;

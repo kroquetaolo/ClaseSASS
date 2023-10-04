@@ -12,3 +12,22 @@
         }
     }
 }
+.wave-calendario{
+    @extend .wave;
+    
+    background-color: #666666;
+    background-image: 
+    linear-gradient($color-child2, $color-child1),
+    linear-gradient($color-child3, $color-child2),
+    linear-gradient($color-child4, $color-child3),
+    linear-gradient($color-child5, $color-child4),
+    linear-gradient($color-child6, $color-child5),
+    linear-gradient($color-child7, $color-child6),
+    linear-gradient($color-child8, $color-child7),
+    linear-gradient($color-child1, $color-child8);
+
+    background-size: 1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
+    background-position:10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0, ;
+    background-repeat: no-repeat;
+    
+}
