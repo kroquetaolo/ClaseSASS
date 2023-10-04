@@ -1,0 +1,182 @@
+$color-child1: rgba(218, 29, 218, 0.58);
+$color-child2: rgba(29, 218, 29, 0.58);
+$color-child3: rgba(218, 29, 29, 0.58);
+$color-child4: rgba(218, 29, 29, 0.58);
+$color-child5: rgba(218, 29, 29, 0.58);
+$color-child6: rgba(218, 29, 29, 0.58);
+$color-child7: rgba(218, 29, 29, 0.58);
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px 20px;
+    width: 100%;
+    height: 100%;
+    
+    :nth-child(1) button {
+        @include botton-newcard;        
+        background-color: $color-child1;
+    }
+    :nth-child(2) button {
+        @include botton-newcard;        
+        background-color: $color-child2;
+    }
+    :nth-child(3) button {
+        @include botton-newcard;        
+        background-color: $color-child3;
+    }
+    :nth-child(4) button {
+        @include botton-newcard;        
+        background-color: $color-child4;
+    }
+    :nth-child(5) button {
+        @include botton-newcard;        
+        background-color: $color-child5;
+    }
+    :nth-child(6) button {
+        @include botton-newcard;        
+        background-color: $color-child6;
+    }
+
+    .newcard {
+        position: relative;
+        width: 500px;
+        height: 200px;
+        background-color: rgb(168, 168, 168);
+        overflow: hidden;
+
+        &:before {
+            z-index: 99;
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: 128px;
+            width: 16px;
+            height: 16px;
+            border-radius: 16px;
+            background-color: white;
+        }
+        &:after {
+            content: "";
+            z-index: 99;
+            position: absolute;
+            bottom: -10px;
+            right: 128px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 16px;
+            background-color: white;
+        }
+        h2 {
+            z-index: 99;
+            position: absolute;
+            right: 130px;
+            font-size: 64px;
+            font-weight: bold;
+            color: white;
+            transition: all 0.2s;
+        }
+
+        .dia {
+            z-index: 99;
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            color: rgba(51, 51, 51, 0.7);
+            font-size: 12px;
+            letter-spacing: 2px;
+            width: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            word-wrap: break-word;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .social {
+            z-index: 99;
+            position: absolute;
+            color: white;
+            width: 300px;
+            left: 10px;
+            top: 15px;
+            text-align: center;
+            border-radius: 80px;
+            p {
+                opacity: 0;
+                transition: all 0.4s;
+            }
+            
+            hr {
+                opacity: 0.7;
+                transition: all 0.4s;
+            }
+            h3{
+                transform: translateY(68px);
+                transition: all 0.4s;
+            }
+        }
+        .pic {
+            z-index: 100;
+            width: 400px;
+            height: 200px;
+            background-size: 100% 100%;
+            filter: grayscale(100%);
+            transition: all 0.2s;
+        }
+
+        .fa-arrow-right {
+            opacity: 0;
+            font-size: 18px;
+            color: #fff;
+            transform: scale(0.1);
+            z-index: 100;
+            position: absolute;
+            right: 80px;
+            bottom: 25px;
+            font-size: 40px;
+            transition: all 0.2s;
+        }
+
+        &:hover button {
+            transform: scale(12.5);
+        }
+        &:hover .fa-arrow-right {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        &:hover .dia {
+            color: #fff;
+        }
+        &:hover .pic {
+            filter: grayscale(0);
+        }
+        &:hover h2{
+            opacity: 0.7;
+            transform: translateY(110px);
+        }
+        &:hover .social {
+            p {
+                opacity: 1;
+            }
+            h3 {
+                transform: translateY(0);
+                opacity: 0.6;
+            }
+            hr {
+                opacity: 1;
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+.dr {
+    position: absolute;
+    bottom: 16px; 
+    right: 16px;
+    width: 100px;
+}

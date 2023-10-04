@@ -1,24 +1,24 @@
 
 footer {
     background-color: $bg-footer;
-    .redes div {     
-            &:nth-child(1) {
-                @include fav-icon(#3b5998);
+    .redes div {
+        &:nth-child(1) {
+            @include fav-icon(#3b5998);
+        }
+        &:nth-child(2) {
+            @include fav-icon(#55acee);
+        }
+        &:nth-child(3) {
+            @include fav-icon(#ac2bac);
             }
-            &:nth-child(2) {
-                @include fav-icon(#55acee);
-            }
-            &:nth-child(3) {
-                @include fav-icon(#ac2bac);
-            }
-            &:nth-child(4) {
-                @include fav-icon(#0082ca);
-            }
-            &:nth-child(5) {
-                @include fav-icon(#333333);
-            }
-            &:nth-child(6) {
-                @include fav-icon(#1900ff);
-            }
+        &:nth-child(4) {
+            @include fav-icon(#0082ca);
+        }
+        &:nth-child(5) {
+            @include fav-icon(#333333);
+        }
+        &:nth-child(6) {
+            @include fav-icon(#1900ff);
+        }
     }
 }

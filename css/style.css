@@ -83,7 +83,8 @@ header .d-flex {
   height: 40.625rem;
   color: white;
   padding: 3.125rem;
-  background-image: linear-gradient(to right, rgba(242, 63, 165, 0.1), rgba(241, 57, 179, 0.1), rgba(237, 53, 195, 0.1), rgba(230, 53, 212, 0.1), rgba(219, 57, 230, 0.1), rgba(207, 61, 238, 0.1), rgba(194, 66, 247, 0.1), rgba(178, 71, 255, 0.1), rgba(163, 73, 255, 0.1), rgba(146, 76, 255, 0.1), rgba(129, 77, 254, 0.1), rgba(109, 79, 253, 0.1)), url(../assets/fondo-presentacion.jpg);
+  background-image: linear-gradient(to bottom, rgba(242, 63, 165, 0.1), rgba(241, 57, 179, 0.1), rgba(237, 53, 195, 0.1), rgba(230, 53, 212, 0.1), rgba(219, 57, 230, 0.1), rgba(207, 61, 238, 0.1), rgba(194, 66, 247, 0.1), rgba(178, 71, 255, 0.1), rgba(163, 73, 255, 0.1), rgba(146, 76, 255, 0.1), rgba(129, 77, 254, 0.1), rgba(109, 79, 253, 0.1)), url(../assets/fondo-presentacion.jpg);
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(48, 12, 30, 0.9), rgba(87, 6, 63, 0.25), rgba(122, 0, 107, 0.15), rgba(149, 0, 162, 0.1), rgba(162, 0, 191, 0.08), rgba(173, 0, 222, 0.08), rgba(180, 0, 255, 0.08), rgba(197, 0, 255, 0.08), rgba(214, 0, 255, 0.08), rgba(229, 0, 255, 0.1), rgba(20, 20, 20, 0.9)), url(../assets/fondo-presentacion.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,8 +103,8 @@ header .d-flex {
   background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
 }
-
 .banco_y_comercio h1 {
   color: darkmagenta;
   font-weight: bold;
@@ -133,58 +134,94 @@ footer {
   background-color: rgb(255, 224, 247);
 }
 footer .redes div:nth-child(1) a {
-  transition: color 500ms, background-color 1s;
+  box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
+  transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #3b5998;
 }
 footer .redes div:nth-child(1) a:hover {
   background: white;
   color: #3b5998;
+  transform: translateY(10px);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+}
+footer .redes div:nth-child(1) div {
+  margin-top: 0.9375rem;
 }
 footer .redes div:nth-child(2) a {
-  transition: color 500ms, background-color 1s;
+  box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
+  transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #55acee;
 }
 footer .redes div:nth-child(2) a:hover {
   background: white;
   color: #55acee;
+  transform: translateY(10px);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+}
+footer .redes div:nth-child(2) div {
+  margin-top: 0.9375rem;
 }
 footer .redes div:nth-child(3) a {
-  transition: color 500ms, background-color 1s;
+  box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
+  transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #ac2bac;
 }
 footer .redes div:nth-child(3) a:hover {
   background: white;
   color: #ac2bac;
+  transform: translateY(10px);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+}
+footer .redes div:nth-child(3) div {
+  margin-top: 0.9375rem;
 }
 footer .redes div:nth-child(4) a {
-  transition: color 500ms, background-color 1s;
+  box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
+  transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #0082ca;
 }
 footer .redes div:nth-child(4) a:hover {
   background: white;
   color: #0082ca;
+  transform: translateY(10px);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+}
+footer .redes div:nth-child(4) div {
+  margin-top: 0.9375rem;
 }
 footer .redes div:nth-child(5) a {
-  transition: color 500ms, background-color 1s;
+  box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
+  transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #333333;
 }
 footer .redes div:nth-child(5) a:hover {
   background: white;
   color: #333333;
+  transform: translateY(10px);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+}
+footer .redes div:nth-child(5) div {
+  margin-top: 0.9375rem;
 }
 footer .redes div:nth-child(6) a {
-  transition: color 500ms, background-color 1s;
+  box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
+  transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #1900ff;
 }
 footer .redes div:nth-child(6) a:hover {
   background: white;
   color: #1900ff;
+  transform: translateY(10px);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+}
+footer .redes div:nth-child(6) div {
+  margin-top: 0.9375rem;
 }
 
 .wave {
@@ -294,6 +331,214 @@ footer .redes div:nth-child(6) a:hover {
 .importante {
   color: red;
   font-style: italic;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3px 20px;
+  width: 100%;
+  height: 100%;
+}
+.contenedor :nth-child(1) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(218, 29, 218, 0.58);
+}
+.contenedor :nth-child(2) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(29, 218, 29, 0.58);
+}
+.contenedor :nth-child(3) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(218, 29, 29, 0.58);
+}
+.contenedor :nth-child(4) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(218, 29, 29, 0.58);
+}
+.contenedor :nth-child(5) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(218, 29, 29, 0.58);
+}
+.contenedor :nth-child(6) button {
+  position: absolute;
+  right: 5.3125rem;
+  bottom: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: 1.875rem;
+  transition: all 300ms;
+  background-color: rgba(218, 29, 29, 0.58);
+}
+.contenedor .newcard {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(168, 168, 168);
+  overflow: hidden;
+}
+.contenedor .newcard:before {
+  z-index: 99;
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 128px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: white;
+}
+.contenedor .newcard:after {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  bottom: -10px;
+  right: 128px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: white;
+}
+.contenedor .newcard h2 {
+  z-index: 99;
+  position: absolute;
+  right: 130px;
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.2s;
+}
+.contenedor .newcard .dia {
+  z-index: 99;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 12px;
+  letter-spacing: 2px;
+  width: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-align: center;
+  transition: all 0.2s;
+}
+.contenedor .newcard .social {
+  z-index: 99;
+  position: absolute;
+  color: white;
+  width: 300px;
+  left: 10px;
+  top: 15px;
+  text-align: center;
+  border-radius: 80px;
+}
+.contenedor .newcard .social p {
+  opacity: 0;
+  transition: all 0.4s;
+}
+.contenedor .newcard .social hr {
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+.contenedor .newcard .social h3 {
+  transform: translateY(68px);
+  transition: all 0.4s;
+}
+.contenedor .newcard .pic {
+  z-index: 100;
+  width: 400px;
+  height: 200px;
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+  transition: all 0.2s;
+}
+.contenedor .newcard .fa-arrow-right {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  transform: scale(0.1);
+  z-index: 100;
+  position: absolute;
+  right: 80px;
+  bottom: 25px;
+  font-size: 40px;
+  transition: all 0.2s;
+}
+.contenedor .newcard:hover button {
+  transform: scale(12.5);
+}
+.contenedor .newcard:hover .fa-arrow-right {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.contenedor .newcard:hover .dia {
+  color: #fff;
+}
+.contenedor .newcard:hover .pic {
+  filter: grayscale(0);
+}
+.contenedor .newcard:hover h2 {
+  opacity: 0.7;
+  transform: translateY(110px);
+}
+.contenedor .newcard:hover .social p {
+  opacity: 1;
+}
+.contenedor .newcard:hover .social h3 {
+  transform: translateY(0);
+  opacity: 0.6;
+}
+.contenedor .newcard:hover .social hr {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px;
 }
 
 @media (max-width: 991px) {
