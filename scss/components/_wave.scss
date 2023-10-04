@@ -15,7 +15,7 @@
 .wave-calendario{
     @extend .wave;
     
-    background-color: #666666;
+    background-color: $bg-calendario;
     background-image: 
     linear-gradient($color-child2, $color-child1),
     linear-gradient($color-child3, $color-child2),

@@ -240,8 +240,8 @@ footer .redes div:nth-child(6) div {
 }
 
 .wave-calendario {
-  background-color: #666666;
-  background-image: linear-gradient(rgba(255, 145, 0, 0.58), rgba(247, 50, 50, 0.58)), linear-gradient(rgba(218, 215, 29, 0.58), rgba(255, 145, 0, 0.58)), linear-gradient(rgba(29, 218, 45, 0.58), rgba(218, 215, 29, 0.58)), linear-gradient(rgba(29, 212, 218, 0.58), rgba(29, 218, 45, 0.58)), linear-gradient(rgba(57, 29, 218, 0.58), rgba(29, 212, 218, 0.58)), linear-gradient(rgba(141, 17, 199, 0.58), rgba(57, 29, 218, 0.58)), linear-gradient(rgba(255, 0, 234, 0.58), rgba(141, 17, 199, 0.58)), linear-gradient(rgba(247, 50, 50, 0.58), rgba(255, 0, 234, 0.58));
+  background-color: rgba(44, 44, 44, 0.842);
+  background-image: linear-gradient(rgba(255, 145, 0, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(255, 0, 234, 0.5));
   background-size: 1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
   background-position: 10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0;
   background-repeat: no-repeat;
@@ -266,18 +266,17 @@ footer .redes div:nth-child(6) div {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 3px 20px;
+  gap: 50px 20px;
   width: 100%;
   height: 100%;
-  padding-top: 6px;
-  padding-bottom: 300px;
-  background-color: #666666;
-  background-image: linear-gradient(to right, rgba(247, 50, 50, 0.58), rgba(255, 145, 0, 0.58)), linear-gradient(to right, rgba(255, 145, 0, 0.58), rgba(218, 215, 29, 0.58)), linear-gradient(to right, rgba(218, 215, 29, 0.58), rgba(29, 218, 45, 0.58)), linear-gradient(to right, rgba(29, 218, 45, 0.58), rgba(29, 212, 218, 0.58)), linear-gradient(to right, rgba(29, 212, 218, 0.58), rgba(57, 29, 218, 0.58)), linear-gradient(to right, rgba(57, 29, 218, 0.58), rgba(141, 17, 199, 0.58)), linear-gradient(to right, rgba(141, 17, 199, 0.58), rgba(255, 0, 234, 0.58)), linear-gradient(to right, rgba(255, 0, 234, 0.58), rgba(247, 50, 50, 0.58)), linear-gradient(rgba(247, 50, 50, 0.58), rgba(255, 145, 0, 0.58)), linear-gradient(rgba(255, 145, 0, 0.58), rgba(218, 215, 29, 0.58)), linear-gradient(rgba(218, 215, 29, 0.58), rgba(29, 218, 45, 0.58)), linear-gradient(rgba(29, 218, 45, 0.58), rgba(29, 212, 218, 0.58)), linear-gradient(rgba(29, 212, 218, 0.58), rgba(57, 29, 218, 0.58)), linear-gradient(rgba(57, 29, 218, 0.58), rgba(141, 17, 199, 0.58)), linear-gradient(rgba(141, 17, 199, 0.58), rgba(255, 0, 234, 0.58)), linear-gradient(rgba(255, 0, 234, 0.58), rgba(247, 50, 50, 0.58));
+  padding: 80px 0;
+  background-color: rgba(44, 44, 44, 0.842);
+  background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5));
   background-size: 100% 1px, 100% 3px, 100% 5px, 100% 8px, 100% 8px, 100% 5px, 100% 3px, 100% 1px, 1px 100%, 3px 100%, 5px 100%, 8px 100%, 8px 100%, 5px 100%, 3px 100%, 1px 100%;
   background-position: 0 10%, 0 15%, 0 20%, 0 25%, 0 30%, 0 35%, 0 40%, 0 45%, 10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0;
   background-repeat: no-repeat;
 }
-.contenedor :nth-child(1) button {
+.contenedor .newcard:nth-child(1) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -286,9 +285,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(247, 50, 50, 0.58);
+  background-color: rgba(247, 50, 50, 0.5);
 }
-.contenedor :nth-child(2) button {
+.contenedor .newcard:nth-child(2) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -297,9 +296,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(255, 145, 0, 0.58);
+  background-color: rgba(255, 145, 0, 0.5);
 }
-.contenedor :nth-child(3) button {
+.contenedor .newcard:nth-child(3) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -308,9 +307,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(218, 215, 29, 0.58);
+  background-color: rgba(218, 215, 29, 0.5);
 }
-.contenedor :nth-child(4) button {
+.contenedor .newcard:nth-child(4) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -319,9 +318,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(29, 218, 45, 0.58);
+  background-color: rgba(29, 218, 45, 0.5);
 }
-.contenedor :nth-child(5) button {
+.contenedor .newcard:nth-child(5) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -330,9 +329,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(29, 212, 218, 0.58);
+  background-color: rgba(29, 212, 218, 0.5);
 }
-.contenedor :nth-child(6) button {
+.contenedor .newcard:nth-child(6) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -341,9 +340,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(57, 29, 218, 0.58);
+  background-color: rgba(57, 29, 218, 0.5);
 }
-.contenedor :nth-child(7) button {
+.contenedor .newcard:nth-child(7) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -352,9 +351,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(141, 17, 199, 0.58);
+  background-color: rgba(141, 17, 199, 0.5);
 }
-.contenedor :nth-child(8) button {
+.contenedor .newcard:nth-child(8) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -363,9 +362,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(255, 0, 234, 0.58);
+  background-color: rgba(255, 0, 234, 0.5);
 }
-.contenedor :nth-child(9) button {
+.contenedor .newcard:nth-child(9) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -374,9 +373,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(247, 50, 50, 0.58);
+  background-color: rgba(247, 50, 50, 0.5);
 }
-.contenedor :nth-child(10) button {
+.contenedor .newcard:nth-child(10) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -385,9 +384,9 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(255, 145, 0, 0.58);
+  background-color: rgba(255, 145, 0, 0.5);
 }
-.contenedor :nth-child(11) button {
+.contenedor .newcard:nth-child(11) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -396,7 +395,7 @@ footer .redes div:nth-child(6) div {
   border: none;
   border-radius: 1.875rem;
   transition: all 300ms;
-  background-color: rgba(218, 215, 29, 0.58);
+  background-color: rgba(218, 215, 29, 0.5);
 }
 .contenedor .newcard {
   position: relative;
@@ -404,30 +403,10 @@ footer .redes div:nth-child(6) div {
   height: 225px;
   overflow: hidden;
   border-radius: 0.375rem;
-  background-color: #fff;
-}
-.contenedor .newcard:before {
-  z-index: 99;
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: 128px;
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  background-color: #666666;
-}
-.contenedor .newcard:after {
-  content: "";
-  z-index: 99;
-  position: absolute;
-  bottom: -10px;
-  right: 128px;
-  display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  background-color: #666666;
+  background-color: rgb(219, 219, 219);
+  mask: radial-gradient(circle 14px at 400px top, rgba(0, 0, 0, 0) 98%, #000) top right, radial-gradient(circle 14px at 400px bottom, rgba(0, 0, 0, 0) 100%, #000) bottom right;
+  mask-size: 100% 50%;
+  mask-repeat: no-repeat;
 }
 .contenedor .newcard h2 {
   z-index: 99;
@@ -500,7 +479,7 @@ footer .redes div:nth-child(6) div {
   transition: all 0.2s;
 }
 .contenedor .newcard:hover button {
-  transform: scale(12.5);
+  transform: scale(14);
 }
 .contenedor .newcard:hover .fa-arrow-right {
   opacity: 1;

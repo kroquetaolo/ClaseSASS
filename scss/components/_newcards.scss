@@ -3,12 +3,12 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 3px 20px;
+    gap: 50px 20px;
     width: 100%;
     height: 100%;
-    padding-top: 6px;
-    padding-bottom: 300px;
-    background-color: #666666;
+    padding: 80px 0;
+    background-color: $bg-calendario;
+    
     background-image: 
 
     linear-gradient(to right, $color-child1, $color-child2),
@@ -37,49 +37,82 @@
     10% 0, 15% 0, 20% 0, 25% 0, 30% 0, 35% 0, 40% 0, 45% 0, ;
     background-repeat: no-repeat;
     
-    :nth-child(1) button {
-        @include botton-newcard;        
-        background-color: $color-child1;
+    .newcard:nth-child(1) { 
+            //background-color: $color-child2;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child1;
+        }
     }
-    :nth-child(2) button {
-        @include botton-newcard;        
-        background-color: $color-child2;
+    .newcard:nth-child(2) {
+        //background-color: $color-child3;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child2;
+        }
     }
-    :nth-child(3) button {
-        @include botton-newcard;        
-        background-color: $color-child3;
+    .newcard:nth-child(3) {
+        //background-color: $color-child4;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child3;
+        }
     }
-    :nth-child(4) button {
-        @include botton-newcard;        
-        background-color: $color-child4;
+    .newcard:nth-child(4) {
+        //background-color: $color-child5;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child4;
+        }
     }
-    :nth-child(5) button {
-        @include botton-newcard;        
-        background-color: $color-child5;
+    .newcard:nth-child(5) {
+        //background-color: $color-child2;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child5;
+        }
     }
-    :nth-child(6) button {
-        @include botton-newcard;        
-        background-color: $color-child6;
+    .newcard:nth-child(6) {
+        //background-color: $color-child7;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child6;
+        }
     }
-    :nth-child(7) button {
-        @include botton-newcard;        
-        background-color: $color-child7;
+    .newcard:nth-child(7) {
+        //background-color: $color-child8;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child7;
+        }
     }
-    :nth-child(8) button {
-        @include botton-newcard;        
-        background-color: $color-child8;
+    .newcard:nth-child(8) {
+        //background-color: $color-child1;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child8;
+        }
     }
-    :nth-child(9) button {
-        @include botton-newcard;        
-        background-color: $color-child1;
+    .newcard:nth-child(9) {
+        //background-color: $color-child2;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child1;
+        }
     }
-    :nth-child(10) button {
-        @include botton-newcard;        
-        background-color: $color-child2;
+    .newcard:nth-child(10) {
+        //background-color: $color-child3;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child2;
+        }
     }
-    :nth-child(11) button {
-        @include botton-newcard;        
-        background-color: $color-child3;
+    .newcard:nth-child(11) {
+        //background-color: $color-child4;
+        button {
+            @include botton-newcard;        
+            background-color: $color-child3;
+        }
     }
 
     .newcard {
@@ -88,30 +121,12 @@
         height: $altura-cards;
         overflow: hidden;
         border-radius: .375rem;
-        background-color: #fff;
-        &:before {
-            z-index: 99;
-            content: "";
-            position: absolute;
-            top: -10px;
-            right: 128px;
-            width: 16px;
-            height: 16px;
-            border-radius: 16px;
-            background-color: #666666;
-        }
-        &:after {
-            content: "";
-            z-index: 99;
-            position: absolute;
-            bottom: -10px;
-            right: 128px;
-            display: block;
-            width: 16px;
-            height: 16px;
-            border-radius: 16px;
-            background-color: #666666;
-        }
+        background-color: rgb(219, 219, 219);
+        mask:
+            radial-gradient(circle 14px at 400px top,#0000 98%,#000) top right,
+            radial-gradient(circle 14px at 400px bottom ,#0000 100%,#000) bottom right;
+        mask-size: 100% 50%;
+        mask-repeat:no-repeat;
         h2 {
             z-index: 99;
             position: absolute;
@@ -187,7 +202,7 @@
         }
 
         &:hover button {
-            transform: scale(12.5);
+            transform: scale(14);
         }
         &:hover .fa-arrow-right {
             opacity: 1;
