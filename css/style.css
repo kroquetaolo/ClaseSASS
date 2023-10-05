@@ -11,6 +11,7 @@ html {
 body {
   background-color: rgb(255, 255, 255);
   padding-top: 4.375rem;
+  font-family: "Roboto";
 }
 
 header {
@@ -92,14 +93,19 @@ header nav img:hover {
 }
 
 .lobos {
-  height: 38.75rem;
-  filter: drop-shadow(0 0.3125rem 0.3125rem black) drop-shadow(-0.625rem 0.9375rem 0.8125rem rgba(255, 20, 147, 0.45));
+  display: flex;
+  height: 620px;
+  filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px rgba(255, 20, 147, 0.45));
 }
 
 .presentacion {
-  height: 40.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
   color: white;
-  padding: 3.125rem;
+  padding: 50px;
   background-image: linear-gradient(to bottom, rgba(242, 63, 165, 0.1), rgba(241, 57, 179, 0.1), rgba(237, 53, 195, 0.1), rgba(230, 53, 212, 0.1), rgba(219, 57, 230, 0.1), rgba(207, 61, 238, 0.1), rgba(194, 66, 247, 0.1), rgba(178, 71, 255, 0.1), rgba(163, 73, 255, 0.1), rgba(146, 76, 255, 0.1), rgba(129, 77, 254, 0.1), rgba(109, 79, 253, 0.1)), url(../assets/fondo-presentacion.jpg);
   background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(48, 12, 30, 0.9), rgba(87, 6, 63, 0.25), rgba(122, 0, 107, 0.15), rgba(149, 0, 162, 0.1), rgba(162, 0, 191, 0.08), rgba(173, 0, 222, 0.08), rgba(180, 0, 255, 0.08), rgba(197, 0, 255, 0.08), rgba(214, 0, 255, 0.08), rgba(229, 0, 255, 0.1), rgba(20, 20, 20, 0.9)), url(../assets/fondo-presentacion.jpg);
   background-attachment: fixed;
@@ -110,11 +116,54 @@ header nav img:hover {
 }
 .presentacion h1 {
   font-weight: bold;
-  font-size: 3.25rem;
-  text-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 91, 192, 0.8);
-  padding: 1.25rem 3.125rem;
-  border-radius: 0.625rem 5rem;
-  backdrop-filter: blur(0.25rem);
+  font-size: 3.25em;
+  text-shadow: 2px 2px 4px rgba(255, 91, 192, 0.8);
+  padding: 20px 50px;
+  border-radius: 10px 80px;
+  backdrop-filter: blur(4px);
+}
+.presentacion p {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.reglamento {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.reglamento h1 {
+  font-size: 3rem;
+  padding: 40px 0px;
+}
+.reglamento .reglas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.reglamento .reglas .regla {
+  display: flex;
+  flex-direction: column;
+  width: 32.8125rem;
+  height: 50rem;
+  margin: 16px;
+  border-radius: 3.125rem 3.125rem 0 0;
+  border: 2px solid darkmagenta;
+  overflow: hidden;
+}
+.reglamento .reglas .regla h2 {
+  background-color: gainsboro;
+  border-bottom: 1px solid rgba(255, 20, 147, 0.45);
+  padding: 1.25rem 0;
+}
+.reglamento .reglas .regla p {
+  padding: 1rem 1.25rem;
+  line-height: 1.75rem;
+  text-align: start;
+}
+.reglamento .reglas .regla img {
+  margin-top: auto;
+  width: 100%;
 }
 
 .banco_y_comercio {
@@ -126,11 +175,6 @@ header nav img:hover {
 .banco_y_comercio h1 {
   color: darkmagenta;
   font-weight: bold;
-}
-
-.reglas {
-  height: auto;
-  margin-bottom: 1.25rem;
 }
 
 .card {
