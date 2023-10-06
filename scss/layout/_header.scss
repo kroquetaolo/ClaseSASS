@@ -6,7 +6,7 @@ header {
     top: 0;
     left: 0;
     height: 4.375rem;
-    width: 100%;
+    width: 100vw;
     z-index: 99999;
     nav{
         display: flex;
@@ -29,18 +29,23 @@ header {
             height: 100%;
             border-radius: 0 1.5625rem 1.5625rem 0;
         }
+
         .nav-derecha{
             background-color: $bg-nav;
             display: flex;
             height: 100%;
             padding-left: 1.875rem;
             border-radius: 1.5625rem 0  0 1.5625rem;
-            .menu{
+            .icono-menu , .menu-toggle{
+                display: none;
+            }
+
+            .menu {
                 display: flex;
                 flex-direction: row;
                 list-style-type: none;
                 padding: .25rem 0;
-                li {
+                .nav-item {
                     display: flex;
                     align-items: center;
                     border-radius: .625rem .625rem 0 0 ;
@@ -62,6 +67,46 @@ header {
                         color: $color-principal-claro;
                         font-weight: bold;
                         transition: color 0.3s;
+                    }
+                }
+            }
+            
+            @media (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                background-color: rgba(0, 0, 0, 0);
+                .menu {
+                    display: none;
+                }
+                .icono-menu{
+                    display: flex;
+                    padding: .75rem 1.5625rem .4375rem 1.875rem;
+                    background-color: $bg-nav;
+                    border-radius: 1.875rem 0 0 1.875rem;
+                    .fa-bars{
+                        font-size: 2em;
+                    }
+                }
+                .menu-toggle {
+                    &.menu-toggle:checked + .menu {
+                            display: flex;
+                            flex-direction: column;
+                            .active{
+                                border-bottom: .0625rem solid $color-principal-claro;
+                                box-shadow: 0rem -0.125rem .625rem 0rem $sombra-principal-claro;
+                            }
+                            .nav-item{
+                                height: 45px;
+                                width: 200px;
+                                background-color: $bg-nav;
+                                border-radius: 0;
+                                a{
+                                    width: 100%;
+                                }
+                                
+                            }
+                        
                     }
                 }
             }
