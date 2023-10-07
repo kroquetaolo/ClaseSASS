@@ -134,7 +134,7 @@ header nav img:hover {
 
 .lobos {
   display: flex;
-  height: 38.75rem;
+  height: 100vh;
   filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px rgba(255, 20, 147, 0.45));
 }
 
@@ -143,12 +143,10 @@ header nav img:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40.625rem;
   width: 100vw;
   color: white;
   padding: 3.125rem;
-  background-image: linear-gradient(to bottom, rgba(242, 63, 165, 0.1), rgba(241, 57, 179, 0.1), rgba(237, 53, 195, 0.1), rgba(230, 53, 212, 0.1), rgba(219, 57, 230, 0.1), rgba(207, 61, 238, 0.1), rgba(194, 66, 247, 0.1), rgba(178, 71, 255, 0.1), rgba(163, 73, 255, 0.1), rgba(146, 76, 255, 0.1), rgba(129, 77, 254, 0.1), rgba(109, 79, 253, 0.1)), url(../assets/fondo-presentacion.jpg);
-  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(48, 12, 30, 0.9), rgba(87, 6, 63, 0.25), rgba(122, 0, 107, 0.15), rgba(149, 0, 162, 0.1), rgba(162, 0, 191, 0.08), rgba(173, 0, 222, 0.08), rgba(180, 0, 255, 0.08), rgba(197, 0, 255, 0.08), rgba(214, 0, 255, 0.08), rgba(229, 0, 255, 0.1), rgba(20, 20, 20, 0.9)), url(../assets/fondo-presentacion.jpg);
+  background-image: url(../assets/fondo-presentacion.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -184,6 +182,11 @@ header nav img:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5));
+  background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem;
+  background-position: 0 400px, 0 435px, 0 470px, 0 505px, 0 540px, 0 575px, 0 610px, 0 645px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .reglamento h1 {
   font-size: 3rem;
@@ -203,6 +206,7 @@ header nav img:hover {
   border-radius: 3.125rem 3.125rem 0 0;
   border: 2px solid darkmagenta;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .reglamento .reglas .regla h2 {
   background-color: gainsboro;
@@ -220,127 +224,243 @@ header nav img:hover {
 }
 
 .banco_y_comercio {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../../assets/banquero.webp);
+  background-size: cover;
   justify-content: center;
   align-items: center;
-  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
 }
 .banco_y_comercio h1 {
   color: darkmagenta;
   font-weight: bold;
 }
 
-.card {
-  height: 100%;
-  border-color: rgba(255, 20, 145, 0.5);
-}
-
-.accordion .accordion-button {
-  background-color: deeppink;
-  font-weight: bold;
-  color: black;
-}
-.accordion .accordion-button:focus {
-  box-shadow: none;
-  color: white;
-}
-
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 224, 247);
+  height: 400px;
 }
-footer .redes div:nth-child(1) a {
+footer section:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 300px;
+}
+footer section:nth-child(1) hr {
+  height: 90%;
+  align-self: center;
+  color: rgba(255, 20, 147, 0.45);
+}
+footer section:nth-child(2) {
+  display: flex;
+  height: 100px;
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  gap: 5rem;
+  background-color: rgba(255, 20, 147, 0.45);
+}
+footer .redes :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+footer .redes :nth-child(1) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #3b5998;
+  font-size: 1.5em;
+  text-decoration: none;
 }
-footer .redes div:nth-child(1) a:hover {
+footer .redes :nth-child(1) a:hover {
   background: white;
   color: #3b5998;
-  transform: translateY(10px);
   box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
 }
-footer .redes div:nth-child(1) div {
-  margin-top: 0.9375rem;
+footer .redes :nth-child(1) div {
+  margin-top: 0.625rem;
 }
-footer .redes div:nth-child(2) a {
+footer .redes :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+footer .redes :nth-child(2) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #55acee;
+  font-size: 1.5em;
+  text-decoration: none;
 }
-footer .redes div:nth-child(2) a:hover {
+footer .redes :nth-child(2) a:hover {
   background: white;
   color: #55acee;
-  transform: translateY(10px);
   box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
 }
-footer .redes div:nth-child(2) div {
-  margin-top: 0.9375rem;
+footer .redes :nth-child(2) div {
+  margin-top: 0.625rem;
 }
-footer .redes div:nth-child(3) a {
+footer .redes :nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+footer .redes :nth-child(3) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #ac2bac;
+  font-size: 1.5em;
+  text-decoration: none;
 }
-footer .redes div:nth-child(3) a:hover {
+footer .redes :nth-child(3) a:hover {
   background: white;
   color: #ac2bac;
-  transform: translateY(10px);
   box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
 }
-footer .redes div:nth-child(3) div {
-  margin-top: 0.9375rem;
+footer .redes :nth-child(3) div {
+  margin-top: 0.625rem;
 }
-footer .redes div:nth-child(4) a {
+footer .redes :nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+footer .redes :nth-child(4) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #0082ca;
+  font-size: 1.5em;
+  text-decoration: none;
 }
-footer .redes div:nth-child(4) a:hover {
+footer .redes :nth-child(4) a:hover {
   background: white;
   color: #0082ca;
-  transform: translateY(10px);
   box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
 }
-footer .redes div:nth-child(4) div {
-  margin-top: 0.9375rem;
+footer .redes :nth-child(4) div {
+  margin-top: 0.625rem;
 }
-footer .redes div:nth-child(5) a {
+footer .redes :nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+footer .redes :nth-child(5) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #333333;
+  font-size: 1.5em;
+  text-decoration: none;
 }
-footer .redes div:nth-child(5) a:hover {
+footer .redes :nth-child(5) a:hover {
   background: white;
   color: #333333;
-  transform: translateY(10px);
   box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
 }
-footer .redes div:nth-child(5) div {
-  margin-top: 0.9375rem;
+footer .redes :nth-child(5) div {
+  margin-top: 0.625rem;
 }
-footer .redes div:nth-child(6) a {
+footer .redes :nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+footer .redes :nth-child(6) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
   background-color: #1900ff;
+  font-size: 1.5em;
+  text-decoration: none;
 }
-footer .redes div:nth-child(6) a:hover {
+footer .redes :nth-child(6) a:hover {
   background: white;
   color: #1900ff;
-  transform: translateY(10px);
   box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
 }
-footer .redes div:nth-child(6) div {
-  margin-top: 0.9375rem;
+footer .redes :nth-child(6) div {
+  margin-top: 0.625rem;
+}
+footer .info--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 26px;
+  height: 100%;
+  width: 60vw;
+}
+footer .info--footer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .info--footer div img {
+  height: 64px;
+  border-radius: 40%;
+  border: 1px solid darkmagenta;
+}
+footer .info--footer div h3 {
+  padding: 50px 40px;
+}
+footer .info--footer p {
+  align-self: center;
+  text-align: center;
+  padding: 0 30px;
+}
+footer .logo--footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-weight: bold;
+  padding-left: 30px;
+  height: 100%;
+  width: 30vw;
+}
+footer .logo--footer p {
+  font-weight: lighter;
+  text-align: center;
+  font-style: italic;
+}
+footer .copy {
+  display: none;
+  background-color: rgba(255, 20, 147, 0.45);
+  text-align: center;
 }
 
 .wave, .wave-calendario {
-  background-color: rgb(255, 224, 247);
   height: 9.375rem;
   overflow: hidden;
 }
@@ -630,10 +750,11 @@ footer .redes div:nth-child(6) div {
   transition: all 0.4s;
 }
 .contenedor .newcard .informacion hr {
-  opacity: 0.7;
+  opacity: 0;
   transition: all 0.4s;
 }
 .contenedor .newcard .informacion h3 {
+  font-size: 2em;
   text-align: center;
   font-weight: bold;
   transform: translateY(68px);
@@ -685,13 +806,9 @@ footer .redes div:nth-child(6) div {
 }
 .contenedor .newcard:hover .informacion hr {
   opacity: 1;
-  transform: translateY(-10px);
 }
 
 @media (max-width: 991px) {
-  .fav-txt {
-    display: none;
-  }
   .back-to-top {
     margin-bottom: 3.125rem;
   }
@@ -700,36 +817,82 @@ footer .redes div:nth-child(6) div {
     height: 1.875rem;
     width: 1.875rem;
   }
-  header nav .navbar-brand {
-    font-size: 1rem;
-  }
   .contenedor .newcard {
     mask: none;
   }
+  footer .redes {
+    gap: 5px;
+  }
+  footer .redes .fab-txt {
+    display: none;
+    visibility: hidden;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+  footer .info--footer {
+    padding: 0;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50px);
+  }
+  footer hr {
+    display: none;
+  }
+  footer .logo--footer {
+    display: none;
+  }
+  footer .copy {
+    display: inline;
+    padding: 10px;
+  }
 }
-@media (max-width: 991px) and (max-width: 530px) {
-  .contenedor .newcard {
+@media (max-width: 530px) {
+  .newcard {
     width: 23.4375rem;
     height: 300px;
   }
-  .contenedor .newcard .pic {
+  .newcard .pic {
     width: 20rem;
     height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .contenedor .newcard .dia {
+  .newcard .dia {
     right: 20px;
   }
-  .contenedor .newcard .fa-arrow-right {
+  .newcard .fa-arrow-right {
     right: 35px;
   }
-  .contenedor .newcard:hover h2 {
+  .newcard:hover h2 {
     transform: translateY(200px);
   }
-  .contenedor .newcard:hover button {
+  .newcard:hover button {
     transform: scale(12);
+  }
+  footer .info--footer {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50px);
+  }
+  footer .info--footer :nth-child(1) img {
+    margin: 30px;
+  }
+  footer .info--footer :nth-child(1) h3 {
+    display: none;
+  }
+  footer .info--footer :nth-child(3) {
+    display: none;
+  }
+  footer .logo--footer h1 {
+    display: none;
+  }
+  footer .copy {
+    display: inline;
+    padding: 10px;
   }
 }
 

@@ -1,24 +1,100 @@
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: $bg-footer;
-    .redes div {
+    height: 400px;
+    section{
         &:nth-child(1) {
-            @include fav-icon(#3b5998);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 300px;
+            hr{
+                height: 90%;
+                align-self: center;
+                color: $sombra-principal-claro;
+            }
         }
         &:nth-child(2) {
-            @include fav-icon(#55acee);
+            display: flex;
+            height: 100px;
         }
-        &:nth-child(3) {
-            @include fav-icon(#ac2bac);
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        gap: 5rem;
+        background-color: $sombra-principal-claro;
+        :nth-child(1) {
+            @include fab-icon(#3b5998);
+        }
+        :nth-child(2) {
+            @include fab-icon(#55acee);
+        }
+        :nth-child(3) {
+            @include fab-icon(#ac2bac);
             }
-        &:nth-child(4) {
-            @include fav-icon(#0082ca);
+        :nth-child(4) {
+            @include fab-icon(#0082ca);
         }
-        &:nth-child(5) {
-            @include fav-icon(#333333);
+        :nth-child(5) {
+            @include fab-icon(#333333);
         }
-        &:nth-child(6) {
-            @include fav-icon(#1900ff);
+        :nth-child(6) {
+            @include fab-icon(#1900ff);
         }
+        
+    }
+    .info--footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 26px;
+        height: 100%;
+        width: 60vw;
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                height: 64px;
+                border-radius: 40%;
+                border: 1px solid $color-principal-oscuro;
+            }
+            h3{
+                padding: 50px 40px
+            }
+        }
+        p{
+            align-self: center;
+            text-align: center;
+            padding: 0 30px;
+        }
+
+        
+    }
+    .logo--footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        font-weight: bold;
+        padding-left: 30px;
+        height: 100%;
+        width: 30vw;
+        p {
+            font-weight: lighter;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+    .copy{
+        display: none;
+        background-color: $sombra-principal-claro;
+        text-align: center;
     }
 }

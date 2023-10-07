@@ -1,7 +1,4 @@
 @media (max-width: 991px) {
-    .fav-txt {
-        display: none;
-    }
     .back-to-top {
         margin-bottom: 3.125rem;
     }
@@ -12,41 +9,42 @@
                 height: 1.875rem;
                 width: 1.875rem;
             }
-            .navbar-brand{
-                font-size: 1rem;    
-            }
         }
     }
-    
+
     .contenedor {
         .newcard {
             mask: none;
         }
-        @media (max-width: 530px) {   
-            .newcard {
-                width: 23.4375rem;
-                height: 300px;
-                .pic {
-                    width: 20rem;
-                    height: 100%;
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                .dia {
-                    right: 20px;
-                }
-                .fa-arrow-right {
-                    right: 35px;
-                }
-
-                &:hover h2{
-                    transform: translateY(200px);
-                }
-                &:hover button {
-                    transform: scale(12);
-                }
+    }
+    footer {   
+        .redes{
+            gap: 5px;
+            .fab-txt {
+                display: none; 
+                visibility: hidden;
+                width: 0 !important;
+                height: 0 !important;
+                margin: 0 !important;
             }
+        }
+        .info--footer{
+            padding: 0;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-50px);
+        }
+        hr{
+            display: none;
+        }
+        .logo--footer{
+            display: none;
+        }
+        
+        .copy{
+            display: inline;
+            padding: 10px;
         }
     }
 }
