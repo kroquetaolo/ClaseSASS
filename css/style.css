@@ -52,6 +52,7 @@ header nav .nav-derecha {
   display: flex;
   height: 100%;
   padding-left: 1.875rem;
+  padding-right: 1.25rem;
   border-radius: 1.5625rem 0 0 1.5625rem;
 }
 header nav .nav-derecha .icono-menu, header nav .nav-derecha .menu-toggle {
@@ -86,43 +87,6 @@ header nav .nav-derecha .menu .active a {
   color: deeppink;
   font-weight: bold;
   transition: color 0.3s;
-}
-@media (max-width: 991px) {
-  header nav .nav-derecha {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: rgba(0, 0, 0, 0);
-  }
-  header nav .nav-derecha .menu {
-    display: none;
-  }
-  header nav .nav-derecha .icono-menu {
-    display: flex;
-    padding: 0.75rem 1.5625rem 0.4375rem 1.875rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 1.875rem 0 0 1.875rem;
-  }
-  header nav .nav-derecha .icono-menu .fa-bars {
-    font-size: 2em;
-  }
-  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu {
-    display: flex;
-    flex-direction: column;
-  }
-  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .active {
-    border-bottom: 0.0625rem solid deeppink;
-    box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(255, 20, 147, 0.45);
-  }
-  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .nav-item {
-    height: 45px;
-    width: 200px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 0;
-  }
-  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .nav-item a {
-    width: 100%;
-  }
 }
 header nav img {
   border-radius: 50%;
@@ -516,12 +480,6 @@ footer .copy {
   background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
   background-repeat: no-repeat;
 }
-@media (max-width: 530px) {
-  .contenedor {
-    background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(255, 145, 0, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(255, 0, 234, 0.5));
-    background-attachment: fixed;
-  }
-}
 .contenedor .newcard:nth-child(1) button {
   position: absolute;
   right: 5.3125rem;
@@ -808,6 +766,53 @@ footer .copy {
   opacity: 1;
 }
 
+.body--torneo {
+  background-image: linear-gradient(to right, black, black, rgba(247, 50, 50, 0.5), black, black), linear-gradient(to right, black, black, rgba(255, 145, 0, 0.5), black, black), linear-gradient(to right, black, black, rgba(218, 215, 29, 0.5), black, black), linear-gradient(to right, black, black, rgba(29, 218, 45, 0.5), black, black), linear-gradient(to right, black, black, rgba(29, 212, 218, 0.5), black, black), linear-gradient(to right, black, black, rgba(57, 29, 218, 0.5), black, black), linear-gradient(to right, black, black, rgba(141, 17, 199, 0.5), black, black), linear-gradient(to right, black, black, rgba(255, 0, 234, 0.5), black, black), linear-gradient(black, black, rgba(247, 50, 50, 0.5), black, black), linear-gradient(black, black, rgba(255, 145, 0, 0.5), black, black), linear-gradient(black, black, rgba(218, 215, 29, 0.5), black, black), linear-gradient(black, black, rgba(29, 218, 45, 0.5), black, black), linear-gradient(black, black, rgba(29, 212, 218, 0.5), black, black), linear-gradient(black, black, rgba(57, 29, 218, 0.5), black, black), linear-gradient(black, black, rgba(141, 17, 199, 0.5), black, black), linear-gradient(black, black, rgba(255, 0, 234, 0.5), black, black);
+  background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem, 0.0625rem 100%, 0.1875rem 100%, 0.3125rem 100%, 0.5rem 100%, 0.5rem 100%, 0.3125rem 100%, 0.1875rem 100%, 0.0625rem 100%;
+  background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body--torneo main section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.body--torneo main section .torneo, .body--torneo main section .concurso {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 700px;
+  width: 49vw;
+  z-index: 2;
+}
+.body--torneo main section .torneo h2, .body--torneo main section .concurso h2 {
+  margin: 20px 0;
+  color: deeppink;
+  font-size: 2em;
+}
+.body--torneo main section .torneo hr, .body--torneo main section .concurso hr {
+  margin-top: 10px;
+  align-self: center;
+  width: 80%;
+}
+.body--torneo main section .torneo img, .body--torneo main section .concurso img {
+  width: 40vw;
+}
+.body--torneo main section .torneo div, .body--torneo main section .concurso div {
+  margin: 20px 10px;
+  padding: 15px;
+  background-color: darkmagenta;
+  color: white;
+  border-radius: 40px;
+}
+.body--torneo main section .concurso {
+  z-index: 1;
+}
+.body--torneo main section .concurso img {
+  margin-left: auto;
+}
+
 @media (max-width: 991px) {
   .back-to-top {
     margin-bottom: 3.125rem;
@@ -847,6 +852,45 @@ footer .copy {
     display: inline;
     padding: 10px;
   }
+  header nav .nav-derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  header nav .nav-derecha .menu {
+    display: none;
+  }
+  header nav .nav-derecha .icono-menu {
+    display: flex;
+    padding: 0.75rem 1.5625rem 0.4375rem 1.875rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1.875rem 0 0 1.875rem;
+  }
+  header nav .nav-derecha .icono-menu .fa-bars {
+    font-size: 2em;
+  }
+  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .active {
+    border-bottom: 0.0625rem solid deeppink;
+    box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(255, 20, 147, 0.45);
+  }
+  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .nav-item {
+    height: 45px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0;
+  }
+  header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .nav-item a {
+    width: 100%;
+  }
+  .body--torneo main section .torneo, .body--torneo main section .concurso {
+    height: 500px;
+    width: 90vw;
+  }
 }
 @media (max-width: 530px) {
   .newcard {
@@ -872,6 +916,10 @@ footer .copy {
   .newcard:hover button {
     transform: scale(12);
   }
+  .contenedor {
+    background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(255, 145, 0, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(255, 0, 234, 0.5));
+    background-attachment: fixed;
+  }
   footer .info--footer {
     padding: 0;
     justify-content: center;
@@ -893,6 +941,13 @@ footer .copy {
   footer .copy {
     display: inline;
     padding: 10px;
+  }
+  .body--torneo main section .torneo, .body--torneo main section .concurso {
+    height: 550px;
+    width: 90vw;
+  }
+  .body--torneo main section .torneo img, .body--torneo main section .concurso img {
+    width: 80vw;
   }
 }
 

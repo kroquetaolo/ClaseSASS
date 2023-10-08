@@ -1,0 +1,73 @@
+.body--torneo{
+    background-image:
+
+    linear-gradient(to right,black, black, $color-child1, black, black),
+    linear-gradient(to right,black, black, $color-child2, black, black),
+    linear-gradient(to right,black, black, $color-child3, black, black),
+    linear-gradient(to right,black, black, $color-child4, black, black),
+    linear-gradient(to right,black, black, $color-child5, black, black),
+    linear-gradient(to right,black, black, $color-child6, black, black),
+    linear-gradient(to right,black, black, $color-child7, black, black),
+    linear-gradient(to right,black, black, $color-child8, black, black),
+
+    linear-gradient(black, black, $color-child1, black, black),
+    linear-gradient(black, black, $color-child2, black, black),
+    linear-gradient(black, black, $color-child3, black, black),
+    linear-gradient(black, black, $color-child4, black, black),
+    linear-gradient(black, black, $color-child5, black, black),
+    linear-gradient(black, black, $color-child6, black, black),
+    linear-gradient(black, black, $color-child7, black, black),
+    linear-gradient(black, black, $color-child8, black, black);
+
+    background-size:
+    100% .0625rem, 100% .1875rem, 100% .3125rem, 100% .5rem, 100% .5rem, 100% .3125rem, 100% .1875rem, 100% .0625rem,
+    .0625rem 100%, .1875rem 100%, .3125rem 100%, .5rem 100%, .5rem 100%, .3125rem 100%, .1875rem 100%, .0625rem 100%;
+    background-position:
+    0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem,
+    12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0 ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    main{
+        section{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .torneo {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                height: 700px;
+                width: 49vw;
+                z-index: 2;
+                h2{
+                    margin: 20px 0;
+                    color: $color-principal-claro;
+                    font-size: 2em;
+                }
+                hr{
+                    margin-top: 10px;
+                    align-self: center;
+                    width: 80%;
+                }
+                img{
+                    width: 40vw;
+                }
+                div{
+                    margin: 20px 10px;
+                    padding: 15px;
+                    background-color: $color-principal-oscuro;
+                    color: white;
+                    border-radius: 40px
+                }
+            }
+            .concurso {
+                @extend .torneo;
+                z-index: 1;
+                img{
+                    margin-left: auto
+                }
+            }
+        }
+    }
+}

@@ -23,6 +23,26 @@
             transform: scale(12);
         }
     }
+    .contenedor{
+        background-image: 
+        linear-gradient(to right, $color-child1, $color-child2),
+        linear-gradient(to right, $color-child2, $color-child3),
+        linear-gradient(to right, $color-child3, $color-child4),
+        linear-gradient(to right, $color-child4, $color-child5),
+        linear-gradient(to right, $color-child5, $color-child6),
+        linear-gradient(to right, $color-child6, $color-child7),
+        linear-gradient(to right, $color-child7, $color-child8),
+        linear-gradient(to right, $color-child8, $color-child1),
+        linear-gradient($color-child1, $color-child1),
+        linear-gradient($color-child2, $color-child2),
+        linear-gradient($color-child3, $color-child3),
+        linear-gradient($color-child4, $color-child4),
+        linear-gradient($color-child5, $color-child5),
+        linear-gradient($color-child6, $color-child6),
+        linear-gradient($color-child7, $color-child7),
+        linear-gradient($color-child8, $color-child8);
+        background-attachment: fixed;
+    }
     footer {   
         .info--footer{
             padding: 0;
@@ -51,6 +71,20 @@
         .copy{
             display: inline;
             padding: 10px;
+        }
+    }
+    .body--torneo{
+        main{
+            section{
+                .torneo {
+                    height: 550px;
+                    width: 90vw;
+                    img{
+                        width: 80vw;
+                    }
+                }
+            }
+            
         }
     }
 }
