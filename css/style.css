@@ -142,49 +142,100 @@ header nav img:hover {
   }
 }
 
+.main-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  text-decoration: none;
+  font-size: 2.5em;
+}
+.main-redes a {
+  color: deeppink;
+  transition: color 0.5s;
+}
+.main-redes a:hover {
+  color: rgba(255, 20, 147, 0.45);
+}
+
 .reglamento {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
   background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5));
   background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem;
   background-position: 0 400px, 0 435px, 0 470px, 0 505px, 0 540px, 0 575px, 0 610px, 0 645px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.reglamento h1 {
-  font-size: 3rem;
-  padding: 40px 0px;
-}
 .reglamento .reglas {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
 }
 .reglamento .reglas .regla {
   display: flex;
   flex-direction: column;
-  width: 32.8125rem;
-  height: 50rem;
   margin: 1rem;
-  border-radius: 3.125rem 3.125rem 0 0;
-  border: 2px solid darkmagenta;
+  width: 100%;
+  border: 2px solid rgba(255, 20, 147, 0.45);
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.reglamento .reglas .regla h2 {
-  background-color: gainsboro;
-  border-bottom: 1px solid rgba(255, 20, 147, 0.45);
-  padding: 1.25rem 0;
+.reglamento .reglas .regla .regla-titulo {
+  display: flex;
+  height: 200px;
+}
+.reglamento .reglas .regla .regla-titulo h2 {
+  font-size: 2.5rem;
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+.reglamento .reglas .regla .regla-titulo img {
+  height: 100%;
+  padding: 20px;
 }
 .reglamento .reglas .regla p {
   padding: 1rem 1.25rem;
   line-height: 1.75rem;
   text-align: start;
 }
-.reglamento .reglas .regla img {
-  margin-top: auto;
+.reglamento .reglas-promo {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  position: sticky;
+  top: 40%;
+  width: 500px;
+  height: 400px;
+  margin: 16px 0 0 50px;
+}
+.reglamento .reglas-promo h2 {
+  text-align: center;
+}
+.reglamento .reglas-promo p:first-letter {
+  text-transform: uppercase;
+}
+.reglamento .reglas-promo .promo-video {
+  height: 350px;
   width: 100%;
+  background-color: blue;
+}
+
+.titulo-reglamento {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.titulo-reglamento h1 {
+  margin: 0 25px;
+  font-size: 2.5em;
+}
+.titulo-reglamento div {
+  height: 10px;
+  width: 200px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 
 .banco_y_comercio {

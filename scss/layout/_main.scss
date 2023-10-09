@@ -44,10 +44,23 @@
         }
     }
 }
+.main-redes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 2.5em;
+    a{
+        color: $color-principal-claro;
+        transition: color 0.5s;
+        &:hover{
+            color: $sombra-principal-claro;
+        }
+    }
+}
 .reglamento{
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
     background-image:     
     linear-gradient(to right, $color-child1, $color-child2),
     linear-gradient(to right, $color-child2, $color-child3),
@@ -62,41 +75,76 @@
     background-position: 0 400px, 0 435px, 0 470px, 0 505px, 0 540px, 0 575px, 0 610px, 0 645px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    h1 {
-        font-size: 3rem;
-        padding: 40px 0px;
-        
-    }
     .reglas{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
         .regla {
             display: flex;
             flex-direction: column;
-            width: 32.8125rem;
-            height: 50rem;
             margin: 1rem;
-            border-radius: 3.125rem 3.125rem 0 0;
-            border: 2px solid $color-principal-oscuro;
+            width: 100%;
+            border: 2px solid $sombra-principal-claro;
             overflow: hidden;
             background-color: rgba(255, 255, 255, 0.9);
-            h2 {
-                background-color: gainsboro;
-                border-bottom: 1px solid $sombra-principal-claro;
-                padding: 1.25rem 0;
+            .regla-titulo{
+                display: flex;
+                height: 200px;
+                h2 {
+                    font-size: 2.5rem;
+                    width: 100%;
+                    align-self: center;
+                    text-align: center;
+                }
+                img {
+                    height: 100%;
+                    padding: 20px;
+                }
+
             }
             p {
                 padding: 1rem 1.25rem;
                 line-height: 1.75rem;
                 text-align: start;
             }
-            img {
-                margin-top: auto;
-                width: 100%;
-                
-            }
         }
+    }
+    .reglas-promo {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        position: sticky; 
+        top: 40%;
+        width: 500px;
+        height: 400px;
+        margin: 16px 0 0 50px;
+        h2{
+            text-align: center;
+        }
+        p:first-letter {
+            text-transform: uppercase;
+        }
+        .promo-video{
+            height: 350px;
+            width: 100%;
+            background-color: blue;
+        }
+    }
+}
+.titulo-reglamento{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    h1{
+        margin: 0 25px;
+        font-size: 2.5em;
+    }
+    div{
+        height: 10px;
+        width: 200px;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
     }
 }
 
