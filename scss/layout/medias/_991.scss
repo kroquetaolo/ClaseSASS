@@ -101,4 +101,11 @@
             }
         }
     }
+    .reglamento{
+        flex-direction: column;
+        align-items: center;
+        .reglas{
+            width: 100%;
+        }
+    }
 }

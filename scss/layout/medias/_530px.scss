@@ -87,4 +87,45 @@
             
         }
     }
+    .reglamento{
+        .reglas{
+            .regla{
+                .regla-titulo{
+                    flex-direction: column;
+                    h2{
+                        font-size: 2em;
+                    }
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        .reglas-promo {
+            width: 100%;
+            margin: 0;
+
+        }
+    }
+    .titulo-reglamento{
+        margin: 0;
+        h1{
+            margin: 0 25px;
+            font-size: 2em;
+        }
+    }
+    
+    .main-redes{
+        font-size: 1.3em;
+    }
+    
+    .presentacion {
+        padding: 0 1.25rem;
+        h1{
+            font-size: 2.25em;
+        }
+        p {
+            padding: 0;
+        }
+    }
 }

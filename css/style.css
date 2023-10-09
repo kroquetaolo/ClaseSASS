@@ -130,17 +130,6 @@ header nav img:hover {
   text-align: center;
   padding: 0 50px;
 }
-@media (max-width: 991px) {
-  .presentacion {
-    padding: 0 1.25rem;
-  }
-  .presentacion h1 {
-    font-size: 2.25em;
-  }
-  .presentacion p {
-    padding: 0;
-  }
-}
 
 .main-redes {
   display: flex;
@@ -942,6 +931,13 @@ footer .copy {
     height: 500px;
     width: 90vw;
   }
+  .reglamento {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reglamento .reglas {
+    width: 100%;
+  }
 }
 @media (max-width: 530px) {
   .newcard {
@@ -999,6 +995,38 @@ footer .copy {
   }
   .body--torneo main section .torneo img, .body--torneo main section .concurso img {
     width: 80vw;
+  }
+  .reglamento .reglas .regla .regla-titulo {
+    flex-direction: column;
+  }
+  .reglamento .reglas .regla .regla-titulo h2 {
+    font-size: 2em;
+  }
+  .reglamento .reglas .regla .regla-titulo img {
+    width: 200px;
+  }
+  .reglamento .reglas-promo {
+    width: 100%;
+    margin: 0;
+  }
+  .titulo-reglamento {
+    margin: 0;
+  }
+  .titulo-reglamento h1 {
+    margin: 0 25px;
+    font-size: 2em;
+  }
+  .main-redes {
+    font-size: 1.3em;
+  }
+  .presentacion {
+    padding: 0 1.25rem;
+  }
+  .presentacion h1 {
+    font-size: 2.25em;
+  }
+  .presentacion p {
+    padding: 0;
   }
 }
 
