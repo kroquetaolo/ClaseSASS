@@ -102,7 +102,7 @@ header nav img:hover {
   filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px rgba(255, 20, 147, 0.45));
 }
 
-.presentacion-index, .body--torneo .presentacion-concursos, .presentacion-calendario {
+.presentacion-index, .body--torneo .presentacion-concursos, .presentacion-ayuda, .presentacion-calendario {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,7 +117,7 @@ header nav img:hover {
   background-repeat: no-repeat;
   clip-path: polygon(100% 0%, 0% 0%, 0% 93.69%, 1.33% 93.44%, 2.67% 93.17%, 4% 92.9%, 5.33% 92.61%, 6.67% 92.32%, 8% 92.02%, 9.33% 91.72%, 10.67% 91.42%, 12% 91.12%, 13.33% 90.83%, 14.67% 90.54%, 16% 90.26%, 17.33% 89.98%, 18.67% 89.72%, 20% 89.48%, 21.33% 89.24%, 22.67% 89.03%, 24% 88.83%, 25.33% 88.65%, 26.67% 88.5%, 28% 88.36%, 29.33% 88.25%, 30.67% 88.16%, 32% 88.1%, 33.33% 88.06%, 34.67% 88.05%, 36% 88.06%, 37.33% 88.1%, 38.67% 88.16%, 40% 88.24%, 41.33% 88.35%, 42.67% 88.49%, 44% 88.64%, 45.33% 88.82%, 46.67% 89.01%, 48% 89.22%, 49.33% 89.46%, 50.67% 89.7%, 52% 89.96%, 53.33% 90.23%, 54.67% 90.51%, 56% 90.8%, 57.33% 91.1%, 58.67% 91.4%, 60% 91.7%, 61.33% 92%, 62.67% 92.29%, 64% 92.59%, 65.33% 92.87%, 66.67% 93.15%, 68% 93.42%, 69.33% 93.67%, 70.67% 93.91%, 72% 94.13%, 73.33% 94.34%, 74.67% 94.53%, 76% 94.69%, 77.33% 94.84%, 78.67% 94.96%, 80% 95.06%, 81.33% 95.14%, 82.67% 95.19%, 84% 95.22%, 85.33% 95.22%, 86.67% 95.19%, 88% 95.14%, 89.33% 95.07%, 90.67% 94.97%, 92% 94.85%, 93.33% 94.71%, 94.67% 94.54%, 96% 94.36%, 97.33% 94.15%, 98.67% 93.93%, 100% 93.69%);
 }
-.presentacion-index h1, .body--torneo .presentacion-concursos h1, .presentacion-calendario h1 {
+.presentacion-index h1, .body--torneo .presentacion-concursos h1, .presentacion-ayuda h1, .presentacion-calendario h1 {
   text-align: center;
   font-weight: bold;
   font-size: 3.25em;
@@ -126,7 +126,7 @@ header nav img:hover {
   border-radius: 0.625rem 5rem;
   backdrop-filter: blur(0.25rem);
 }
-.presentacion-index p, .body--torneo .presentacion-concursos p, .presentacion-calendario p {
+.presentacion-index p, .body--torneo .presentacion-concursos p, .presentacion-ayuda p, .presentacion-calendario p {
   text-align: center;
   padding: 0 50px;
 }
@@ -197,16 +197,16 @@ header nav img:hover {
   background-color: blue;
 }
 
-.titulo-reglamento, .body--torneo .titulo-torneos, .titulo-calendario {
+.titulo-reglamento, .body--torneo .titulo-torneos, .titulo-ayuda, .titulo-calendario {
   display: flex;
   align-items: center;
   margin-left: 50px;
 }
-.titulo-reglamento h1, .body--torneo .titulo-torneos h1, .titulo-calendario h1 {
+.titulo-reglamento h1, .body--torneo .titulo-torneos h1, .titulo-ayuda h1, .titulo-calendario h1 {
   margin: 0 25px;
   font-size: 2.5em;
 }
-.titulo-reglamento div, .body--torneo .titulo-torneos div, .titulo-calendario div {
+.titulo-reglamento div, .body--torneo .titulo-torneos div, .titulo-ayuda div, .titulo-calendario div {
   height: 10px;
   width: 200px;
   border-top: 2px solid grey;
@@ -538,6 +538,72 @@ header nav img:hover {
   opacity: 1;
 }
 
+.presentacion-ayuda {
+  background-image: url(../../assets/top-ayuda.webp);
+}
+
+.titulo-ayuda {
+  padding-top: 1.875rem;
+}
+
+.body--torneo {
+  background-image: linear-gradient(to right, black, black, rgba(247, 50, 50, 0.5), black, black), linear-gradient(to right, black, black, rgba(255, 145, 0, 0.5), black, black), linear-gradient(to right, black, black, rgba(218, 215, 29, 0.5), black, black), linear-gradient(to right, black, black, rgba(29, 218, 45, 0.5), black, black), linear-gradient(to right, black, black, rgba(29, 212, 218, 0.5), black, black), linear-gradient(to right, black, black, rgba(57, 29, 218, 0.5), black, black), linear-gradient(to right, black, black, rgba(141, 17, 199, 0.5), black, black), linear-gradient(to right, black, black, rgba(255, 0, 234, 0.5), black, black), linear-gradient(black, black, rgba(247, 50, 50, 0.5), black, black), linear-gradient(black, black, rgba(255, 145, 0, 0.5), black, black), linear-gradient(black, black, rgba(218, 215, 29, 0.5), black, black), linear-gradient(black, black, rgba(29, 218, 45, 0.5), black, black), linear-gradient(black, black, rgba(29, 212, 218, 0.5), black, black), linear-gradient(black, black, rgba(57, 29, 218, 0.5), black, black), linear-gradient(black, black, rgba(141, 17, 199, 0.5), black, black), linear-gradient(black, black, rgba(255, 0, 234, 0.5), black, black);
+  background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem, 0.0625rem 100%, 0.1875rem 100%, 0.3125rem 100%, 0.5rem 100%, 0.5rem 100%, 0.3125rem 100%, 0.1875rem 100%, 0.0625rem 100%;
+  background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body--torneo .presentacion-concursos {
+  background-image: url(../../assets/top-actividades.jpg);
+}
+.body--torneo .titulo-torneos {
+  padding-bottom: 1.875rem;
+}
+.body--torneo .titulo-torneos h1 {
+  padding: 1.25rem 3.125rem;
+  backdrop-filter: blur(0.25rem);
+  border-radius: 0.625rem 5rem;
+}
+.body--torneo main .contenedor-torneos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.body--torneo main .contenedor-torneos .torneo, .body--torneo main .contenedor-torneos .concurso {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 700px;
+  width: 49vw;
+  z-index: 2;
+}
+.body--torneo main .contenedor-torneos .torneo h2, .body--torneo main .contenedor-torneos .concurso h2 {
+  margin: 20px 0;
+  color: deeppink;
+  font-size: 2em;
+}
+.body--torneo main .contenedor-torneos .torneo hr, .body--torneo main .contenedor-torneos .concurso hr {
+  margin-top: 10px;
+  align-self: center;
+  width: 80%;
+}
+.body--torneo main .contenedor-torneos .torneo img, .body--torneo main .contenedor-torneos .concurso img {
+  width: 40vw;
+}
+.body--torneo main .contenedor-torneos .torneo div, .body--torneo main .contenedor-torneos .concurso div {
+  margin: 20px 10px;
+  padding: 15px;
+  background-color: darkmagenta;
+  color: white;
+  border-radius: 40px;
+}
+.body--torneo main .contenedor-torneos .concurso {
+  z-index: 1;
+}
+.body--torneo main .contenedor-torneos .concurso img {
+  margin-left: auto;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -821,64 +887,6 @@ footer .copy {
   background-color: #555;
 }
 
-.body--torneo {
-  background-image: linear-gradient(to right, black, black, rgba(247, 50, 50, 0.5), black, black), linear-gradient(to right, black, black, rgba(255, 145, 0, 0.5), black, black), linear-gradient(to right, black, black, rgba(218, 215, 29, 0.5), black, black), linear-gradient(to right, black, black, rgba(29, 218, 45, 0.5), black, black), linear-gradient(to right, black, black, rgba(29, 212, 218, 0.5), black, black), linear-gradient(to right, black, black, rgba(57, 29, 218, 0.5), black, black), linear-gradient(to right, black, black, rgba(141, 17, 199, 0.5), black, black), linear-gradient(to right, black, black, rgba(255, 0, 234, 0.5), black, black), linear-gradient(black, black, rgba(247, 50, 50, 0.5), black, black), linear-gradient(black, black, rgba(255, 145, 0, 0.5), black, black), linear-gradient(black, black, rgba(218, 215, 29, 0.5), black, black), linear-gradient(black, black, rgba(29, 218, 45, 0.5), black, black), linear-gradient(black, black, rgba(29, 212, 218, 0.5), black, black), linear-gradient(black, black, rgba(57, 29, 218, 0.5), black, black), linear-gradient(black, black, rgba(141, 17, 199, 0.5), black, black), linear-gradient(black, black, rgba(255, 0, 234, 0.5), black, black);
-  background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem, 0.0625rem 100%, 0.1875rem 100%, 0.3125rem 100%, 0.5rem 100%, 0.5rem 100%, 0.3125rem 100%, 0.1875rem 100%, 0.0625rem 100%;
-  background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.body--torneo .presentacion-concursos {
-  background-image: url(../../assets/top-actividades.jpg);
-}
-.body--torneo .titulo-torneos {
-  padding-bottom: 1.875rem;
-}
-.body--torneo .titulo-torneos h1 {
-  padding: 1.25rem 3.125rem;
-  backdrop-filter: blur(0.25rem);
-  border-radius: 0.625rem 5rem;
-}
-.body--torneo main .contenedor-torneos {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.body--torneo main .contenedor-torneos .torneo, .body--torneo main .contenedor-torneos .concurso {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 700px;
-  width: 49vw;
-  z-index: 2;
-}
-.body--torneo main .contenedor-torneos .torneo h2, .body--torneo main .contenedor-torneos .concurso h2 {
-  margin: 20px 0;
-  color: deeppink;
-  font-size: 2em;
-}
-.body--torneo main .contenedor-torneos .torneo hr, .body--torneo main .contenedor-torneos .concurso hr {
-  margin-top: 10px;
-  align-self: center;
-  width: 80%;
-}
-.body--torneo main .contenedor-torneos .torneo img, .body--torneo main .contenedor-torneos .concurso img {
-  width: 40vw;
-}
-.body--torneo main .contenedor-torneos .torneo div, .body--torneo main .contenedor-torneos .concurso div {
-  margin: 20px 10px;
-  padding: 15px;
-  background-color: darkmagenta;
-  color: white;
-  border-radius: 40px;
-}
-.body--torneo main .contenedor-torneos .concurso {
-  z-index: 1;
-}
-.body--torneo main .contenedor-torneos .concurso img {
-  margin-left: auto;
-}
-
 @media (max-width: 991px) {
   .back-to-top {
     margin-bottom: 3.125rem;
@@ -1035,10 +1043,10 @@ footer .copy {
     width: 100%;
     margin: 0;
   }
-  .titulo-reglamento, .titulo-calendario, .body--torneo .titulo-torneos {
+  .titulo-reglamento, .titulo-calendario, .titulo-ayuda, .body--torneo .titulo-torneos {
     margin: 0;
   }
-  .titulo-reglamento h1, .titulo-calendario h1, .body--torneo .titulo-torneos h1 {
+  .titulo-reglamento h1, .titulo-calendario h1, .titulo-ayuda h1, .body--torneo .titulo-torneos h1 {
     margin: 0 25px;
     font-size: 2em;
   }

@@ -1,0 +1,8 @@
+.presentacion-ayuda {
+    @extend .presentacion-index;
+    background-image:url(../../assets/top-ayuda.webp);
+}
+.titulo-ayuda{
+    @extend .titulo-reglamento;
+    padding-top: 1.875rem;
+}

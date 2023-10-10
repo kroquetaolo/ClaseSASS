@@ -7,12 +7,13 @@
 @import "./layout/header";
 @import "./layout/main-index";
 @import "./layout/main-calendario";
+@import "./layout/main-ayuda";
+@import "./layout/main-torneos";
 @import "./layout/footer";
 
-@import "./components/main-redes";
+@import "./components/redes-main";
 @import "./components/wave";
 @import "./components/back-to-top";
-@import "./components/concurso-y-torneo";
 
 @import "./layout/medias/991";
 @import "./layout/medias/530px";
