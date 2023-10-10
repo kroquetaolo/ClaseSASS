@@ -28,8 +28,21 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+    .presentacion-concursos {
+        @extend .presentacion-index;
+        background-image:url(../../assets/top-actividades.jpg);
+    }
+    .titulo-torneos{
+        @extend .titulo-reglamento;
+        padding-bottom: 1.875rem;
+        h1{
+            padding: 1.25rem 3.125rem;
+            backdrop-filter: blur(.25rem);
+            border-radius: .625rem 5rem;
+        }
+    }
     main{
-        section{
+        .contenedor-torneos{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;

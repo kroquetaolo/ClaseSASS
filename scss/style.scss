@@ -5,12 +5,13 @@
 @import "./base/body";
 
 @import "./layout/header";
-@import "./layout/main";
+@import "./layout/main-index";
+@import "./layout/main-calendario";
 @import "./layout/footer";
 
+@import "./components/main-redes";
 @import "./components/wave";
 @import "./components/back-to-top";
-@import "./components/newcards";
 @import "./components/concurso-y-torneo";
 
 @import "./layout/medias/991";

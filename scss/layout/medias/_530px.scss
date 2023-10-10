@@ -3,14 +3,14 @@
         width: 23.4375rem;
         height: 300px;
         .pic {
-            width: 20rem;
+            width: 20rem !important;
             height: 100%;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         .dia {
-            right: 20px;
+            right: 20px !important;
         }
         .fa-arrow-right {
             right: 35px;
@@ -23,7 +23,7 @@
             transform: scale(12);
         }
     }
-    .contenedor{
+    .body-calendario{
         background-image: 
         linear-gradient(to right, $color-child1, $color-child2),
         linear-gradient(to right, $color-child2, $color-child3),
@@ -75,7 +75,7 @@
     }
     .body--torneo{
         main{
-            section{
+            .contenedor-torneos{
                 .torneo {
                     height: 550px;
                     width: 90vw;

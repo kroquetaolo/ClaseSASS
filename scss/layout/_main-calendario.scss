@@ -1,12 +1,4 @@
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 3.125rem 1.25rem;
-    width: 100%;
-    height: 100%;
-    padding: 5rem 0;
+.main-calendario{
     background-color: $bg-calendario;
     
     background-image: 
@@ -36,6 +28,27 @@
     0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem,
     12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0 ;
     background-repeat: no-repeat;
+}
+.presentacion-calendario {
+    @extend .presentacion-index;
+    background-image:url(../../assets/top-calendario.jpg);
+}
+.titulo-calendario{
+    @extend .titulo-reglamento;
+    color: white;
+    padding-top: 1.875rem;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 1.875rem;
+    padding-bottom: 5rem;
+
     .newcard:nth-child(1) { 
             //background-color: $color-child2;
         button {
