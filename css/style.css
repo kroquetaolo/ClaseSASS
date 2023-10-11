@@ -123,7 +123,7 @@ header nav img:hover {
   width: 100vw;
   color: white;
   padding: 3.125rem;
-  background-image: url(../../assets/fondo-presentacion.jpg);
+  background-image: url(../assets/fondo-presentacion.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -227,7 +227,7 @@ header nav img:hover {
 }
 
 .banco_y_comercio {
-  background-image: url(../../assets/banquero.webp);
+  background-image: url(../assets/banquero.webp);
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -246,7 +246,7 @@ header nav img:hover {
 }
 
 .presentacion-calendario {
-  background-image: url(../../assets/top-calendario.jpg);
+  background-image: url(../assets/top-calendario.jpg);
 }
 
 .titulo-calendario {
@@ -552,7 +552,7 @@ header nav img:hover {
 }
 
 .presentacion-ayuda {
-  background-image: url(../../assets/top-ayuda.webp);
+  background-image: url(../assets/top-ayuda.webp);
 }
 
 .titulo-ayuda {
@@ -567,7 +567,7 @@ header nav img:hover {
   background-attachment: fixed;
 }
 .body--torneo .presentacion-concursos {
-  background-image: url(../../assets/top-actividades.jpg);
+  background-image: url(../assets/top-actividades.jpg);
 }
 .body--torneo .titulo-torneos {
   padding-bottom: 1.875rem;
