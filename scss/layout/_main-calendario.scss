@@ -31,7 +31,7 @@
 }
 .presentacion-calendario {
     @extend .presentacion-index;
-    background:url(../../assets/top-calendario.jpg);
+    background-image:url(../assets/top-calendario.jpg);
 }
 .titulo-calendario{
     @extend .titulo-reglamento;

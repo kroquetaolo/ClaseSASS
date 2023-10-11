@@ -1,6 +1,6 @@
 .presentacion-ayuda {
     @extend .presentacion-index;
-    background:url(../../assets/top-ayuda.webp);
+    background-image:url(../assets/top-ayuda.webp);
 }
 .titulo-ayuda{
     @extend .titulo-reglamento;
