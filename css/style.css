@@ -33,6 +33,16 @@ header nav {
   height: 3.4375rem;
   margin-top: 8px;
 }
+header nav li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+header nav li a i {
+  color: deeppink;
+}
 header nav a {
   text-decoration: none;
   color: darkmagenta;
@@ -87,6 +97,9 @@ header nav .nav-derecha .menu .active a {
   color: deeppink;
   font-weight: bold;
   transition: color 0.3s;
+}
+header nav .nav-derecha .menu .active a i {
+  color: darkmagenta;
 }
 header nav img {
   border-radius: 50%;

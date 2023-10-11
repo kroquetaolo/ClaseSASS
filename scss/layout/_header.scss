@@ -15,6 +15,18 @@ header {
         width: 100%;
         height: 3.4375rem;
         margin-top: 8px;
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                gap: 10px;
+                i{
+                    color: $color-principal-claro;
+                }
+            }
+        }
         a{
             text-decoration: none;
             color: $color-principal-oscuro;
@@ -68,6 +80,9 @@ header {
                         color: $color-principal-claro;
                         font-weight: bold;
                         transition: color 0.3s;
+                        i {
+                            color: $color-principal-oscuro;
+                        }
                     }
                 }
             }
