@@ -86,7 +86,6 @@ header nav .nav-derecha .menu .nav-item {
 header nav .nav-derecha .menu .nav-item:hover {
   box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(16, 212, 222, 0.45);
   border: 0.125rem solid rgba(77, 157, 161, 0.5);
-  font-weight: bold;
   transition: box-shadow 0.2s;
 }
 header nav .nav-derecha .menu .active {
@@ -447,9 +446,7 @@ header nav img:hover {
   overflow: hidden;
   border-radius: 0.375rem;
   background-color: rgb(219, 219, 219);
-  mask: radial-gradient(circle 0.875rem at 25rem top, rgba(0, 0, 0, 0) 98%, #000) top right, radial-gradient(circle 0.875rem at 25rem bottom, rgba(0, 0, 0, 0) 100%, #000) bottom right;
-  mask-size: 100% 50%;
-  mask-repeat: no-repeat;
+  box-shadow: 0px 0px 0.3125rem 0.4375rem rgba(16, 212, 222, 0.45);
 }
 .contenedor .newcard h2 {
   z-index: 99;

@@ -50,13 +50,14 @@
 
     .newcard:nth-child(1) { 
             //background-color: $color-child2;
+            
         button {
             @include botton-newcard;        
             background-color: $color-child1;
         }
     }
     .newcard:nth-child(2) {
-        //background-color: $color-child3;
+        //background-color: $color-child3;        
         button {
             @include botton-newcard;        
             background-color: $color-child2;
@@ -133,11 +134,8 @@
         overflow: hidden;
         border-radius: .375rem;
         background-color: rgb(219, 219, 219);
-        mask:
-            radial-gradient(circle .875rem at 25rem top,#0000 98%,#000) top right,
-            radial-gradient(circle .875rem at 25rem bottom ,#0000 100%,#000) bottom right;
-        mask-size: 100% 50%;
-        mask-repeat: no-repeat;
+        box-shadow: 0px 0px .3125rem .4375rem $sombra-principal-claro;
+        // filter: drop-shadow(0 0 20px $sombra-principal-claro);
         h2 {
             z-index: 99;
             position: absolute;
