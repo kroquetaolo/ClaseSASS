@@ -41,11 +41,11 @@ header nav li a {
   gap: 10px;
 }
 header nav li a i {
-  color: deeppink;
+  color: #10d5de;
 }
 header nav a {
   text-decoration: none;
-  color: darkmagenta;
+  color: #4d9da1;
   font-size: 1.15em;
 }
 header nav .logo {
@@ -81,25 +81,25 @@ header nav .nav-derecha .menu .nav-item {
   padding: 5px 10px;
   height: 100%;
   transition: background-color 1s;
-  border-bottom: 0.0625rem solid deeppink;
+  border-bottom: 0.0625rem solid #10d5de;
 }
 header nav .nav-derecha .menu .nav-item:hover {
-  box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(255, 20, 147, 0.45);
-  border: 0.125rem solid rgba(255, 20, 145, 0.5);
+  box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(16, 212, 222, 0.45);
+  border: 0.125rem solid rgba(77, 157, 161, 0.5);
   font-weight: bold;
   transition: box-shadow 0.2s;
 }
 header nav .nav-derecha .menu .active {
-  border: 0.125rem solid rgba(255, 20, 145, 0.5);
+  border: 0.125rem solid rgba(77, 157, 161, 0.5);
   border-bottom: none;
 }
 header nav .nav-derecha .menu .active a {
-  color: deeppink;
+  color: #10d5de;
   font-weight: bold;
   transition: color 0.3s;
 }
 header nav .nav-derecha .menu .active a i {
-  color: darkmagenta;
+  color: #4d9da1;
 }
 header nav img {
   border-radius: 50%;
@@ -112,7 +112,7 @@ header nav img:hover {
 .container-presentacion {
   display: flex;
   height: 100vh;
-  filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px rgba(255, 20, 147, 0.45));
+  filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px rgba(16, 212, 222, 0.45));
 }
 
 .presentacion-index, .body--torneo .presentacion-concursos, .presentacion-ayuda, .presentacion-calendario {
@@ -134,7 +134,7 @@ header nav img:hover {
   text-align: center;
   font-weight: bold;
   font-size: 3.25em;
-  text-shadow: 2px 2px 4px rgba(255, 91, 192, 0.8);
+  text-shadow: 2px 2px 4px rgba(16, 212, 222, 0.45);
   padding: 1.25rem 3.125rem;
   border-radius: 0.625rem 5rem;
   backdrop-filter: blur(0.25rem);
@@ -165,7 +165,7 @@ header nav img:hover {
   flex-direction: column;
   margin: 1rem;
   width: 100%;
-  border: 2px solid rgba(255, 20, 147, 0.45);
+  border: 2px solid rgba(16, 212, 222, 0.45);
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -233,12 +233,12 @@ header nav img:hover {
   align-items: center;
 }
 .banco_y_comercio h1 {
-  color: darkmagenta;
+  color: #4d9da1;
   font-weight: bold;
 }
 
 .main-calendario {
-  background-color: rgba(44, 44, 44, 0.842);
+  background-color: rgba(255, 255, 255, 0.842);
   background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5));
   background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem, 0.0625rem 100%, 0.1875rem 100%, 0.3125rem 100%, 0.5rem 100%, 0.5rem 100%, 0.3125rem 100%, 0.1875rem 100%, 0.0625rem 100%;
   background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
@@ -250,7 +250,6 @@ header nav img:hover {
 }
 
 .titulo-calendario {
-  color: white;
   padding-top: 1.875rem;
 }
 
@@ -489,7 +488,7 @@ header nav img:hover {
 .contenedor .newcard .informacion p {
   opacity: 0;
   font-weight: 600;
-  text-shadow: 2px 2px 2px rgba(255, 20, 147, 0.45);
+  text-shadow: 2px 2px 2px rgba(16, 212, 222, 0.45);
   transition: all 0.4s;
 }
 .contenedor .newcard .informacion hr {
@@ -592,7 +591,7 @@ header nav img:hover {
 }
 .body--torneo main .contenedor-torneos .torneo h2, .body--torneo main .contenedor-torneos .concurso h2 {
   margin: 20px 0;
-  color: deeppink;
+  color: #10d5de;
   font-size: 2em;
 }
 .body--torneo main .contenedor-torneos .torneo hr, .body--torneo main .contenedor-torneos .concurso hr {
@@ -606,7 +605,7 @@ header nav img:hover {
 .body--torneo main .contenedor-torneos .torneo div, .body--torneo main .contenedor-torneos .concurso div {
   margin: 20px 10px;
   padding: 15px;
-  background-color: darkmagenta;
+  background-color: #4d9da1;
   color: white;
   border-radius: 40px;
 }
@@ -620,7 +619,7 @@ header nav img:hover {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 224, 247);
+  background-color: #ebfdfe;
   height: 400px;
 }
 footer section:nth-child(1) {
@@ -632,7 +631,7 @@ footer section:nth-child(1) {
 footer section:nth-child(1) hr {
   height: 90%;
   align-self: center;
-  color: rgba(255, 20, 147, 0.45);
+  color: rgba(16, 212, 222, 0.45);
 }
 footer section:nth-child(2) {
   display: flex;
@@ -644,7 +643,7 @@ footer .redes {
   align-items: center;
   padding-top: 10px;
   gap: 5rem;
-  background-color: rgba(255, 20, 147, 0.45);
+  background-color: rgba(16, 212, 222, 0.45);
 }
 footer .redes :nth-child(1) {
   display: flex;
@@ -666,7 +665,7 @@ footer .redes :nth-child(1) a {
 footer .redes :nth-child(1) a:hover {
   background: white;
   color: #3b5998;
-  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
 footer .redes :nth-child(1) div {
   margin-top: 0.625rem;
@@ -691,7 +690,7 @@ footer .redes :nth-child(2) a {
 footer .redes :nth-child(2) a:hover {
   background: white;
   color: #55acee;
-  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
 footer .redes :nth-child(2) div {
   margin-top: 0.625rem;
@@ -716,7 +715,7 @@ footer .redes :nth-child(3) a {
 footer .redes :nth-child(3) a:hover {
   background: white;
   color: #ac2bac;
-  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
 footer .redes :nth-child(3) div {
   margin-top: 0.625rem;
@@ -741,7 +740,7 @@ footer .redes :nth-child(4) a {
 footer .redes :nth-child(4) a:hover {
   background: white;
   color: #0082ca;
-  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
 footer .redes :nth-child(4) div {
   margin-top: 0.625rem;
@@ -766,7 +765,7 @@ footer .redes :nth-child(5) a {
 footer .redes :nth-child(5) a:hover {
   background: white;
   color: #333333;
-  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
 footer .redes :nth-child(5) div {
   margin-top: 0.625rem;
@@ -791,7 +790,7 @@ footer .redes :nth-child(6) a {
 footer .redes :nth-child(6) a:hover {
   background: white;
   color: #1900ff;
-  box-shadow: 0 0 0.625rem 0.125rem rgba(255, 20, 147, 0.45);
+  box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
 footer .redes :nth-child(6) div {
   margin-top: 0.625rem;
@@ -812,7 +811,7 @@ footer .info--footer div {
 footer .info--footer div img {
   height: 64px;
   border-radius: 40%;
-  border: 1px solid darkmagenta;
+  border: 1px solid #4d9da1;
 }
 footer .info--footer div h3 {
   padding: 50px 40px;
@@ -839,7 +838,7 @@ footer .logo--footer p {
 }
 footer .copy {
   display: none;
-  background-color: rgba(255, 20, 147, 0.45);
+  background-color: rgba(16, 212, 222, 0.45);
   text-align: center;
 }
 
@@ -851,11 +850,11 @@ footer .copy {
   font-size: 2.5em;
 }
 .main-redes a {
-  color: deeppink;
+  color: #10d5de;
   transition: color 0.5s;
 }
 .main-redes a:hover {
-  color: rgba(255, 20, 147, 0.45);
+  color: rgba(16, 212, 222, 0.45);
 }
 
 .wave, .wave-calendario {
@@ -865,15 +864,15 @@ footer .copy {
 .wave svg, .wave-calendario svg {
   height: 100%;
   width: 100%;
-  filter: drop-shadow(0 -0.0625rem 0.625rem black) drop-shadow(-0.3125rem -0.3125rem 0.9375rem rgba(255, 20, 147, 0.45));
+  filter: drop-shadow(0 -0.0625rem 0.625rem black) drop-shadow(-0.3125rem -0.3125rem 0.9375rem rgba(16, 212, 222, 0.45));
 }
 .wave svg path, .wave-calendario svg path {
   stroke: none;
-  fill: rgb(255, 224, 247);
+  fill: #ebfdfe;
 }
 
 .wave-calendario {
-  background-color: rgba(44, 44, 44, 0.842);
+  background-color: rgba(255, 255, 255, 0.842);
   background-image: linear-gradient(rgba(255, 145, 0, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(255, 0, 234, 0.5));
   background-size: 0.0625rem 100%, 0.1875rem 100%, 0.3125rem 100%, 0.5rem 100%, 0.5rem 100%, 0.3125rem 100%, 0.1875rem 100%, 0.0625rem 100%;
   background-position: 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
@@ -962,8 +961,8 @@ footer .copy {
     flex-direction: column;
   }
   header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .active {
-    border-bottom: 0.0625rem solid deeppink;
-    box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(255, 20, 147, 0.45);
+    border-bottom: 0.0625rem solid #10d5de;
+    box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(16, 212, 222, 0.45);
   }
   header nav .nav-derecha .menu-toggle.menu-toggle:checked + .menu .nav-item {
     height: 45px;

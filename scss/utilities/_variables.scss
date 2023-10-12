@@ -1,13 +1,15 @@
-$color-principal-oscuro: darkmagenta;
-$color-principal-claro: deeppink;
-$sombra-principal-claro: rgb(255, 20, 147,0.45);
+// #10d5de #4d9da1 #ebfdfe #e6f4f1
 
-$color-bordes: rgba(255, 20, 145, 0.5);
+$color-principal-oscuro: #4d9da1;
+$color-principal-claro: #10d5de;
+$sombra-principal-claro: rgba(16, 212, 222, 0.45);
+
+$color-bordes: rgb(77, 157, 161, 0.5);
 $bg-nav: rgba(255, 255, 255, 0.8);
-$hover-nav: rgb(253, 212, 233);
-$bg-footer: rgb(255, 224, 247);
+$hover-nav: #e6f4f1;
+$bg-footer: #ebfdfe;
 
-$bg-calendario: rgba(44, 44, 44, 0.842);
+$bg-calendario: rgba(255, 255, 255, 0.842);
 
 $color-child1: rgba(247, 50, 50, 0.5);
 $color-child2: rgba(255, 145, 0, 0.5);
