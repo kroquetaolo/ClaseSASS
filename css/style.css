@@ -86,13 +86,14 @@ header nav .nav-derecha .menu .nav-item {
   height: 100%;
   transition: background-color 1s;
   border-bottom: 0.0625rem solid #10d5de;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, padding 0.2s;
 }
 header nav .nav-derecha .menu .nav-item a, header nav .nav-derecha .menu .nav-item i {
   transition: color 0.5s;
 }
 header nav .nav-derecha .menu .nav-item:hover {
-  box-shadow: 0rem -0.125rem 0.625rem 1px rgba(16, 212, 222, 0.45);
+  padding: 0 35px;
+  box-shadow: 0rem -0.125rem 0.625rem 1px #10d5de;
 }
 header nav .nav-derecha .menu .nav-item:hover a {
   color: #10d5de;
@@ -1038,8 +1039,10 @@ footer .copy {
     flex-direction: column;
     align-items: flex-end;
     background-color: rgba(0, 0, 0, 0);
+    border: none;
   }
   header nav .nav-derecha .menu {
+    margin-top: 5px;
     display: none;
   }
   header nav .nav-derecha .icono-menu {
@@ -1047,6 +1050,7 @@ footer .copy {
     padding: 0.75rem 1.5625rem 0.4375rem 1.875rem;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1.875rem 0 0 1.875rem;
+    border: 1px solid #4d9da1;
   }
   header nav .nav-derecha .icono-menu .fa-bars {
     font-size: 2em;

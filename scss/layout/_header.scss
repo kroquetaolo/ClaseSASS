@@ -70,7 +70,7 @@ header {
                     height: 100%;
                     transition: background-color 1s;
                     border-bottom: .0625rem solid $color-principal-claro;
-                    transition: box-shadow .5s;
+                    transition: box-shadow .5s, padding .2s;
                     a , i{
                         transition: color .5s;
                     }
@@ -81,7 +81,8 @@ header {
                         i{
                             color: $color-principal-oscuro;
                         }
-                        box-shadow: 0rem -0.125rem .625rem 1px $sombra-principal-claro;
+                        padding: 0 35px;
+                        box-shadow: 0rem -0.125rem .625rem 1px $color-principal-claro;
                     }
                 }
                 .active{
