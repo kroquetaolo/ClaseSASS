@@ -9,6 +9,7 @@ header {
     height: 4.375rem;
     width: 100vw;
     z-index: 99999;
+    border-bottom: 1px solid $color-principal-claro;
     nav{
         display: flex;
         justify-content: space-between;
@@ -41,6 +42,7 @@ header {
             padding: 0 1.25rem;
             height: 100%;
             border-radius: 0 1.5625rem 1.5625rem 0;
+            border: 1px solid $color-principal-oscuro;
         }
 
         .nav-derecha{
@@ -50,6 +52,7 @@ header {
             padding-left: 1.875rem;
             padding-right: 1.25rem;
             border-radius: 1.5625rem 0  0 1.5625rem;
+            border: 1px solid $color-principal-oscuro;
             .icono-menu , .menu-toggle{
                 display: none;
             }

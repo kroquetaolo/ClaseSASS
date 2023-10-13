@@ -25,6 +25,7 @@ header {
   height: 4.375rem;
   width: 100vw;
   z-index: 99999;
+  border-bottom: 1px solid #10d5de;
 }
 header nav {
   display: flex;
@@ -57,6 +58,7 @@ header nav .logo {
   padding: 0 1.25rem;
   height: 100%;
   border-radius: 0 1.5625rem 1.5625rem 0;
+  border: 1px solid #4d9da1;
 }
 header nav .nav-derecha {
   background-color: rgba(255, 255, 255, 0.8);
@@ -65,6 +67,7 @@ header nav .nav-derecha {
   padding-left: 1.875rem;
   padding-right: 1.25rem;
   border-radius: 1.5625rem 0 0 1.5625rem;
+  border: 1px solid #4d9da1;
 }
 header nav .nav-derecha .icono-menu, header nav .nav-derecha .menu-toggle {
   display: none;
