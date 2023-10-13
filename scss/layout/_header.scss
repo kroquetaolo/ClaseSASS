@@ -70,10 +70,18 @@ header {
                     height: 100%;
                     transition: background-color 1s;
                     border-bottom: .0625rem solid $color-principal-claro;
+                    transition: box-shadow .5s;
+                    a , i{
+                        transition: color .5s;
+                    }
                     &:hover {
-                        box-shadow: 0rem -0.125rem .625rem 0rem $sombra-principal-claro;
-                        border: .125rem solid $color-bordes;
-                        transition: box-shadow 0.2s;
+                        a {
+                            color: $color-principal-claro;
+                        }
+                        i{
+                            color: $color-principal-oscuro;
+                        }
+                        box-shadow: 0rem -0.125rem .625rem 1px $sombra-principal-claro;
                     }
                 }
                 .active{

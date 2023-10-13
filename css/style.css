@@ -86,11 +86,19 @@ header nav .nav-derecha .menu .nav-item {
   height: 100%;
   transition: background-color 1s;
   border-bottom: 0.0625rem solid #10d5de;
+  transition: box-shadow 0.5s;
+}
+header nav .nav-derecha .menu .nav-item a, header nav .nav-derecha .menu .nav-item i {
+  transition: color 0.5s;
 }
 header nav .nav-derecha .menu .nav-item:hover {
-  box-shadow: 0rem -0.125rem 0.625rem 0rem rgba(16, 212, 222, 0.45);
-  border: 0.125rem solid rgba(77, 157, 161, 0.5);
-  transition: box-shadow 0.2s;
+  box-shadow: 0rem -0.125rem 0.625rem 1px rgba(16, 212, 222, 0.45);
+}
+header nav .nav-derecha .menu .nav-item:hover a {
+  color: #10d5de;
+}
+header nav .nav-derecha .menu .nav-item:hover i {
+  color: #4d9da1;
 }
 header nav .nav-derecha .menu .active {
   border: 0.125rem solid rgba(77, 157, 161, 0.5);
@@ -270,7 +278,7 @@ header nav img:hover {
   margin-top: 1.875rem;
   padding-bottom: 5rem;
 }
-.contenedor .newcard:nth-child(1) button, .contenedor .burbujas div.newcard:nth-child(8) button, .burbujas .contenedor div.newcard:nth-child(8) button, .contenedor .burbujas div.newcard:nth-child(7) button, .burbujas .contenedor div.newcard:nth-child(7) button, .contenedor .burbujas div.newcard:nth-child(6) button, .burbujas .contenedor div.newcard:nth-child(6) button, .contenedor .burbujas div.newcard:nth-child(5) button, .burbujas .contenedor div.newcard:nth-child(5) button, .contenedor .burbujas div.newcard:nth-child(4) button, .burbujas .contenedor div.newcard:nth-child(4) button, .contenedor .burbujas div.newcard:nth-child(3) button, .burbujas .contenedor div.newcard:nth-child(3) button, .contenedor .burbujas div.newcard:nth-child(2) button, .burbujas .contenedor div.newcard:nth-child(2) button {
+.contenedor .newcard:nth-child(1) button, .contenedor .burbujas button.newcard:nth-child(8) button, .burbujas .contenedor button.newcard:nth-child(8) button, .contenedor .burbujas button.newcard:nth-child(7) button, .burbujas .contenedor button.newcard:nth-child(7) button, .contenedor .burbujas button.newcard:nth-child(6) button, .burbujas .contenedor button.newcard:nth-child(6) button, .contenedor .burbujas button.newcard:nth-child(5) button, .burbujas .contenedor button.newcard:nth-child(5) button, .contenedor .burbujas button.newcard:nth-child(4) button, .burbujas .contenedor button.newcard:nth-child(4) button, .contenedor .burbujas button.newcard:nth-child(3) button, .burbujas .contenedor button.newcard:nth-child(3) button, .contenedor .burbujas button.newcard:nth-child(2) button, .burbujas .contenedor button.newcard:nth-child(2) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -282,7 +290,7 @@ header nav img:hover {
   background-color: rgba(247, 50, 50, 0.5);
 }
 @media (max-width: 530px) {
-  .contenedor .newcard:nth-child(1) button, .contenedor .burbujas div.newcard:nth-child(8) button, .burbujas .contenedor div.newcard:nth-child(8) button, .contenedor .burbujas div.newcard:nth-child(7) button, .burbujas .contenedor div.newcard:nth-child(7) button, .contenedor .burbujas div.newcard:nth-child(6) button, .burbujas .contenedor div.newcard:nth-child(6) button, .contenedor .burbujas div.newcard:nth-child(5) button, .burbujas .contenedor div.newcard:nth-child(5) button, .contenedor .burbujas div.newcard:nth-child(4) button, .burbujas .contenedor div.newcard:nth-child(4) button, .contenedor .burbujas div.newcard:nth-child(3) button, .burbujas .contenedor div.newcard:nth-child(3) button, .contenedor .burbujas div.newcard:nth-child(2) button, .burbujas .contenedor div.newcard:nth-child(2) button {
+  .contenedor .newcard:nth-child(1) button, .contenedor .burbujas button.newcard:nth-child(8) button, .burbujas .contenedor button.newcard:nth-child(8) button, .contenedor .burbujas button.newcard:nth-child(7) button, .burbujas .contenedor button.newcard:nth-child(7) button, .contenedor .burbujas button.newcard:nth-child(6) button, .burbujas .contenedor button.newcard:nth-child(6) button, .contenedor .burbujas button.newcard:nth-child(5) button, .burbujas .contenedor button.newcard:nth-child(5) button, .contenedor .burbujas button.newcard:nth-child(4) button, .burbujas .contenedor button.newcard:nth-child(4) button, .contenedor .burbujas button.newcard:nth-child(3) button, .burbujas .contenedor button.newcard:nth-child(3) button, .contenedor .burbujas button.newcard:nth-child(2) button, .burbujas .contenedor button.newcard:nth-child(2) button {
     right: 2.5rem;
   }
 }
@@ -649,7 +657,7 @@ footer .redes {
   gap: 5rem;
   background-color: rgba(16, 212, 222, 0.45);
 }
-footer .redes :nth-child(1), footer .redes .burbujas div:nth-child(8), .burbujas footer .redes div:nth-child(8), footer .redes .burbujas div:nth-child(7), .burbujas footer .redes div:nth-child(7), footer .redes .burbujas div:nth-child(6), .burbujas footer .redes div:nth-child(6), footer .redes .burbujas div:nth-child(5), .burbujas footer .redes div:nth-child(5), footer .redes .burbujas div:nth-child(4), .burbujas footer .redes div:nth-child(4), footer .redes .burbujas div:nth-child(3), .burbujas footer .redes div:nth-child(3), footer .redes .burbujas div:nth-child(2), .burbujas footer .redes div:nth-child(2) {
+footer .redes :nth-child(1), footer .redes .burbujas button:nth-child(8), .burbujas footer .redes button:nth-child(8), footer .redes .burbujas button:nth-child(7), .burbujas footer .redes button:nth-child(7), footer .redes .burbujas button:nth-child(6), .burbujas footer .redes button:nth-child(6), footer .redes .burbujas button:nth-child(5), .burbujas footer .redes button:nth-child(5), footer .redes .burbujas button:nth-child(4), .burbujas footer .redes button:nth-child(4), footer .redes .burbujas button:nth-child(3), .burbujas footer .redes button:nth-child(3), footer .redes .burbujas button:nth-child(2), .burbujas footer .redes button:nth-child(2) {
   display: flex;
   flex-direction: column;
   height: 3rem;
@@ -658,7 +666,7 @@ footer .redes :nth-child(1), footer .redes .burbujas div:nth-child(8), .burbujas
   align-items: center;
   border-radius: 10px;
 }
-footer .redes :nth-child(1) a, footer .redes .burbujas div:nth-child(8) a, .burbujas footer .redes div:nth-child(8) a, footer .redes .burbujas div:nth-child(7) a, .burbujas footer .redes div:nth-child(7) a, footer .redes .burbujas div:nth-child(6) a, .burbujas footer .redes div:nth-child(6) a, footer .redes .burbujas div:nth-child(5) a, .burbujas footer .redes div:nth-child(5) a, footer .redes .burbujas div:nth-child(4) a, .burbujas footer .redes div:nth-child(4) a, footer .redes .burbujas div:nth-child(3) a, .burbujas footer .redes div:nth-child(3) a, footer .redes .burbujas div:nth-child(2) a, .burbujas footer .redes div:nth-child(2) a {
+footer .redes :nth-child(1) a, footer .redes .burbujas button:nth-child(8) a, .burbujas footer .redes button:nth-child(8) a, footer .redes .burbujas button:nth-child(7) a, .burbujas footer .redes button:nth-child(7) a, footer .redes .burbujas button:nth-child(6) a, .burbujas footer .redes button:nth-child(6) a, footer .redes .burbujas button:nth-child(5) a, .burbujas footer .redes button:nth-child(5) a, footer .redes .burbujas button:nth-child(4) a, .burbujas footer .redes button:nth-child(4) a, footer .redes .burbujas button:nth-child(3) a, .burbujas footer .redes button:nth-child(3) a, footer .redes .burbujas button:nth-child(2) a, .burbujas footer .redes button:nth-child(2) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
@@ -666,12 +674,12 @@ footer .redes :nth-child(1) a, footer .redes .burbujas div:nth-child(8) a, .burb
   font-size: 1.5em;
   text-decoration: none;
 }
-footer .redes :nth-child(1) a:hover, footer .redes .burbujas div:nth-child(8) a:hover, .burbujas footer .redes div:nth-child(8) a:hover, footer .redes .burbujas div:nth-child(7) a:hover, .burbujas footer .redes div:nth-child(7) a:hover, footer .redes .burbujas div:nth-child(6) a:hover, .burbujas footer .redes div:nth-child(6) a:hover, footer .redes .burbujas div:nth-child(5) a:hover, .burbujas footer .redes div:nth-child(5) a:hover, footer .redes .burbujas div:nth-child(4) a:hover, .burbujas footer .redes div:nth-child(4) a:hover, footer .redes .burbujas div:nth-child(3) a:hover, .burbujas footer .redes div:nth-child(3) a:hover, footer .redes .burbujas div:nth-child(2) a:hover, .burbujas footer .redes div:nth-child(2) a:hover {
+footer .redes :nth-child(1) a:hover, footer .redes .burbujas button:nth-child(8) a:hover, .burbujas footer .redes button:nth-child(8) a:hover, footer .redes .burbujas button:nth-child(7) a:hover, .burbujas footer .redes button:nth-child(7) a:hover, footer .redes .burbujas button:nth-child(6) a:hover, .burbujas footer .redes button:nth-child(6) a:hover, footer .redes .burbujas button:nth-child(5) a:hover, .burbujas footer .redes button:nth-child(5) a:hover, footer .redes .burbujas button:nth-child(4) a:hover, .burbujas footer .redes button:nth-child(4) a:hover, footer .redes .burbujas button:nth-child(3) a:hover, .burbujas footer .redes button:nth-child(3) a:hover, footer .redes .burbujas button:nth-child(2) a:hover, .burbujas footer .redes button:nth-child(2) a:hover {
   background: white;
   color: #3b5998;
   box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
-footer .redes :nth-child(1) div, footer .redes .burbujas div:nth-child(8) div, .burbujas footer .redes div:nth-child(8) div, footer .redes .burbujas div:nth-child(7) div, .burbujas footer .redes div:nth-child(7) div, footer .redes .burbujas div:nth-child(6) div, .burbujas footer .redes div:nth-child(6) div, footer .redes .burbujas div:nth-child(5) div, .burbujas footer .redes div:nth-child(5) div, footer .redes .burbujas div:nth-child(4) div, .burbujas footer .redes div:nth-child(4) div, footer .redes .burbujas div:nth-child(3) div, .burbujas footer .redes div:nth-child(3) div, footer .redes .burbujas div:nth-child(2) div, .burbujas footer .redes div:nth-child(2) div {
+footer .redes :nth-child(1) div, footer .redes .burbujas button:nth-child(8) div, .burbujas footer .redes button:nth-child(8) div, footer .redes .burbujas button:nth-child(7) div, .burbujas footer .redes button:nth-child(7) div, footer .redes .burbujas button:nth-child(6) div, .burbujas footer .redes button:nth-child(6) div, footer .redes .burbujas button:nth-child(5) div, .burbujas footer .redes button:nth-child(5) div, footer .redes .burbujas button:nth-child(4) div, .burbujas footer .redes button:nth-child(4) div, footer .redes .burbujas button:nth-child(3) div, .burbujas footer .redes button:nth-child(3) div, footer .redes .burbujas button:nth-child(2) div, .burbujas footer .redes button:nth-child(2) div {
   margin-top: 0.625rem;
 }
 footer .redes :nth-child(2) {
@@ -904,7 +912,7 @@ footer .copy {
   padding: 50px 0;
   gap: 40px;
 }
-.burbujas div:nth-child(1), .burbujas div:nth-child(8), .burbujas div:nth-child(7), .burbujas div:nth-child(6), .burbujas div:nth-child(5), .burbujas div:nth-child(4), .burbujas div:nth-child(3), .burbujas div:nth-child(2) {
+.burbujas button:nth-child(1), .burbujas button:nth-child(8), .burbujas button:nth-child(7), .burbujas button:nth-child(6), .burbujas button:nth-child(5), .burbujas button:nth-child(4), .burbujas button:nth-child(3), .burbujas button:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -917,42 +925,55 @@ footer .copy {
   border-radius: 50%;
   border: 1px solid rgba(247, 50, 50, 0.5);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(247, 50, 50, 0.5), 0 5px 35px 12px rgba(247, 50, 50, 0.5);
+  transition: box-shadow 0.3s;
 }
-.burbujas div:nth-child(2) {
+.burbujas button:nth-child(1) i, .burbujas button:nth-child(8) i, .burbujas button:nth-child(7) i, .burbujas button:nth-child(6) i, .burbujas button:nth-child(5) i, .burbujas button:nth-child(4) i, .burbujas button:nth-child(3) i, .burbujas button:nth-child(2) i {
+  transition: transform 0.5s;
+}
+.burbujas button:nth-child(1):hover, .burbujas button:hover:nth-child(8), .burbujas button:hover:nth-child(7), .burbujas button:hover:nth-child(6), .burbujas button:hover:nth-child(5), .burbujas button:hover:nth-child(4), .burbujas button:hover:nth-child(3), .burbujas button:hover:nth-child(2) {
+  box-shadow: 0 0 4px 2px white, 0 0 20px 15px #10d5de, 0 5px 35px 20px grey;
+}
+.burbujas button:nth-child(1):hover i, .burbujas button:hover:nth-child(8) i, .burbujas button:hover:nth-child(7) i, .burbujas button:hover:nth-child(6) i, .burbujas button:hover:nth-child(5) i, .burbujas button:hover:nth-child(4) i, .burbujas button:hover:nth-child(3) i, .burbujas button:hover:nth-child(2) i {
+  transform: scale(1.3);
+}
+.burbujas button:nth-child(1):active, .burbujas button:active:nth-child(8), .burbujas button:active:nth-child(7), .burbujas button:active:nth-child(6), .burbujas button:active:nth-child(5), .burbujas button:active:nth-child(4), .burbujas button:active:nth-child(3), .burbujas button:active:nth-child(2) {
+  background-color: red;
+}
+.burbujas button:nth-child(2) {
   background-color: rgba(255, 145, 0, 0.5);
   border: 1px solid rgba(255, 145, 0, 0.5);
   transform: translateY(30px);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(255, 145, 0, 0.5), 0 5px 35px 12px rgba(255, 145, 0, 0.5);
 }
-.burbujas div:nth-child(3) {
+.burbujas button:nth-child(3) {
   background-color: rgba(218, 215, 29, 0.5);
   border: 1px solid rgba(218, 215, 29, 0.5);
   transform: translateY(-30px);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(218, 215, 29, 0.5), 0 5px 35px 12px rgba(218, 215, 29, 0.5);
 }
-.burbujas div:nth-child(4) {
+.burbujas button:nth-child(4) {
   background-color: rgba(29, 218, 45, 0.5);
   border: 1px solid rgba(29, 218, 45, 0.5);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(29, 218, 45, 0.5), 0 5px 35px 12px rgba(29, 218, 45, 0.5);
 }
-.burbujas div:nth-child(5) {
+.burbujas button:nth-child(5) {
   background-color: rgba(29, 212, 218, 0.5);
   border: 1px solid rgba(29, 212, 218, 0.5);
   transform: translateY(-30px);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(29, 212, 218, 0.5), 0 5px 35px 12px rgba(29, 212, 218, 0.5);
 }
-.burbujas div:nth-child(6) {
+.burbujas button:nth-child(6) {
   background-color: rgba(57, 29, 218, 0.5);
   border: 1px solid rgba(57, 29, 218, 0.5);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(57, 29, 218, 0.5), 0 5px 35px 12px rgba(57, 29, 218, 0.5);
 }
-.burbujas div:nth-child(7) {
+.burbujas button:nth-child(7) {
   background-color: rgba(141, 17, 199, 0.5);
   border: 1px solid rgba(141, 17, 199, 0.5);
   transform: translateY(30px);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(141, 17, 199, 0.5), 0 5px 35px 12px rgba(141, 17, 199, 0.5);
 }
-.burbujas div:nth-child(8) {
+.burbujas button:nth-child(8) {
   background-color: rgba(255, 0, 234, 0.5);
   border: 1px solid rgba(255, 0, 234, 0.5);
   box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(255, 0, 234, 0.5), 0 5px 35px 12px rgba(255, 0, 234, 0.5);
@@ -1058,7 +1079,7 @@ footer .copy {
   .reglamento .reglas {
     width: 100%;
   }
-  .burbujas div:nth-child(1), .burbujas div:nth-child(2), .burbujas div:nth-child(3), .burbujas div:nth-child(4), .burbujas div:nth-child(5), .burbujas div:nth-child(6), .burbujas div:nth-child(7), .burbujas div:nth-child(8) {
+  .burbujas div:nth-child(1) {
     transform: none;
   }
 }
@@ -1097,10 +1118,10 @@ footer .copy {
     align-items: center;
     transform: translateY(-50px);
   }
-  footer .info--footer :nth-child(1) img, footer .info--footer .burbujas div:nth-child(2) img, .burbujas footer .info--footer div:nth-child(2) img, footer .info--footer .burbujas div:nth-child(3) img, .burbujas footer .info--footer div:nth-child(3) img, footer .info--footer .burbujas div:nth-child(4) img, .burbujas footer .info--footer div:nth-child(4) img, footer .info--footer .burbujas div:nth-child(5) img, .burbujas footer .info--footer div:nth-child(5) img, footer .info--footer .burbujas div:nth-child(6) img, .burbujas footer .info--footer div:nth-child(6) img, footer .info--footer .burbujas div:nth-child(7) img, .burbujas footer .info--footer div:nth-child(7) img, footer .info--footer .burbujas div:nth-child(8) img, .burbujas footer .info--footer div:nth-child(8) img {
+  footer .info--footer :nth-child(1) img, footer .info--footer .burbujas button:nth-child(2) img, .burbujas footer .info--footer button:nth-child(2) img, footer .info--footer .burbujas button:nth-child(3) img, .burbujas footer .info--footer button:nth-child(3) img, footer .info--footer .burbujas button:nth-child(4) img, .burbujas footer .info--footer button:nth-child(4) img, footer .info--footer .burbujas button:nth-child(5) img, .burbujas footer .info--footer button:nth-child(5) img, footer .info--footer .burbujas button:nth-child(6) img, .burbujas footer .info--footer button:nth-child(6) img, footer .info--footer .burbujas button:nth-child(7) img, .burbujas footer .info--footer button:nth-child(7) img, footer .info--footer .burbujas button:nth-child(8) img, .burbujas footer .info--footer button:nth-child(8) img {
     margin: 30px;
   }
-  footer .info--footer :nth-child(1) h3, footer .info--footer .burbujas div:nth-child(2) h3, .burbujas footer .info--footer div:nth-child(2) h3, footer .info--footer .burbujas div:nth-child(3) h3, .burbujas footer .info--footer div:nth-child(3) h3, footer .info--footer .burbujas div:nth-child(4) h3, .burbujas footer .info--footer div:nth-child(4) h3, footer .info--footer .burbujas div:nth-child(5) h3, .burbujas footer .info--footer div:nth-child(5) h3, footer .info--footer .burbujas div:nth-child(6) h3, .burbujas footer .info--footer div:nth-child(6) h3, footer .info--footer .burbujas div:nth-child(7) h3, .burbujas footer .info--footer div:nth-child(7) h3, footer .info--footer .burbujas div:nth-child(8) h3, .burbujas footer .info--footer div:nth-child(8) h3 {
+  footer .info--footer :nth-child(1) h3, footer .info--footer .burbujas button:nth-child(2) h3, .burbujas footer .info--footer button:nth-child(2) h3, footer .info--footer .burbujas button:nth-child(3) h3, .burbujas footer .info--footer button:nth-child(3) h3, footer .info--footer .burbujas button:nth-child(4) h3, .burbujas footer .info--footer button:nth-child(4) h3, footer .info--footer .burbujas button:nth-child(5) h3, .burbujas footer .info--footer button:nth-child(5) h3, footer .info--footer .burbujas button:nth-child(6) h3, .burbujas footer .info--footer button:nth-child(6) h3, footer .info--footer .burbujas button:nth-child(7) h3, .burbujas footer .info--footer button:nth-child(7) h3, footer .info--footer .burbujas button:nth-child(8) h3, .burbujas footer .info--footer button:nth-child(8) h3 {
     display: none;
   }
   footer .info--footer :nth-child(3) {
