@@ -125,9 +125,12 @@
             &:target {
                 .pupup-abierto {
                     height: 70vh;
-                    .popup-contenido {
-                        a {
-                            margin: 10px;
+                    .popup-contenido{
+                        .pupup-fa {
+                            margin: 0;
+                        }
+                        h4 {
+                            margin-top: auto;
                         }
                     }
                 }
