@@ -2,23 +2,23 @@
 
     background-image:
 
-    linear-gradient(to right,black, black, $color-child1, black, black),
-    linear-gradient(to right,black, black, $color-child2, black, black),
-    linear-gradient(to right,black, black, $color-child3, black, black),
-    linear-gradient(to right,black, black, $color-child4, black, black),
-    linear-gradient(to right,black, black, $color-child5, black, black),
-    linear-gradient(to right,black, black, $color-child6, black, black),
-    linear-gradient(to right,black, black, $color-child7, black, black),
-    linear-gradient(to right,black, black, $color-child8, black, black),
+    linear-gradient(to right, $color-child1, $color-child1),
+    linear-gradient(to right, $color-child2, $color-child2),
+    linear-gradient(to right, $color-child3, $color-child3),
+    linear-gradient(to right, $color-child4, $color-child4),
+    linear-gradient(to right, $color-child5, $color-child5),
+    linear-gradient(to right, $color-child6, $color-child6),
+    linear-gradient(to right, $color-child7, $color-child7),
+    linear-gradient(to right, $color-child8, $color-child8),
 
-    linear-gradient(black, black, $color-child1, black, black),
-    linear-gradient(black, black, $color-child2, black, black),
-    linear-gradient(black, black, $color-child3, black, black),
-    linear-gradient(black, black, $color-child4, black, black),
-    linear-gradient(black, black, $color-child5, black, black),
-    linear-gradient(black, black, $color-child6, black, black),
-    linear-gradient(black, black, $color-child7, black, black),
-    linear-gradient(black, black, $color-child8, black, black);
+    linear-gradient($color-child1, $color-child1),
+    linear-gradient($color-child2, $color-child2),
+    linear-gradient($color-child3, $color-child3),
+    linear-gradient($color-child4, $color-child4),
+    linear-gradient($color-child5, $color-child5),
+    linear-gradient($color-child6, $color-child6),
+    linear-gradient($color-child7, $color-child7),
+    linear-gradient($color-child8, $color-child8);
 
     background-size:
     100% .0625rem, 100% .1875rem, 100% .3125rem, 100% .5rem, 100% .5rem, 100% .3125rem, 100% .1875rem, 100% .0625rem,
