@@ -947,6 +947,7 @@ footer .copy {
   padding: 20px 40px;
 }
 .burbujas .pupup .pupup-abierto .popup-contenido a {
+  color: black;
   padding-top: 6px;
   text-align: center;
   height: 40px;
@@ -1055,7 +1056,7 @@ footer .copy {
 
 @media (max-width: 991px) {
   .back-to-top {
-    margin-bottom: 3.125rem;
+    display: none;
   }
   header nav .nav-derecha {
     padding: 0;
@@ -1153,7 +1154,10 @@ footer .copy {
     margin: 0;
   }
   .burbujas .pupup:target .pupup-abierto {
-    height: 75vh;
+    height: 70vh;
+  }
+  .burbujas .pupup:target .pupup-abierto .popup-contenido a {
+    margin: 10px;
   }
 }
 @media (max-width: 530px) {

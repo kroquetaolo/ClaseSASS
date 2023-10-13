@@ -1,6 +1,6 @@
 @media (max-width: 991px) {
     .back-to-top {
-        margin-bottom: 3.125rem;
+        display: none;
     }
     header {
         nav {
@@ -124,7 +124,12 @@
         .pupup {
             &:target {
                 .pupup-abierto {
-                    height: 75vh;
+                    height: 70vh;
+                    .popup-contenido {
+                        a {
+                            margin: 10px;
+                        }
+                    }
                 }
             }
         }
