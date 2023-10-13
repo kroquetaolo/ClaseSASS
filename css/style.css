@@ -134,7 +134,7 @@ header nav img:hover {
   font-weight: bold;
   font-size: 3.25em;
   text-shadow: 2px 2px 4px rgba(16, 212, 222, 0.45);
-  padding: 1.25rem 3.125rem;
+  margin: 1.25rem 3.125rem;
   border-radius: 0.625rem 5rem;
   backdrop-filter: blur(0.25rem);
 }
@@ -263,7 +263,7 @@ header nav img:hover {
   margin-top: 1.875rem;
   padding-bottom: 5rem;
 }
-.contenedor .newcard:nth-child(1) button {
+.contenedor .newcard:nth-child(1) button, .contenedor .burbujas div.newcard:nth-child(8) button, .burbujas .contenedor div.newcard:nth-child(8) button, .contenedor .burbujas div.newcard:nth-child(7) button, .burbujas .contenedor div.newcard:nth-child(7) button, .contenedor .burbujas div.newcard:nth-child(6) button, .burbujas .contenedor div.newcard:nth-child(6) button, .contenedor .burbujas div.newcard:nth-child(5) button, .burbujas .contenedor div.newcard:nth-child(5) button, .contenedor .burbujas div.newcard:nth-child(4) button, .burbujas .contenedor div.newcard:nth-child(4) button, .contenedor .burbujas div.newcard:nth-child(3) button, .burbujas .contenedor div.newcard:nth-child(3) button, .contenedor .burbujas div.newcard:nth-child(2) button, .burbujas .contenedor div.newcard:nth-child(2) button {
   position: absolute;
   right: 5.3125rem;
   bottom: 1.5625rem;
@@ -275,7 +275,7 @@ header nav img:hover {
   background-color: rgba(247, 50, 50, 0.5);
 }
 @media (max-width: 530px) {
-  .contenedor .newcard:nth-child(1) button {
+  .contenedor .newcard:nth-child(1) button, .contenedor .burbujas div.newcard:nth-child(8) button, .burbujas .contenedor div.newcard:nth-child(8) button, .contenedor .burbujas div.newcard:nth-child(7) button, .burbujas .contenedor div.newcard:nth-child(7) button, .contenedor .burbujas div.newcard:nth-child(6) button, .burbujas .contenedor div.newcard:nth-child(6) button, .contenedor .burbujas div.newcard:nth-child(5) button, .burbujas .contenedor div.newcard:nth-child(5) button, .contenedor .burbujas div.newcard:nth-child(4) button, .burbujas .contenedor div.newcard:nth-child(4) button, .contenedor .burbujas div.newcard:nth-child(3) button, .burbujas .contenedor div.newcard:nth-child(3) button, .contenedor .burbujas div.newcard:nth-child(2) button, .burbujas .contenedor div.newcard:nth-child(2) button {
     right: 2.5rem;
   }
 }
@@ -642,7 +642,7 @@ footer .redes {
   gap: 5rem;
   background-color: rgba(16, 212, 222, 0.45);
 }
-footer .redes :nth-child(1) {
+footer .redes :nth-child(1), footer .redes .burbujas div:nth-child(8), .burbujas footer .redes div:nth-child(8), footer .redes .burbujas div:nth-child(7), .burbujas footer .redes div:nth-child(7), footer .redes .burbujas div:nth-child(6), .burbujas footer .redes div:nth-child(6), footer .redes .burbujas div:nth-child(5), .burbujas footer .redes div:nth-child(5), footer .redes .burbujas div:nth-child(4), .burbujas footer .redes div:nth-child(4), footer .redes .burbujas div:nth-child(3), .burbujas footer .redes div:nth-child(3), footer .redes .burbujas div:nth-child(2), .burbujas footer .redes div:nth-child(2) {
   display: flex;
   flex-direction: column;
   height: 3rem;
@@ -651,7 +651,7 @@ footer .redes :nth-child(1) {
   align-items: center;
   border-radius: 10px;
 }
-footer .redes :nth-child(1) a {
+footer .redes :nth-child(1) a, footer .redes .burbujas div:nth-child(8) a, .burbujas footer .redes div:nth-child(8) a, footer .redes .burbujas div:nth-child(7) a, .burbujas footer .redes div:nth-child(7) a, footer .redes .burbujas div:nth-child(6) a, .burbujas footer .redes div:nth-child(6) a, footer .redes .burbujas div:nth-child(5) a, .burbujas footer .redes div:nth-child(5) a, footer .redes .burbujas div:nth-child(4) a, .burbujas footer .redes div:nth-child(4) a, footer .redes .burbujas div:nth-child(3) a, .burbujas footer .redes div:nth-child(3) a, footer .redes .burbujas div:nth-child(2) a, .burbujas footer .redes div:nth-child(2) a {
   box-shadow: 0px 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.4);
   transition: color 500ms, background-color 1s, box-shadow 300ms;
   color: white;
@@ -659,12 +659,12 @@ footer .redes :nth-child(1) a {
   font-size: 1.5em;
   text-decoration: none;
 }
-footer .redes :nth-child(1) a:hover {
+footer .redes :nth-child(1) a:hover, footer .redes .burbujas div:nth-child(8) a:hover, .burbujas footer .redes div:nth-child(8) a:hover, footer .redes .burbujas div:nth-child(7) a:hover, .burbujas footer .redes div:nth-child(7) a:hover, footer .redes .burbujas div:nth-child(6) a:hover, .burbujas footer .redes div:nth-child(6) a:hover, footer .redes .burbujas div:nth-child(5) a:hover, .burbujas footer .redes div:nth-child(5) a:hover, footer .redes .burbujas div:nth-child(4) a:hover, .burbujas footer .redes div:nth-child(4) a:hover, footer .redes .burbujas div:nth-child(3) a:hover, .burbujas footer .redes div:nth-child(3) a:hover, footer .redes .burbujas div:nth-child(2) a:hover, .burbujas footer .redes div:nth-child(2) a:hover {
   background: white;
   color: #3b5998;
   box-shadow: 0 0 0.625rem 0.125rem rgba(16, 212, 222, 0.45);
 }
-footer .redes :nth-child(1) div {
+footer .redes :nth-child(1) div, footer .redes .burbujas div:nth-child(8) div, .burbujas footer .redes div:nth-child(8) div, footer .redes .burbujas div:nth-child(7) div, .burbujas footer .redes div:nth-child(7) div, footer .redes .burbujas div:nth-child(6) div, .burbujas footer .redes div:nth-child(6) div, footer .redes .burbujas div:nth-child(5) div, .burbujas footer .redes div:nth-child(5) div, footer .redes .burbujas div:nth-child(4) div, .burbujas footer .redes div:nth-child(4) div, footer .redes .burbujas div:nth-child(3) div, .burbujas footer .redes div:nth-child(3) div, footer .redes .burbujas div:nth-child(2) div, .burbujas footer .redes div:nth-child(2) div {
   margin-top: 0.625rem;
 }
 footer .redes :nth-child(2) {
@@ -875,10 +875,80 @@ footer .copy {
   background-position: 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
   background-repeat: no-repeat;
 }
-@media (max-width: 530px) {
-  .wave-calendario {
-    background-image: linear-gradient(rgba(247, 50, 50, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(255, 145, 0, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(255, 0, 234, 0.5));
-  }
+
+.info-main-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.info-main-final h1 {
+  text-align: center;
+}
+.info-main-final p {
+  padding: 0 50px;
+}
+
+.burbujas {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 40px;
+}
+.burbujas div:nth-child(1), .burbujas div:nth-child(8), .burbujas div:nth-child(7), .burbujas div:nth-child(6), .burbujas div:nth-child(5), .burbujas div:nth-child(4), .burbujas div:nth-child(3), .burbujas div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(247, 50, 50, 0.5);
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(247, 50, 50, 0.5);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(247, 50, 50, 0.5), 0 5px 35px 12px rgba(247, 50, 50, 0.5);
+}
+.burbujas div:nth-child(2) {
+  background-color: rgba(255, 145, 0, 0.5);
+  border: 1px solid rgba(255, 145, 0, 0.5);
+  transform: translateY(30px);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(255, 145, 0, 0.5), 0 5px 35px 12px rgba(255, 145, 0, 0.5);
+}
+.burbujas div:nth-child(3) {
+  background-color: rgba(218, 215, 29, 0.5);
+  border: 1px solid rgba(218, 215, 29, 0.5);
+  transform: translateY(-30px);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(218, 215, 29, 0.5), 0 5px 35px 12px rgba(218, 215, 29, 0.5);
+}
+.burbujas div:nth-child(4) {
+  background-color: rgba(29, 218, 45, 0.5);
+  border: 1px solid rgba(29, 218, 45, 0.5);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(29, 218, 45, 0.5), 0 5px 35px 12px rgba(29, 218, 45, 0.5);
+}
+.burbujas div:nth-child(5) {
+  background-color: rgba(29, 212, 218, 0.5);
+  border: 1px solid rgba(29, 212, 218, 0.5);
+  transform: translateY(-30px);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(29, 212, 218, 0.5), 0 5px 35px 12px rgba(29, 212, 218, 0.5);
+}
+.burbujas div:nth-child(6) {
+  background-color: rgba(57, 29, 218, 0.5);
+  border: 1px solid rgba(57, 29, 218, 0.5);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(57, 29, 218, 0.5), 0 5px 35px 12px rgba(57, 29, 218, 0.5);
+}
+.burbujas div:nth-child(7) {
+  background-color: rgba(141, 17, 199, 0.5);
+  border: 1px solid rgba(141, 17, 199, 0.5);
+  transform: translateY(30px);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(141, 17, 199, 0.5), 0 5px 35px 12px rgba(141, 17, 199, 0.5);
+}
+.burbujas div:nth-child(8) {
+  background-color: rgba(255, 0, 234, 0.5);
+  border: 1px solid rgba(255, 0, 234, 0.5);
+  box-shadow: 0 0 4px 2px white, 0 0 20px 8px rgba(255, 0, 234, 0.5), 0 5px 35px 12px rgba(255, 0, 234, 0.5);
 }
 
 .back-to-top {
@@ -900,13 +970,13 @@ footer .copy {
   .back-to-top {
     margin-bottom: 3.125rem;
   }
+  header nav .nav-derecha {
+    padding: 0;
+  }
   header nav img {
     justify-content: center;
     height: 1.875rem;
     width: 1.875rem;
-  }
-  .contenedor .newcard {
-    mask: none;
   }
   footer .redes {
     gap: 5px;
@@ -981,11 +1051,15 @@ footer .copy {
   .reglamento .reglas {
     width: 100%;
   }
+  .burbujas div:nth-child(1), .burbujas div:nth-child(2), .burbujas div:nth-child(3), .burbujas div:nth-child(4), .burbujas div:nth-child(5), .burbujas div:nth-child(6), .burbujas div:nth-child(7), .burbujas div:nth-child(8) {
+    transform: none;
+  }
 }
 @media (max-width: 530px) {
   .newcard {
     width: 23.4375rem;
     height: 300px;
+    box-shadow: none;
   }
   .newcard .pic {
     width: 20rem !important;
@@ -1016,10 +1090,10 @@ footer .copy {
     align-items: center;
     transform: translateY(-50px);
   }
-  footer .info--footer :nth-child(1) img {
+  footer .info--footer :nth-child(1) img, footer .info--footer .burbujas div:nth-child(2) img, .burbujas footer .info--footer div:nth-child(2) img, footer .info--footer .burbujas div:nth-child(3) img, .burbujas footer .info--footer div:nth-child(3) img, footer .info--footer .burbujas div:nth-child(4) img, .burbujas footer .info--footer div:nth-child(4) img, footer .info--footer .burbujas div:nth-child(5) img, .burbujas footer .info--footer div:nth-child(5) img, footer .info--footer .burbujas div:nth-child(6) img, .burbujas footer .info--footer div:nth-child(6) img, footer .info--footer .burbujas div:nth-child(7) img, .burbujas footer .info--footer div:nth-child(7) img, footer .info--footer .burbujas div:nth-child(8) img, .burbujas footer .info--footer div:nth-child(8) img {
     margin: 30px;
   }
-  footer .info--footer :nth-child(1) h3 {
+  footer .info--footer :nth-child(1) h3, footer .info--footer .burbujas div:nth-child(2) h3, .burbujas footer .info--footer div:nth-child(2) h3, footer .info--footer .burbujas div:nth-child(3) h3, .burbujas footer .info--footer div:nth-child(3) h3, footer .info--footer .burbujas div:nth-child(4) h3, .burbujas footer .info--footer div:nth-child(4) h3, footer .info--footer .burbujas div:nth-child(5) h3, .burbujas footer .info--footer div:nth-child(5) h3, footer .info--footer .burbujas div:nth-child(6) h3, .burbujas footer .info--footer div:nth-child(6) h3, footer .info--footer .burbujas div:nth-child(7) h3, .burbujas footer .info--footer div:nth-child(7) h3, footer .info--footer .burbujas div:nth-child(8) h3, .burbujas footer .info--footer div:nth-child(8) h3 {
     display: none;
   }
   footer .info--footer :nth-child(3) {

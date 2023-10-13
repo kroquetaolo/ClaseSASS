@@ -4,6 +4,9 @@
     }
     header {
         nav {
+            .nav-derecha{
+                padding: 0;
+            }
             img {
                 justify-content: center;
                 height: 1.875rem;
@@ -12,11 +15,6 @@
         }
     }
 
-    .contenedor {
-        .newcard {
-            mask: none;
-        }
-    }
     footer {   
         .redes{
             gap: 5px;
@@ -106,6 +104,11 @@
         align-items: center;
         .reglas{
             width: 100%;
+        }
+    }
+    .burbujas {
+        div:nth-child(1) {
+            transform: none;
         }
     }
 }
