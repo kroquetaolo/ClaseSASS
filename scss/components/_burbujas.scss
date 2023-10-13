@@ -17,7 +17,69 @@
     flex-wrap: wrap;
     padding: 50px 0;
     gap: 40px;
-    button:nth-child(1) {
+
+    .pupup{
+        display: none;
+
+        &:target {
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 999;
+        }
+        .pupup-abierto {
+            background-color: white;
+            border: 2px solid $color-principal-claro;
+            width: 80vw;
+            height: 300px;
+            .popup-contenido {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                h3 {
+                    text-align: center;
+                }
+                p {
+                    padding: 20px 40px;
+                }
+                a {
+                    padding-top: 6px;
+                    text-align: center;
+                    height: 40px;
+                    width: 40px;
+                    font-size: 1.5em;
+                    border-radius: 50%;
+                    background-color: $sombra-principal-claro;
+                    align-self: flex-end;
+                }
+                .pupup-fa {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-self: center;
+                    justify-self: flex-start;
+                    color: white;
+                    font-size: 1.5em;
+                    width: 50px;
+                    height: 50px;
+                    margin-top: auto;
+                    margin-bottom: 50px;
+                    background-color: $color-principal-claro;
+                    border-radius: 50%;
+                    border: 1px solid $color-principal-claro;
+                    box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-principal-claro, 0 5px 35px 12px $color-principal-claro;
+                }
+            }
+        }
+    }
+    .button:nth-child(1) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,6 +93,7 @@
         border: 1px solid $color-child1;
         box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child1, 0 5px 35px 12px $color-child1;
         transition: box-shadow .3s;
+        text-decoration: none;
         i {
             transition: transform .5s;
         }
@@ -40,52 +103,48 @@
                 transform: scale(1.3);
             }
         }
-        &:active {
-            background-color: red;
-        }
-        
     }
-    button:nth-child(2) {
+    .button:nth-child(2) {
         @extend :nth-child(1);
         background-color: $color-child2;
         border: 1px solid $color-child2;
         transform: translateY($distancia-borbujas);
         box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child2, 0 5px 35px 12px $color-child2;
     }
-    button:nth-child(3) {
+    .button:nth-child(3) {
         @extend :nth-child(1);
         background-color: $color-child3;
         border: 1px solid $color-child3;
         transform: translateY(-$distancia-borbujas);
         box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child3, 0 5px 35px 12px $color-child3;
     }
-    button:nth-child(4) {
+    .button:nth-child(4) {
         @extend :nth-child(1);
         background-color: $color-child4;
         border: 1px solid $color-child4;
         box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child4, 0 5px 35px 12px $color-child4;
     }
-    button:nth-child(5) {
+    .button:nth-child(5) {
         @extend :nth-child(1);
         background-color: $color-child5;
         border: 1px solid $color-child5;
         transform: translateY(-$distancia-borbujas);
         box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child5, 0 5px 35px 12px $color-child5;
     }
-    button:nth-child(6) {
+    .button:nth-child(6) {
         @extend :nth-child(1);
         background-color: $color-child6;
         border: 1px solid $color-child6;
         box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child6, 0 5px 35px 12px $color-child6;
     }
-    button:nth-child(7) {
+    .button:nth-child(7) {
         @extend :nth-child(1);
         background-color: $color-child7;
         border: 1px solid $color-child7;
         transform: translateY($distancia-borbujas);
         box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child7, 0 5px 35px 12px $color-child7;
     }
-    button:nth-child(8) {
+    .button:nth-child(8) {
         @extend :nth-child(1);
         background-color: $color-child8;
         border: 1px solid $color-child8;
