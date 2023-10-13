@@ -1,0 +1,80 @@
+.info-main-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    h1{
+        text-align: center;
+    }
+    p {
+        padding: 0 50px;
+    }
+}
+.burbujas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 40px;
+    div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2em;
+        width: 80px;
+        height: 80px;
+        background-color: $color-child1;
+        margin-right: 30px;
+        border-radius: 50%;
+        border: 1px solid $color-child1;
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child1, 0 5px 35px 12px $color-child1;
+    }
+    div:nth-child(2) {
+        @extend :nth-child(1);
+        background-color: $color-child2;
+        border: 1px solid $color-child2;
+        transform: translateY($distancia-borbujas);
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child2, 0 5px 35px 12px $color-child2;
+    }
+    div:nth-child(3) {
+        @extend :nth-child(1);
+        background-color: $color-child3;
+        border: 1px solid $color-child3;
+        transform: translateY(-$distancia-borbujas);
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child3, 0 5px 35px 12px $color-child3;
+    }
+    div:nth-child(4) {
+        @extend :nth-child(1);
+        background-color: $color-child4;
+        border: 1px solid $color-child4;
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child4, 0 5px 35px 12px $color-child4;
+    }
+    div:nth-child(5) {
+        @extend :nth-child(1);
+        background-color: $color-child5;
+        border: 1px solid $color-child5;
+        transform: translateY(-$distancia-borbujas);
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child5, 0 5px 35px 12px $color-child5;
+    }
+    div:nth-child(6) {
+        @extend :nth-child(1);
+        background-color: $color-child6;
+        border: 1px solid $color-child6;
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child6, 0 5px 35px 12px $color-child6;
+    }
+    div:nth-child(7) {
+        @extend :nth-child(1);
+        background-color: $color-child7;
+        border: 1px solid $color-child7;
+        transform: translateY($distancia-borbujas);
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child7, 0 5px 35px 12px $color-child7;
+    }
+    div:nth-child(8) {
+        @extend :nth-child(1);
+        background-color: $color-child8;
+        border: 1px solid $color-child8;
+        box-shadow: 0 0 4px 2px white, 0 0 20px 8px $color-child8, 0 5px 35px 12px $color-child8;
+    }
+}
