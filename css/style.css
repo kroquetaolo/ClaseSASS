@@ -143,14 +143,17 @@ header nav img:hover {
   padding: 0 50px;
 }
 
-.reglamento {
-  display: flex;
-  justify-content: center;
+.body-index {
   background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(247, 50, 50, 0.5));
   background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem;
   background-position: 0 400px, 0 435px, 0 470px, 0 505px, 0 540px, 0 575px, 0 610px, 0 645px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.reglamento {
+  display: flex;
+  justify-content: center;
   padding-bottom: 60px;
 }
 .reglamento .reglas {
