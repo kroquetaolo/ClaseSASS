@@ -1141,8 +1141,15 @@ footer .copy {
   .reglamento .reglas {
     width: 100%;
   }
-  .burbujas div:nth-child(1), .burbujas div.button:nth-child(2), .burbujas div.button:nth-child(3), .burbujas div.button:nth-child(4), .burbujas div.button:nth-child(5), .burbujas div.button:nth-child(6), .burbujas div.button:nth-child(7), .burbujas div.button:nth-child(8) {
+  .info-main-final {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .burbujas .button:nth-child(1), .burbujas .button:nth-child(2), .burbujas .button:nth-child(3), .burbujas .button:nth-child(4), .burbujas .button:nth-child(5), .burbujas .button:nth-child(6), .burbujas .button:nth-child(7), .burbujas .button:nth-child(8) {
     transform: none;
+  }
+  .burbujas .pupup:target .pupup-abierto {
+    height: 75vh;
   }
 }
 @media (max-width: 530px) {

@@ -109,10 +109,22 @@
             width: 100%;
         }
     }
-    .burbujas {
-        div:nth-child(1) {
-            transform: none;
-        }
+
+    .info-main-final {
+        flex-direction: column;
+        gap: 20px 0;
     }
     
+    .burbujas {
+        .button:nth-child(1) {
+            transform: none;
+        }
+        .pupup {
+            &:target {
+                .pupup-abierto {
+                    height: 75vh;
+                }
+            }
+        }
+    }
 }
