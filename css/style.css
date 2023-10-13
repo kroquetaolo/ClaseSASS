@@ -1145,8 +1145,12 @@ footer .copy {
     flex-direction: column;
     gap: 20px 0;
   }
+  .burbujas {
+    justify-content: center;
+  }
   .burbujas .button:nth-child(1), .burbujas .button:nth-child(2), .burbujas .button:nth-child(3), .burbujas .button:nth-child(4), .burbujas .button:nth-child(5), .burbujas .button:nth-child(6), .burbujas .button:nth-child(7), .burbujas .button:nth-child(8) {
     transform: none;
+    margin: 0;
   }
   .burbujas .pupup:target .pupup-abierto {
     height: 75vh;
