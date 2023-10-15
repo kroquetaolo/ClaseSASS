@@ -574,7 +574,7 @@ header nav img:hover {
 .body--torneo {
   background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(255, 145, 0, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(255, 0, 234, 0.5));
   background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem, 0.0625rem 100%, 0.1875rem 100%, 0.3125rem 100%, 0.5rem 100%, 0.5rem 100%, 0.3125rem 100%, 0.1875rem 100%, 0.0625rem 100%;
-  background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, 12.5rem 70px, 14.6875rem 70px, 16.875rem 70px, 19.0625rem 70px, 21.25rem 70px, 23.4375rem 70px, 25.625rem 70px, 27.8125rem 70px;
+  background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, 12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -610,6 +610,7 @@ header nav img:hover {
 .body--torneo main .contenedor-torneos .torneo hr, .body--torneo main .contenedor-torneos .concurso hr {
   margin-top: 10px;
   align-self: center;
+  color: #10d5de;
   width: 80%;
 }
 .body--torneo main .contenedor-torneos .torneo img, .body--torneo main .contenedor-torneos .concurso img {
@@ -1077,6 +1078,55 @@ footer .copy {
   background-color: #555;
 }
 
+.carousel-torneos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.carousel-torneos .swiper {
+  width: 1000px;
+  padding: 50px 50px;
+}
+.carousel-torneos .swiper-button-prev, .carousel-torneos .swiper-button-next {
+  color: white;
+  height: 100%;
+  width: 15%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.carousel-torneos .swiper-button-next {
+  left: auto;
+  right: 0;
+}
+.carousel-torneos .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 700px;
+  height: 450px;
+  text-align: center;
+}
+.carousel-torneos .swiper-slide div {
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+}
+.carousel-torneos .swiper-slide div p, .carousel-torneos .swiper-slide div h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+}
+.carousel-torneos .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 991px) {
   .back-to-top {
     display: none;
@@ -1184,6 +1234,17 @@ footer .copy {
   }
   .burbujas .pupup:target .pupup-abierto .popup-contenido h4 {
     margin-top: auto;
+  }
+  .carousel-torneos .swiper {
+    width: 100%;
+    background: none;
+  }
+  .carousel-torneos .swiper-slide {
+    width: 130%;
+    height: auto;
+  }
+  .carousel-torneos .swiper-button-prev, .carousel-torneos .swiper-button-next {
+    display: none;
   }
 }
 @media (max-width: 530px) {

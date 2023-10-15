@@ -1,0 +1,49 @@
+.carousel-torneos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .swiper {
+        width: 1000px;
+        padding: 50px 50px;
+    }
+    .swiper-button-prev {
+        color: white;
+        height: 100%;
+        width: 15%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+    .swiper-button-next {
+        @extend .swiper-button-prev;
+        left: auto;
+        right: 0;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 700px;
+        height: 450px;
+        text-align: center;
+        div {
+            position: absolute;
+            padding: 20px;
+            bottom: 0;
+            p, h3 {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                width: 100%;
+            }
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

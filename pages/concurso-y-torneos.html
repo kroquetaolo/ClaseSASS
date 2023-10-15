@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/267b35900f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <meta name="keywords" content="the elder scrolls online, eso, concurso, torneos, pvp">
     <meta name="description" content="participa en increibles concursos y torneos de todo tipo con nosotros!">
@@ -22,6 +23,7 @@
     <meta property="og:image" content="https://compass-ssl.xbox.com/assets/88/19/8819f463-26ad-4128-86eb-187c963dbcec.jpg?n=Elder-Scrolls-Online_GLP-Page-Hero-0_1083x609_02.jpg">
 
     <link rel="shortcut icon" href="../assets/favico.ico" type="image/x-icon">
+
 
 
     <title>Concursos & Torneos | Wulfheim Tundra</title>
@@ -80,52 +82,43 @@
             <h1>CONCURSOS & TORNEOS</h1>
             <div></div>
         </div>
-        <section class="contenedor-torneos">
-            <div class="torneo">
-                <img src="../assets/torneo-pvp.jpg" alt="">
-                <div>
-                    <h2>
-                        Fancy Title woooow
-                    </h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates est sapiente, minima mollitia eos ut? Nobis, obcaecati architecto. Deleniti tempore nobis atque perferendis tenetur amet, sint assumenda esse nihil numquam!</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section class="carousel-torneos">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <h3>Torneo PvP</h3>
+                            <p>Lorem ipsum dolor sit, molestiae exercitationem nobis corrupti excepturi aliquid pariatur facere.</p>
+                        </div>
+                        <img src="../assets/torneo-pvp.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <h3>CONCRUSO DE CARTAS </h3>
+                            <p>Lorem ipsum dolor sit, molestiae exercitationem nobis corrupti excepturi aliquid pariatur facere.</p>
+                        </div>
+                        <img src="../assets/tales-of-tribute.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <h3>CONCURSO DE ROPA </h3>
+                            <p>Lorem ipsum dolor sit, molestiae exercitationem nobis corrupti excepturi aliquid pariatur facere.</p>
+                        </div>
+                        <img src="../assets/samhain.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <h3>RIFA </h3>
+                            <p>Lorem ipsum dolor sit, molestiae exercitationem nobis corrupti excepturi aliquid pariatur facere.</p>
+                        </div>
+                        <img src="../assets/Rifa.jpg" />
+                    </div>
                 </div>
-            </div>
-            <div class="concurso">
-                <img src="../assets/samhain.jpg" alt="">
-                <div>
-                    <h2>
-                        Fancy Title woooow
-                    </h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates est sapiente, minima mollitia eos ut? Nobis, obcaecati architecto. Deleniti tempore nobis atque perferendis tenetur amet, sint assumenda esse nihil numquam!</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="torneo">
-                <img src="../assets/tales-of-tribute.jpg" alt="">
-                <div>
-                    <h2>
-                        Fancy Title woooow
-                    </h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates est sapiente, minima mollitia eos ut? Nobis, obcaecati architecto. Deleniti tempore nobis atque perferendis tenetur amet, sint assumenda esse nihil numquam!</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="concurso">
-                <img src="../assets/Rifa.jpg" alt="">
-                <div>
-                    <h2>
-                        Fancy Title woooow
-                    </h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates est sapiente, minima mollitia eos ut? Nobis, obcaecati architecto. Deleniti tempore nobis atque perferendis tenetur amet, sint assumenda esse nihil numquam!</p>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
+        
         <section class="info-main-final">
             <h1>
                 INFORMACION NO TAN IMPORTANTE
@@ -325,8 +318,36 @@
     </footer>
     <a href="#top" class="back-to-top">Subir</a>
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            // autoplay: {
+            //     delay: 3500,
+            //     disableOnInteraction: false,
+            // },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            mousewheel: true,
+            keyboard: true,
+            },    
+        });
+    </script>
 </body>
 
 </html>

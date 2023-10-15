@@ -25,7 +25,7 @@
     .0625rem 100%, .1875rem 100%, .3125rem 100%, .5rem 100%, .5rem 100%, .3125rem 100%, .1875rem 100%, .0625rem 100%;
     background-position:
     0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem,
-    12.5rem 70px, 14.6875rem 70px, 16.875rem 70px, 19.0625rem 70px, 21.25rem 70px, 23.4375rem 70px, 25.625rem 70px, 27.8125rem 70px ;
+    12.5rem 0, 14.6875rem 0, 16.875rem 0, 19.0625rem 0, 21.25rem 0, 23.4375rem 0, 25.625rem 0, 27.8125rem 0 ;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -62,6 +62,7 @@
                 hr{
                     margin-top: 10px;
                     align-self: center;
+                    color: $color-principal-claro;
                     width: 80%;
                 }
                 img{
@@ -84,4 +85,5 @@
             }
         }
     }
+    
 }

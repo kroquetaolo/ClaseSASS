@@ -137,4 +137,18 @@
             }
         }
     }
+    .carousel-torneos {
+        .swiper {
+            width: 100%;
+            background: none;
+        }
+        .swiper-slide {
+            width: 130%;
+            height: auto;
+        }
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+
 }
