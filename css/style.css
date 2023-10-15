@@ -1089,15 +1089,20 @@ footer .copy {
 }
 .carousel-torneos .swiper-button-prev, .carousel-torneos .swiper-button-next {
   color: white;
+  border: none;
   height: 100%;
   width: 15%;
   top: 0;
   left: 0;
   margin: 0;
+  font-size: 3em;
 }
 .carousel-torneos .swiper-button-next {
   left: auto;
   right: 0;
+}
+.carousel-torneos .swiper-button-prev::after, .carousel-torneos .swiper-button-next::after {
+  content: "";
 }
 .carousel-torneos .swiper-slide {
   display: flex;
