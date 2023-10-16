@@ -1,7 +1,7 @@
 
 .container-presentacion {
     display: flex;
-    height: 100vh;
+    height: 85vh;
     filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px $sombra-principal-claro) ;
 }
 .presentacion-index {
@@ -29,9 +29,10 @@
         font-weight: bold;
         font-size: 3.25em;
         text-shadow: 2px 2px 4px $sombra-principal-claro;
-        margin: 1.25rem 3.125rem;
+        padding: 1.25rem 3.125rem;
         border-radius: .625rem 5rem;
-        backdrop-filter: blur(.25rem);
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
     }
     p{
         text-align: center;
@@ -123,6 +124,11 @@
     h1{
         margin: 0 25px;
         font-size: 2.5em;
+        padding: 1.25rem 3.125rem;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(.25rem);
+        border-radius: 5rem .625rem ;
     }
     div{
         height: 10px;

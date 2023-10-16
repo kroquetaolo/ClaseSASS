@@ -41,11 +41,6 @@
     .titulo-torneos{
         @extend .titulo-reglamento;
         padding-bottom: 1.875rem;
-        h1{
-            padding: 1.25rem 3.125rem;
-            backdrop-filter: blur(.25rem);
-            border-radius: .625rem 5rem;
-        }
     }
     main{
         .contenedor-torneos{

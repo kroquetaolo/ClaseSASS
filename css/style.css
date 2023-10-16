@@ -127,7 +127,7 @@ header nav img:hover {
 
 .container-presentacion {
   display: flex;
-  height: 100vh;
+  height: 85vh;
   filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px rgba(16, 212, 222, 0.45));
 }
 
@@ -154,9 +154,10 @@ header nav img:hover {
   font-weight: bold;
   font-size: 3.25em;
   text-shadow: 2px 2px 4px rgba(16, 212, 222, 0.45);
-  margin: 1.25rem 3.125rem;
+  padding: 1.25rem 3.125rem;
   border-radius: 0.625rem 5rem;
-  backdrop-filter: blur(0.25rem);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 .presentacion-index p, .body--torneo .presentacion-concursos p, .presentacion-ayuda p, .presentacion-calendario p {
   text-align: center;
@@ -240,6 +241,11 @@ header nav img:hover {
 .titulo-reglamento h1, .body--torneo .titulo-torneos h1, .titulo-ayuda h1, .titulo-calendario h1 {
   margin: 0 25px;
   font-size: 2.5em;
+  padding: 1.25rem 3.125rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.25rem);
+  border-radius: 5rem 0.625rem;
 }
 .titulo-reglamento div, .body--torneo .titulo-torneos div, .titulo-ayuda div, .titulo-calendario div {
   height: 10px;
@@ -606,11 +612,6 @@ header nav img:hover {
 .body--torneo .titulo-torneos {
   padding-bottom: 1.875rem;
 }
-.body--torneo .titulo-torneos h1 {
-  padding: 1.25rem 3.125rem;
-  backdrop-filter: blur(0.25rem);
-  border-radius: 0.625rem 5rem;
-}
 .body--torneo main .contenedor-torneos {
   display: flex;
   justify-content: space-between;
@@ -656,7 +657,7 @@ footer {
   display: flex;
   flex-direction: column;
   height: auto;
-  filter: drop-shadow(0 -5px 5px black) drop-shadow(-10px -15px 13px rgba(16, 212, 222, 0.45));
+  filter: drop-shadow(0 -5px 5px rgba(0, 0, 0, 0.7)) drop-shadow(-10px -15px 13px rgba(16, 212, 222, 0.45));
 }
 footer .container-footer {
   height: 100%;
@@ -864,10 +865,6 @@ footer .info--footer p {
   text-align: center;
   padding: 0 30px;
 }
-footer .container-footer {
-  height: auto;
-  clip-path: polygon(100% 100%, 0% 100%, 0% 6.4%, 2.5% 6.07%, 5% 5.77%, 7.5% 5.51%, 10% 5.31%, 12.5% 5.18%, 15% 5.12%, 17.5% 5.13%, 20% 5.21%, 22.5% 5.37%, 25% 5.59%, 27.5% 5.86%, 30% 6.17%, 32.5% 6.5%, 35% 6.84%, 37.5% 7.17%, 40% 7.48%, 42.5% 7.75%, 45% 7.97%, 47.5% 8.12%, 50% 8.21%, 52.5% 8.22%, 55% 8.15%, 57.5% 8.02%, 60% 7.82%, 62.5% 7.56%, 65% 7.26%, 67.5% 6.93%, 70% 6.59%, 72.5% 6.25%, 75% 5.94%, 77.5% 5.65%, 80% 5.42%, 82.5% 5.25%, 85% 5.14%, 87.5% 5.11%, 90% 5.15%, 92.5% 5.27%, 95% 5.45%, 97.5% 5.7%, 100% 5.98%);
-}
 footer .logo--footer {
   display: flex;
   flex-direction: column;
@@ -895,6 +892,7 @@ footer .copy {
   gap: 15px;
   text-decoration: none;
   font-size: 2.5em;
+  margin-bottom: 30px;
 }
 .main-redes a {
   color: #10d5de;
@@ -932,7 +930,6 @@ footer .copy {
   align-items: center;
   padding: 30px 0;
   background-color: rgba(155, 155, 155, 0.555);
-  border-radius: 60px 0 60px 0;
 }
 .info-main-final h1 {
   display: flex;
@@ -956,6 +953,7 @@ footer .copy {
   flex-wrap: wrap;
   padding: 50px 0;
   gap: 40px;
+  margin: 40px 0;
 }
 .burbujas .pupup {
   display: none;
@@ -1222,6 +1220,12 @@ footer .copy {
 .contenedor-clases .clases .item-clases label .fa-toggle-on {
   display: none;
 }
+.contenedor-clases .clases .item-clases label i {
+  transition: 0.2s;
+}
+.contenedor-clases .clases .item-clases label:hover i {
+  opacity: 0.5;
+}
 .contenedor-clases .clases .item-clases a {
   display: none;
 }
@@ -1241,7 +1245,6 @@ footer .copy {
 }
 .contenedor-clases .clases .fa-wand-sparkles {
   color: cyan;
-  font-size: 2.4em;
 }
 .contenedor-clases .clases .fa-paw {
   color: green;
