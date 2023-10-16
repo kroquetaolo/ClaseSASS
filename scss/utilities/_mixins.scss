@@ -37,3 +37,46 @@
         right: 2.5rem;
     }
 }
+
+@mixin checkbox-ayuda-y-guias {
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    .fa-sun {
+        padding: 10px;
+    }
+    h3 {
+        position: static;
+        transition: opacity 2s;
+    }
+    p {
+        display: inline;
+        padding: 10px;
+        opacity: 1;
+        height: auto;
+        text-align: center;
+        width: 100%;
+        transition: opacity 1.5s;
+    }
+    label {
+        color: $color-principal-claro;
+        .fa-toggle-on {
+            display: inline;
+        }
+        .fa-toggle-off {
+            display: none;
+        }
+    }
+    a {
+        position: absolute;
+        display: inline;
+        text-decoration: none;
+        color: black;
+        bottom: 15px;
+        right: 10px;
+        i {
+            color: $color-principal-claro;
+            font-size: 1.25em;
+        }
+    }
+}

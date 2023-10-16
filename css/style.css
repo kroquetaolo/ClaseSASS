@@ -1165,6 +1165,388 @@ footer .copy {
   height: 100%;
 }
 
+.contenedor-clases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.contenedor-clases .clases {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 80vw;
+}
+.contenedor-clases .clases input {
+  display: none;
+}
+.contenedor-clases .clases .item-clases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: rgba(16, 212, 222, 0.2);
+  transition: height 0.5s ease-out, width 0.8s ease-out, border-radius 0.8s ease-out;
+  border-radius: 120px 5px 120px 60px;
+  margin: 30px 0;
+  border: 3px solid rgba(16, 212, 222, 0.45);
+  box-shadow: 0px 0px 25px 10px rgba(16, 212, 222, 0.45);
+}
+.contenedor-clases .clases .item-clases h3 {
+  position: absolute;
+  bottom: 20px;
+  padding: 5px;
+  align-self: center;
+  user-select: none;
+}
+.contenedor-clases .clases .item-clases p {
+  margin-top: 20px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  user-select: none;
+}
+.contenedor-clases .clases .item-clases label {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  font-size: 2.4em;
+  color: #4d9da1;
+  transition: color 0.5s;
+}
+.contenedor-clases .clases .item-clases label .fa-toggle-on {
+  display: none;
+}
+.contenedor-clases .clases .item-clases a {
+  display: none;
+}
+.contenedor-clases .clases .fa-sun, .contenedor-clases .clases .fa-hat-wizard, .contenedor-clases .clases .fa-fire, .contenedor-clases .clases .fa-paw, .contenedor-clases .clases .fa-wand-sparkles, .contenedor-clases .clases .fa-skull, .contenedor-clases .clases .fa-shoe-prints {
+  align-self: center;
+  color: rgba(231, 231, 0, 0.863);
+  font-size: 3em;
+}
+.contenedor-clases .clases .fa-shoe-prints {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 53%, rgb(255, 255, 255) 53%, rgb(163, 163, 163) 53%, rgb(163, 163, 163) 54%, rgb(163, 163, 163) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenedor-clases .clases .fa-skull {
+  color: purple;
+}
+.contenedor-clases .clases .fa-wand-sparkles {
+  color: cyan;
+  font-size: 2.4em;
+}
+.contenedor-clases .clases .fa-paw {
+  color: green;
+}
+.contenedor-clases .clases .fa-fire {
+  color: red;
+}
+.contenedor-clases .clases .fa-hat-wizard {
+  color: rgb(110, 163, 29);
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar {
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar .fa-sun, .contenedor-clases .clases #templar-checkbox:checked + #templar .fa-shoe-prints, .contenedor-clases .clases #templar-checkbox:checked + #templar .fa-skull, .contenedor-clases .clases #templar-checkbox:checked + #templar .fa-wand-sparkles, .contenedor-clases .clases #templar-checkbox:checked + #templar .fa-paw, .contenedor-clases .clases #templar-checkbox:checked + #templar .fa-fire, .contenedor-clases .clases #templar-checkbox:checked + #templar .fa-hat-wizard {
+  padding: 10px;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar h3 {
+  position: static;
+  transition: opacity 2s;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar p {
+  display: inline;
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  transition: opacity 1.5s;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar label {
+  color: #10d5de;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar label .fa-toggle-on {
+  display: inline;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar label .fa-toggle-off {
+  display: none;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar a {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  right: 10px;
+}
+.contenedor-clases .clases #templar-checkbox:checked + #templar a i {
+  color: #10d5de;
+  font-size: 1.25em;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade {
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .fa-sun, .contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .fa-shoe-prints, .contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .fa-skull, .contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .fa-wand-sparkles, .contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .fa-paw, .contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .fa-fire, .contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .fa-hat-wizard {
+  padding: 10px;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade h3 {
+  position: static;
+  transition: opacity 2s;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade p {
+  display: inline;
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  transition: opacity 1.5s;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade label {
+  color: #10d5de;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade label .fa-toggle-on {
+  display: inline;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade label .fa-toggle-off {
+  display: none;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade a {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  right: 10px;
+}
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade a i {
+  color: #10d5de;
+  font-size: 1.25em;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer {
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .fa-sun, .contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .fa-shoe-prints, .contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .fa-skull, .contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .fa-wand-sparkles, .contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .fa-paw, .contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .fa-fire, .contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .fa-hat-wizard {
+  padding: 10px;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer h3 {
+  position: static;
+  transition: opacity 2s;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer p {
+  display: inline;
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  transition: opacity 1.5s;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer label {
+  color: #10d5de;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer label .fa-toggle-on {
+  display: inline;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer label .fa-toggle-off {
+  display: none;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer a {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  right: 10px;
+}
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer a i {
+  color: #10d5de;
+  font-size: 1.25em;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer {
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .fa-sun, .contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .fa-shoe-prints, .contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .fa-skull, .contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .fa-wand-sparkles, .contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .fa-paw, .contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .fa-fire, .contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .fa-hat-wizard {
+  padding: 10px;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer h3 {
+  position: static;
+  transition: opacity 2s;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer p {
+  display: inline;
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  transition: opacity 1.5s;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer label {
+  color: #10d5de;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer label .fa-toggle-on {
+  display: inline;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer label .fa-toggle-off {
+  display: none;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer a {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  right: 10px;
+}
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer a i {
+  color: #10d5de;
+  font-size: 1.25em;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden {
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden .fa-sun, .contenedor-clases .clases #warden-checkbox:checked + #warden .fa-shoe-prints, .contenedor-clases .clases #warden-checkbox:checked + #warden .fa-skull, .contenedor-clases .clases #warden-checkbox:checked + #warden .fa-wand-sparkles, .contenedor-clases .clases #warden-checkbox:checked + #warden .fa-paw, .contenedor-clases .clases #warden-checkbox:checked + #warden .fa-fire, .contenedor-clases .clases #warden-checkbox:checked + #warden .fa-hat-wizard {
+  padding: 10px;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden h3 {
+  position: static;
+  transition: opacity 2s;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden p {
+  display: inline;
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  transition: opacity 1.5s;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden label {
+  color: #10d5de;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden label .fa-toggle-on {
+  display: inline;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden label .fa-toggle-off {
+  display: none;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden a {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  right: 10px;
+}
+.contenedor-clases .clases #warden-checkbox:checked + #warden a i {
+  color: #10d5de;
+  font-size: 1.25em;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight {
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .fa-sun, .contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .fa-shoe-prints, .contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .fa-skull, .contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .fa-wand-sparkles, .contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .fa-paw, .contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .fa-fire, .contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .fa-hat-wizard {
+  padding: 10px;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight h3 {
+  position: static;
+  transition: opacity 2s;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight p {
+  display: inline;
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  transition: opacity 1.5s;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight label {
+  color: #10d5de;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight label .fa-toggle-on {
+  display: inline;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight label .fa-toggle-off {
+  display: none;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight a {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  right: 10px;
+}
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight a i {
+  color: #10d5de;
+  font-size: 1.25em;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist {
+  height: 400px;
+  width: 300px;
+  border-radius: 25px;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .fa-sun, .contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .fa-shoe-prints, .contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .fa-skull, .contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .fa-wand-sparkles, .contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .fa-paw, .contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .fa-fire, .contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .fa-hat-wizard {
+  padding: 10px;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist h3 {
+  position: static;
+  transition: opacity 2s;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist p {
+  display: inline;
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  transition: opacity 1.5s;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist label {
+  color: #10d5de;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist label .fa-toggle-on {
+  display: inline;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist label .fa-toggle-off {
+  display: none;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist a {
+  position: absolute;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  right: 10px;
+}
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist a i {
+  color: #10d5de;
+  font-size: 1.25em;
+}
+
 @media (max-width: 991px) {
   .back-to-top {
     display: none;
