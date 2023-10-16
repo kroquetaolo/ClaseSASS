@@ -113,6 +113,10 @@ header nav .nav-derecha .menu .active a {
 header nav .nav-derecha .menu .active a i {
   color: #4d9da1;
 }
+header nav .nav-derecha .menu .active:hover {
+  padding: 5px 10px;
+  box-shadow: none;
+}
 header nav img {
   border-radius: 50%;
   transition: border-radius 0.2s;
@@ -135,10 +139,10 @@ header nav img:hover {
   width: 100vw;
   color: white;
   padding: 3.125rem;
-  background-image: url(../assets/fondo-presentacion.jpg);
+  background-image: url("../assets/fondo-presentacion2.webp"), linear-gradient(to right, black, rgba(16, 212, 222, 0.45), rgba(16, 212, 222, 0.45), black);
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
   clip-path: polygon(100% 0%, 0% 0%, 0% 93.69%, 1.33% 93.44%, 2.67% 93.17%, 4% 92.9%, 5.33% 92.61%, 6.67% 92.32%, 8% 92.02%, 9.33% 91.72%, 10.67% 91.42%, 12% 91.12%, 13.33% 90.83%, 14.67% 90.54%, 16% 90.26%, 17.33% 89.98%, 18.67% 89.72%, 20% 89.48%, 21.33% 89.24%, 22.67% 89.03%, 24% 88.83%, 25.33% 88.65%, 26.67% 88.5%, 28% 88.36%, 29.33% 88.25%, 30.67% 88.16%, 32% 88.1%, 33.33% 88.06%, 34.67% 88.05%, 36% 88.06%, 37.33% 88.1%, 38.67% 88.16%, 40% 88.24%, 41.33% 88.35%, 42.67% 88.49%, 44% 88.64%, 45.33% 88.82%, 46.67% 89.01%, 48% 89.22%, 49.33% 89.46%, 50.67% 89.7%, 52% 89.96%, 53.33% 90.23%, 54.67% 90.51%, 56% 90.8%, 57.33% 91.1%, 58.67% 91.4%, 60% 91.7%, 61.33% 92%, 62.67% 92.29%, 64% 92.59%, 65.33% 92.87%, 66.67% 93.15%, 68% 93.42%, 69.33% 93.67%, 70.67% 93.91%, 72% 94.13%, 73.33% 94.34%, 74.67% 94.53%, 76% 94.69%, 77.33% 94.84%, 78.67% 94.96%, 80% 95.06%, 81.33% 95.14%, 82.67% 95.19%, 84% 95.22%, 85.33% 95.22%, 86.67% 95.19%, 88% 95.14%, 89.33% 95.07%, 90.67% 94.97%, 92% 94.85%, 93.33% 94.71%, 94.67% 94.54%, 96% 94.36%, 97.33% 94.15%, 98.67% 93.93%, 100% 93.69%);
 }
@@ -261,7 +265,9 @@ header nav img:hover {
 }
 
 .presentacion-calendario {
-  background-image: url(../assets/top-calendario.jpg);
+  background-image: url(../assets/top-calendario.webp);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .titulo-calendario {
@@ -565,6 +571,8 @@ header nav img:hover {
 
 .presentacion-ayuda {
   background-image: url(../assets/top-ayuda.webp);
+  background-size: cover;
+  background-position: top;
 }
 
 .titulo-ayuda {
@@ -579,7 +587,9 @@ header nav img:hover {
   background-attachment: fixed;
 }
 .body--torneo .presentacion-concursos {
-  background-image: url(../assets/top-actividades.jpg);
+  background-image: url("../assets/top-actividades.webp");
+  background-size: cover;
+  background-position: bottom;
 }
 .body--torneo .titulo-torneos {
   padding-bottom: 1.875rem;
@@ -633,8 +643,15 @@ header nav img:hover {
 footer {
   display: flex;
   flex-direction: column;
+  height: auto;
+  filter: drop-shadow(0 -5px 5px black) drop-shadow(-10px -15px 13px rgba(16, 212, 222, 0.45));
+}
+footer .container-footer {
+  height: 100%;
+  width: 100%;
+  padding-top: 125px;
   background-color: #ebfdfe;
-  height: 400px;
+  clip-path: polygon(100% 100%, 0% 100%, 0% 5.86%, 2.5% 4.87%, 5% 3.98%, 7.5% 3.21%, 10% 2.61%, 12.5% 2.2%, 15% 2.01%, 17.5% 2.05%, 20% 2.3%, 22.5% 2.77%, 25% 3.42%, 27.5% 4.24%, 30% 5.16%, 32.5% 6.16%, 35% 7.19%, 37.5% 8.19%, 40% 9.11%, 42.5% 9.92%, 45% 10.57%, 47.5% 11.03%, 50% 11.29%, 52.5% 11.32%, 55% 11.12%, 57.5% 10.72%, 60% 10.11%, 62.5% 9.34%, 65% 8.44%, 67.5% 7.46%, 70% 6.44%, 72.5% 5.43%, 75% 4.48%, 77.5% 3.63%, 80% 2.93%, 82.5% 2.41%, 85% 2.1%, 87.5% 2%, 90% 2.13%, 92.5% 2.48%, 95% 3.03%, 97.5% 3.76%, 100% 4.62%);
 }
 footer section:nth-child(1), footer .burbujas section.button:nth-child(8), .burbujas footer section.button:nth-child(8), footer .burbujas section.button:nth-child(7), .burbujas footer section.button:nth-child(7), footer .burbujas section.button:nth-child(6), .burbujas footer section.button:nth-child(6), footer .burbujas section.button:nth-child(5), .burbujas footer section.button:nth-child(5), footer .burbujas section.button:nth-child(4), .burbujas footer section.button:nth-child(4), footer .burbujas section.button:nth-child(3), .burbujas footer section.button:nth-child(3), footer .burbujas section.button:nth-child(2), .burbujas footer section.button:nth-child(2) {
   display: flex;
@@ -834,6 +851,10 @@ footer .info--footer p {
   align-self: center;
   text-align: center;
   padding: 0 30px;
+}
+footer .container-footer {
+  height: auto;
+  clip-path: polygon(100% 100%, 0% 100%, 0% 6.4%, 2.5% 6.07%, 5% 5.77%, 7.5% 5.51%, 10% 5.31%, 12.5% 5.18%, 15% 5.12%, 17.5% 5.13%, 20% 5.21%, 22.5% 5.37%, 25% 5.59%, 27.5% 5.86%, 30% 6.17%, 32.5% 6.5%, 35% 6.84%, 37.5% 7.17%, 40% 7.48%, 42.5% 7.75%, 45% 7.97%, 47.5% 8.12%, 50% 8.21%, 52.5% 8.22%, 55% 8.15%, 57.5% 8.02%, 60% 7.82%, 62.5% 7.56%, 65% 7.26%, 67.5% 6.93%, 70% 6.59%, 72.5% 6.25%, 75% 5.94%, 77.5% 5.65%, 80% 5.42%, 82.5% 5.25%, 85% 5.14%, 87.5% 5.11%, 90% 5.15%, 92.5% 5.27%, 95% 5.45%, 97.5% 5.7%, 100% 5.98%);
 }
 footer .logo--footer {
   display: flex;
@@ -1168,7 +1189,8 @@ footer .copy {
     display: none;
   }
   footer .copy {
-    display: inline;
+    display: flex;
+    justify-content: center;
     padding: 10px;
   }
   header nav .nav-derecha {
@@ -1300,7 +1322,7 @@ footer .copy {
     display: none;
   }
   footer .copy {
-    display: inline;
+    display: flex;
     padding: 10px;
   }
   .body--torneo main .contenedor-torneos .torneo, .body--torneo main .contenedor-torneos .concurso {

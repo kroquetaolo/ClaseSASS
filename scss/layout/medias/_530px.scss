@@ -46,6 +46,7 @@
         background-attachment: fixed;
     }
     footer {   
+
         .info--footer{
             padding: 0;
             justify-content: center;
@@ -71,7 +72,7 @@
         }
         
         .copy{
-            display: inline;
+            display: flex;
             padding: 10px;
         }
     }

@@ -96,6 +96,10 @@ header {
                             color: $color-principal-oscuro;
                         }
                     }
+                    &:hover {
+                        padding: 5px 10px;
+                        box-shadow: none;
+                    }
                 }
             }
         }
