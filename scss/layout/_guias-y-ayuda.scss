@@ -2,6 +2,9 @@
     @extend .presentacion-index;
     background-image:url(../assets/top-ayuda.webp);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: top;
 }
 .titulo-ayuda{
