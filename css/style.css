@@ -129,6 +129,7 @@ header nav img:hover {
   display: flex;
   height: 85vh;
   filter: drop-shadow(0 5px 5px black) drop-shadow(-10px 15px 13px rgba(16, 212, 222, 0.45));
+  overflow: hidden;
 }
 
 .presentacion-index, .body--torneo .presentacion-concursos, .presentacion-ayuda, .presentacion-calendario {
@@ -1553,6 +1554,9 @@ footer .copy {
 @media (max-width: 991px) {
   .back-to-top {
     display: none;
+  }
+  .presentacion-index, .presentacion-calendario, .presentacion-ayuda, .body--torneo .presentacion-concursos {
+    background-attachment: scroll;
   }
   header nav .nav-derecha {
     padding: 0;
