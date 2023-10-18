@@ -1438,11 +1438,16 @@ footer .copy {
 .contenedor-clases .clases .item-clases label:hover i {
   opacity: 0.5;
 }
-.contenedor-clases .clases .item-clases a {
+.contenedor-clases .clases .item-clases .link-guia {
   display: none;
 }
-.contenedor-clases .clases .fa-sun, .contenedor-clases .clases .fa-hat-wizard, .contenedor-clases .clases .fa-fire, .contenedor-clases .clases .fa-paw, .contenedor-clases .clases .fa-wand-sparkles, .contenedor-clases .clases .fa-skull, .contenedor-clases .clases .fa-shoe-prints {
+.contenedor-clases .clases .link-icono {
   align-self: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.contenedor-clases .clases .fa-sun, .contenedor-clases .clases .fa-hat-wizard, .contenedor-clases .clases .fa-fire, .contenedor-clases .clases .fa-paw, .contenedor-clases .clases .fa-wand-sparkles, .contenedor-clases .clases .fa-skull, .contenedor-clases .clases .fa-shoe-prints {
   color: rgba(231, 231, 0, 0.863);
   font-size: 3em;
 }
@@ -1497,7 +1502,7 @@ footer .copy {
 .contenedor-clases .clases #templar-checkbox:checked + #templar label .fa-toggle-off {
   display: none;
 }
-.contenedor-clases .clases #templar-checkbox:checked + #templar a {
+.contenedor-clases .clases #templar-checkbox:checked + #templar .link-guia {
   position: absolute;
   display: inline;
   text-decoration: none;
@@ -1505,7 +1510,7 @@ footer .copy {
   bottom: 15px;
   right: 10px;
 }
-.contenedor-clases .clases #templar-checkbox:checked + #templar a i {
+.contenedor-clases .clases #templar-checkbox:checked + #templar .link-guia i {
   color: #10d5de;
   font-size: 1.25em;
 }
@@ -1539,7 +1544,7 @@ footer .copy {
 .contenedor-clases .clases #nightblade-checkbox:checked + #nightblade label .fa-toggle-off {
   display: none;
 }
-.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade a {
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .link-guia {
   position: absolute;
   display: inline;
   text-decoration: none;
@@ -1547,7 +1552,7 @@ footer .copy {
   bottom: 15px;
   right: 10px;
 }
-.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade a i {
+.contenedor-clases .clases #nightblade-checkbox:checked + #nightblade .link-guia i {
   color: #10d5de;
   font-size: 1.25em;
 }
@@ -1581,7 +1586,7 @@ footer .copy {
 .contenedor-clases .clases #necromancer-checkbox:checked + #necromancer label .fa-toggle-off {
   display: none;
 }
-.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer a {
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .link-guia {
   position: absolute;
   display: inline;
   text-decoration: none;
@@ -1589,7 +1594,7 @@ footer .copy {
   bottom: 15px;
   right: 10px;
 }
-.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer a i {
+.contenedor-clases .clases #necromancer-checkbox:checked + #necromancer .link-guia i {
   color: #10d5de;
   font-size: 1.25em;
 }
@@ -1623,7 +1628,7 @@ footer .copy {
 .contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer label .fa-toggle-off {
   display: none;
 }
-.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer a {
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .link-guia {
   position: absolute;
   display: inline;
   text-decoration: none;
@@ -1631,7 +1636,7 @@ footer .copy {
   bottom: 15px;
   right: 10px;
 }
-.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer a i {
+.contenedor-clases .clases #sorcerer-checkbox:checked + #sorcerer .link-guia i {
   color: #10d5de;
   font-size: 1.25em;
 }
@@ -1665,7 +1670,7 @@ footer .copy {
 .contenedor-clases .clases #warden-checkbox:checked + #warden label .fa-toggle-off {
   display: none;
 }
-.contenedor-clases .clases #warden-checkbox:checked + #warden a {
+.contenedor-clases .clases #warden-checkbox:checked + #warden .link-guia {
   position: absolute;
   display: inline;
   text-decoration: none;
@@ -1673,7 +1678,7 @@ footer .copy {
   bottom: 15px;
   right: 10px;
 }
-.contenedor-clases .clases #warden-checkbox:checked + #warden a i {
+.contenedor-clases .clases #warden-checkbox:checked + #warden .link-guia i {
   color: #10d5de;
   font-size: 1.25em;
 }
@@ -1707,7 +1712,7 @@ footer .copy {
 .contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight label .fa-toggle-off {
   display: none;
 }
-.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight a {
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .link-guia {
   position: absolute;
   display: inline;
   text-decoration: none;
@@ -1715,7 +1720,7 @@ footer .copy {
   bottom: 15px;
   right: 10px;
 }
-.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight a i {
+.contenedor-clases .clases #dragonknight-checkbox:checked + #dragonknight .link-guia i {
   color: #10d5de;
   font-size: 1.25em;
 }
@@ -1749,7 +1754,7 @@ footer .copy {
 .contenedor-clases .clases #arcanist-checkbox:checked + #arcanist label .fa-toggle-off {
   display: none;
 }
-.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist a {
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .link-guia {
   position: absolute;
   display: inline;
   text-decoration: none;
@@ -1757,7 +1762,7 @@ footer .copy {
   bottom: 15px;
   right: 10px;
 }
-.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist a i {
+.contenedor-clases .clases #arcanist-checkbox:checked + #arcanist .link-guia i {
   color: #10d5de;
   font-size: 1.25em;
 }
