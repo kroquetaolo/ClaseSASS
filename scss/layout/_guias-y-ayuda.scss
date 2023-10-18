@@ -6,8 +6,13 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: top;
+    h1 {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+    }
 }
 .titulo-ayuda{
     @extend .titulo-reglamento;
     padding-top: 1.875rem;
+    text-align: center;
 }

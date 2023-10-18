@@ -1,0 +1,206 @@
+.main-guias {
+    overflow: hidden;
+}
+.contenedor-guia {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    background: $bg-guia;
+    width: 100vw;
+    margin-top: 30px;
+    .encabezado-guia {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .imagen-guia {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            left: 100px;
+            top: 80px;
+            img {
+                position: absolute;
+                z-index: 2;
+                height: 400px;
+                width: 257px;
+
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: -30px;
+                background-color: white;
+                height: 400px;
+                width: 257px;
+                z-index: 1;
+            }
+        }
+        .encabezado-texto {
+            position: relative;
+            align-self: center;
+            width: 500px;
+            h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-principal-claro;
+                font-family: 'Pixelify Sans', sans-serif;
+                font-size: 2.5em;
+                position: absolute;
+                width: 430px;
+                height: 80px;
+                text-align: center;
+                background: url("../assets/bg-texto-clases.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                top: -80px;
+                left: -80px;
+                z-index: 3;
+            }
+        }
+    }
+    .label-exterior-offcanvas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        padding-left: 30px;
+        transition: opacity .4s linear;
+        cursor: pointer;
+        .fa-angles-down {
+            font-size: 1.4em;
+        }
+        .offcanvas-checkbox-imagen {
+            position: relative;
+            height: 200px;
+            margin-top: 80px;
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+                height: 100%;
+            }
+            h4 {
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                color: white;
+                font-size: .7em;
+                background: rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
+                padding: 2px 5px;
+                border-radius: .625rem 5rem;
+            }
+            p {
+                position: absolute;
+                top: 120px;
+                left: 70px;
+                color: white;
+                font-size: .25em;
+            }
+        }
+    }
+    #offcanvas-checkbox:checked ~ label {
+        .label-exterior-offcanvas {
+            opacity: 0;
+        }
+    }   
+}
+#offcanvas-guias {
+    display: flex;
+    position: fixed;
+    top: 70px;
+    right: -50vw;
+    z-index: 5;
+    height: 100vh;
+    width: 30vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    background-color: $fondo-offcanvas-guias;
+    border-left: 2px solid $color-bordes;
+    transition: opacity .8s ease-in, right .6s ease-in;
+    &::before {
+        content: "";
+        height: 0;
+        width: 0;
+        left: 0;
+    }
+
+    h1 {
+        color: $color-principal-claro;
+        font-size: 2.3em;
+    }
+    h3 {
+        text-align: right;
+        color: $color-principal-oscuro;
+        transform: translateX(40px);
+        padding-bottom: 80px;
+    }
+    .fa-circle-xmark {
+        position: absolute;
+        color: $bg-nav;
+        font-size: 2em;
+        left: 30px;
+        top: 60px;
+        cursor: pointer;
+    }
+    ul {
+        width: 100%;
+        list-style-type: none;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $color-principal-claro;
+            height: 60px;
+            margin: 5px 30px;
+            border-radius: 20px;
+            background-color: $bg-nav;
+            transition: transform .2s, color 3.4s;
+            &:hover {
+                transform: translateX(-30px);
+                a {
+                    color: $color-principal-claro;
+                    i {
+                        color: $color-principal-oscuro;
+                        padding: 0 20px;
+                    }
+
+                }
+            }
+            a {
+                display: flex;
+                align-items: center;
+                padding-left: 60px;
+                width: 100%;
+                height: 100%;
+                font-size: 1.4em;
+                text-decoration: none;
+                color: $color-principal-oscuro;
+                transition: color .4s;
+                i {
+                    color: $color-principal-claro;
+                    padding: 0 20px;
+                    transition: color .5s;
+                }
+            }
+        }
+    }
+}
+#offcanvas-checkbox{
+    transform: translateX(-200px);
+    display: none;
+}
+#offcanvas-checkbox:checked + #offcanvas-guias {
+    opacity: 1;
+    right: 0;
+    &::before {
+        position: absolute;
+        left: -100vw;
+        width: 100vw;
+        height: 100%;
+        background-color: $fondo-offcanvas-guias-before;
+    }
+}
