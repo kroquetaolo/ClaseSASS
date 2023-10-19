@@ -955,6 +955,9 @@ footer .copy {
   left: -80px;
   z-index: 3;
 }
+.contenedor-guia .encabezado-guia .encabezado-texto p {
+  text-indent: 3em;
+}
 .contenedor-guia .label-exterior-offcanvas {
   display: flex;
   flex-direction: column;
