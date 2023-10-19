@@ -31,11 +31,11 @@ En el sitio web, encontrarás las siguientes características destacadas:
 
 Durante el desarrollo de este proyecto, he aplicado diversas tecnologías y herramientas, incluyendo:
 
-- HTML y CSS para la estructura y el diseño del sitio.
+- [HTML](https://github.com/kroquetaolo/PF-Zamora/blob/main/index.html "index.html") y CSS para la estructura y el diseño del sitio. 
 - Integración de fuentes de Google y FontAwesome para mejorar la estética y la legibilidad.
 - Diseño responsivo para garantizar la accesibilidad desde diferentes dispositivos.
-- Utilicé el framework swiper para crear presentaciones de diapositivas interactivas, lo que permite mostrar contenido de manera dinámica y atractiva en el sitio.
-- Para facilitar la gestión y organización de los estilos CSS, opté por utilizar SASS, haciendo uso de mixins y variables.
+- Utilicé el framework [Swiper](https://github.com/kroquetaolo/PF-Zamora/blob/main/pages/concurso-y-torneos.html#L10 "html con Swiper") para crear presentaciones de diapositivas interactivas, lo que permite mostrar contenido de manera dinámica y atractiva en el sitio. 
+- Para facilitar la gestión y organización de los estilos CSS, opté por utilizar [SACSS](https://github.com/kroquetaolo/PF-Zamora/tree/main/scss "SACSS"), haciendo uso de mixins y variables. 
 
 [![](https://i.imgur.com/HdtVv06.png)](https://i.imgur.com/HdtVv06.png)
 ------------
