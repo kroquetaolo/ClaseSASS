@@ -1,2 +1,1 @@
-# Ignora todos los archivos de texto
-package.json
+/node_modules

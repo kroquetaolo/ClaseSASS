@@ -1,0 +1,43 @@
+https://www.figma.com/file/GydnVItO8Nqc1wfD7fssqa/Untitled?type=design&node-id=0%3A1&mode=design&t=eFeniKXLuVxoKTR9-1
+[![](https://cdn.discordapp.com/icons/559140696636784642/ebf35a5c5774a71cf320bd5017018a9f.webp)](http://https://cdn.discordapp.com/icons/559140696636784642/ebf35a5c5774a71cf320bd5017018a9f.webp)
+
+# Proyecto de Desarrollo Web - Clan Wulfheim Tundra
+
+## Introducción
+
+Este proyecto, titulado "Clan Wulfheim Tundra", forma parte del curso de Desarrollo Web de Coderhouse. Se trata de la creación de un sitio web para una comunidad en línea dedicada a Elder Scrolls Online. El proyecto se enfoca en aplicar los conocimientos adquiridos en el curso para desarrollar una plataforma que conecte a jugadores de habla hispana y ofrezca información sobre el clan, actividades y recursos relacionados con el juego.
+
+## Objetivos
+
+Mi proyecto tiene los siguientes objetivos:
+
+- Diseñar una página web atractiva y funcional que represente al Clan Wulfheim Tundra.
+- Implementar buenas prácticas de desarrollo web, incluyendo HTML, CSS y SASS.
+- Ofrecer una experiencia de usuario óptima, con navegación intuitiva y contenido organizado.
+- Incorporar elementos de diseño responsivo para que el sitio sea accesible desde dispositivos móviles y de escritorio.
+
+## Características Destacadas
+
+En el sitio web, encontrarás las siguientes características destacadas:
+
+- **Página de Inicio**: Una página atractiva que introduce a los visitantes en el mundo del Clan Wulfheim Tundra y sus actividades.
+
+- **Calendario de Eventos**: Un módulo de calendario que muestra eventos programados para mantener a los miembros informados.
+
+- **Concursos y Torneos**: Páginas dedicadas a competencias y torneos, con información sobre premios y reglas.
+
+- **Recursos y Guías**: Una sección de ayuda que proporciona recursos útiles, consejos y guías para mejorar la experiencia de juego.
+
+## Tecnologías Utilizadas
+
+Durante el desarrollo de este proyecto, he aplicado diversas tecnologías y herramientas, incluyendo:
+
+- HTML y CSS para la estructura y el diseño del sitio.
+- Integración de fuentes de Google y FontAwesome para mejorar la estética y la legibilidad.
+- Diseño responsivo para garantizar la accesibilidad desde diferentes dispositivos.
+- Utilicé el framework "swiper" para crear presentaciones de diapositivas interactivas, lo que permite mostrar contenido de manera dinámica y atractiva en el sitio.
+- Para facilitar la gestión y organización de los estilos CSS, opté por utilizar SASS, haciendo uso de mixins y variables.
+
+------------
+
+> *Proyecto elaborado por Benjamín Zamora*
