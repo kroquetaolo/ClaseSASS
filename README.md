@@ -1,5 +1,6 @@
-[![](https://i.imgur.com/FJjPYgW.png)](https://i.imgur.com/FJjPYgW.png)
 # Proyecto de Desarrollo Web - Clan Wulfheim Tundra
+
+[![](https://i.imgur.com/FJjPYgW.png)](https://i.imgur.com/FJjPYgW.png)
 
 ## Introducción
 
