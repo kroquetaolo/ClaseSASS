@@ -1890,6 +1890,62 @@ footer .copy {
   .carousel-torneos .swiper-button-prev, .carousel-torneos .swiper-button-next {
     display: none;
   }
+  .contenedor-guia {
+    flex-direction: column;
+    height: auto;
+  }
+  .contenedor-guia .encabezado-guia {
+    flex-direction: column;
+  }
+  .contenedor-guia .encabezado-guia .encabezado-texto {
+    width: 100%;
+  }
+  .contenedor-guia .encabezado-guia .encabezado-texto h1 {
+    position: relative;
+    background: none;
+    color: black;
+    top: -20px;
+    left: auto;
+  }
+  .contenedor-guia .encabezado-guia .encabezado-texto h1::before {
+    content: "";
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: url("../assets/bg-texto-clases.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .contenedor-guia .encabezado-guia .encabezado-texto p {
+    padding: 15px 10px;
+  }
+  #offcanvas-checkbox:checked + #offcanvas-guias {
+    left: 0;
+    right: auto;
+    width: 100vw;
+  }
+  #offcanvas-checkbox:checked + #offcanvas-guias::before {
+    display: none;
+  }
+  #offcanvas-checkbox:checked + #offcanvas-guias .fa-circle-xmark {
+    top: 10px;
+    left: 10px;
+  }
+  #offcanvas-checkbox:checked + #offcanvas-guias h3 {
+    padding-bottom: 40px;
+  }
+  #offcanvas-checkbox:checked + #offcanvas-guias ul li {
+    height: 40px;
+  }
+  .label-exterior-offcanvas {
+    margin-bottom: 20px;
+    padding: 0 !important;
+  }
+  .label-exterior-offcanvas .offcanvas-checkbox-imagen {
+    margin-top: 0 !important;
+  }
 }
 @media (max-width: 530px) {
   .newcard {
