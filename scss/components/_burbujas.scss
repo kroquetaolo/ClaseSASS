@@ -47,20 +47,23 @@
         .pupup-abierto {
             background-color: white;
             border: 2px solid $color-principal-claro;
-            width: 80vw;
-            height: 300px;
+            width: 70vw;
+            height: auto;
             .popup-contenido {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 height: 100%;
                 h3 {
                     text-align: center;
                 }
                 h4 {
                     margin: 0 20px 10px 0;
-                    text-align: end;
+                    align-self: flex-end;
                 }
                 p {
+                    text-indent: 3em;
+                    width: 70%;
                     padding: 20px 40px;
                 }
                 hr{

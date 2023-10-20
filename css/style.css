@@ -1189,12 +1189,13 @@ footer .copy {
 .burbujas .pupup .pupup-abierto {
   background-color: white;
   border: 2px solid #10d5de;
-  width: 80vw;
-  height: 300px;
+  width: 70vw;
+  height: auto;
 }
 .burbujas .pupup .pupup-abierto .popup-contenido {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
 }
 .burbujas .pupup .pupup-abierto .popup-contenido h3 {
@@ -1202,9 +1203,11 @@ footer .copy {
 }
 .burbujas .pupup .pupup-abierto .popup-contenido h4 {
   margin: 0 20px 10px 0;
-  text-align: end;
+  align-self: flex-end;
 }
 .burbujas .pupup .pupup-abierto .popup-contenido p {
+  text-indent: 3em;
+  width: 70%;
   padding: 20px 40px;
 }
 .burbujas .pupup .pupup-abierto .popup-contenido hr {
