@@ -72,6 +72,7 @@
         transition: opacity .4s linear;
         cursor: pointer;
         .fa-angles-down {
+            margin-bottom: 10px;
             font-size: 1.4em;
         }
         .offcanvas-checkbox-imagen {
@@ -80,6 +81,7 @@
             margin-top: 80px;
             border-radius: 10px;
             overflow: hidden;
+            margin-bottom: 10px;
             img {
                 height: 100%;
             }

@@ -190,6 +190,7 @@ header nav img:hover {
   margin: 1rem;
   width: 100%;
   border: 5px inset rgba(16, 212, 222, 0.45);
+  border-radius: 20px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -215,7 +216,6 @@ header nav img:hover {
 .reglamento .reglas-promo {
   display: flex;
   flex-direction: column;
-  background-color: red;
   position: sticky;
   top: 40%;
   width: 500px;
@@ -231,7 +231,9 @@ header nav img:hover {
 .reglamento .reglas-promo .promo-video {
   height: 350px;
   width: 100%;
-  background-color: blue;
+  background: url("../assets/publicidad.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .titulo-reglamento, .body--torneo .titulo-torneos, .titulo-ayuda, .titulo-calendario {
@@ -968,6 +970,7 @@ footer .copy {
   cursor: pointer;
 }
 .contenedor-guia .label-exterior-offcanvas .fa-angles-down {
+  margin-bottom: 10px;
   font-size: 1.4em;
 }
 .contenedor-guia .label-exterior-offcanvas .offcanvas-checkbox-imagen {
@@ -976,6 +979,7 @@ footer .copy {
   margin-top: 80px;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 .contenedor-guia .label-exterior-offcanvas .offcanvas-checkbox-imagen img {
   height: 100%;
