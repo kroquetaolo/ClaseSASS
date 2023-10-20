@@ -1,3 +1,35 @@
+.body-guias {
+    
+    background-image:
+
+    linear-gradient(to right, $color-child1, $color-child1),
+    linear-gradient(to right, $color-child2, $color-child2),
+    linear-gradient(to right, $color-child3, $color-child3),
+    linear-gradient(to right, $color-child4, $color-child4),
+    linear-gradient(to right, $color-child5, $color-child5),
+    linear-gradient(to right, $color-child6, $color-child6),
+    linear-gradient(to right, $color-child7, $color-child7),
+    linear-gradient(to right, $color-child8, $color-child8),
+
+    linear-gradient($color-child1, $color-child1),
+    linear-gradient($color-child2, $color-child2),
+    linear-gradient($color-child3, $color-child3),
+    linear-gradient($color-child4, $color-child4),
+    linear-gradient($color-child5, $color-child5),
+    linear-gradient($color-child6, $color-child6),
+    linear-gradient($color-child7, $color-child7),
+    linear-gradient($color-child8, $color-child8);
+
+    background-size:
+    100% .0625rem, 100% .1875rem, 100% .3125rem, 100% .5rem, 100% .5rem, 100% .3125rem, 100% .1875rem, 100% .0625rem,
+    .0625rem 100%, .1875rem 100%, .3125rem 100%, .5rem 100%, .5rem 100%, .3125rem 100%, .1875rem 100%, .0625rem 100%;
+    background-position:
+    0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem,
+    calc(100% - 12.5rem) 0, calc(100% - 14.6875rem) 0, calc(100% - 16.875rem) 0, calc(100% - 19.0625rem) 0, calc(100% - 21.25rem) 0, calc(100% - 23.4375rem) 0, calc(100% - 25.625rem) 0, calc(100% - 27.8125rem) 0 ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .presentacion-ayuda {
     @extend .presentacion-index;
     background-image:url(../assets/top-ayuda.webp);

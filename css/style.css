@@ -583,6 +583,14 @@ header nav img:hover {
   opacity: 1;
 }
 
+.body-guias {
+  background-image: linear-gradient(to right, rgba(247, 50, 50, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(to right, rgba(255, 145, 0, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(to right, rgba(218, 215, 29, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(to right, rgba(29, 218, 45, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(to right, rgba(29, 212, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(to right, rgba(57, 29, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(to right, rgba(141, 17, 199, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(to right, rgba(255, 0, 234, 0.5), rgba(255, 0, 234, 0.5)), linear-gradient(rgba(247, 50, 50, 0.5), rgba(247, 50, 50, 0.5)), linear-gradient(rgba(255, 145, 0, 0.5), rgba(255, 145, 0, 0.5)), linear-gradient(rgba(218, 215, 29, 0.5), rgba(218, 215, 29, 0.5)), linear-gradient(rgba(29, 218, 45, 0.5), rgba(29, 218, 45, 0.5)), linear-gradient(rgba(29, 212, 218, 0.5), rgba(29, 212, 218, 0.5)), linear-gradient(rgba(57, 29, 218, 0.5), rgba(57, 29, 218, 0.5)), linear-gradient(rgba(141, 17, 199, 0.5), rgba(141, 17, 199, 0.5)), linear-gradient(rgba(255, 0, 234, 0.5), rgba(255, 0, 234, 0.5));
+  background-size: 100% 0.0625rem, 100% 0.1875rem, 100% 0.3125rem, 100% 0.5rem, 100% 0.5rem, 100% 0.3125rem, 100% 0.1875rem, 100% 0.0625rem, 0.0625rem 100%, 0.1875rem 100%, 0.3125rem 100%, 0.5rem 100%, 0.5rem 100%, 0.3125rem 100%, 0.1875rem 100%, 0.0625rem 100%;
+  background-position: 0 12.5rem, 0 14.6875rem, 0 16.875rem, 0 19.0625rem, 0 21.25rem, 0 23.4375rem, 0 25.625rem, 0 27.8125rem, calc(100% - 12.5rem) 0, calc(100% - 14.6875rem) 0, calc(100% - 16.875rem) 0, calc(100% - 19.0625rem) 0, calc(100% - 21.25rem) 0, calc(100% - 23.4375rem) 0, calc(100% - 25.625rem) 0, calc(100% - 27.8125rem) 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .presentacion-ayuda {
   background-image: url(../assets/top-ayuda.webp);
   background-size: cover;
