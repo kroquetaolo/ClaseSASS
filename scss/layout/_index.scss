@@ -100,21 +100,20 @@
     .reglas-promo {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         position: sticky; 
-        top: 40%;
+        text-align: center;
+        top: 30%;
         width: 500px;
-        height: 400px;
+        height: 500px;
         margin: 16px 0 0 50px;
-        h2{
-            text-align: center;
-        }
         p:first-letter {
             text-transform: uppercase;
         }
         .promo-video{
-            height: 350px;
+            height: 100%;
             width: 100%;
-            background: url("../assets/asdd.jpg");
+            background: url("../assets/publicidad.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }

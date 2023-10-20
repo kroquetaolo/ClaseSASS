@@ -216,20 +216,19 @@ header nav img:hover {
 .reglamento .reglas-promo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: sticky;
-  top: 40%;
-  width: 500px;
-  height: 400px;
-  margin: 16px 0 0 50px;
-}
-.reglamento .reglas-promo h2 {
   text-align: center;
+  top: 30%;
+  width: 500px;
+  height: 500px;
+  margin: 16px 0 0 50px;
 }
 .reglamento .reglas-promo p:first-letter {
   text-transform: uppercase;
 }
 .reglamento .reglas-promo .promo-video {
-  height: 350px;
+  height: 100%;
   width: 100%;
   background: url("../assets/publicidad.jpg");
   background-size: cover;
