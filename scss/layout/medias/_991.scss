@@ -112,6 +112,25 @@
         align-items: center;
         .reglas{
             width: 100%;
+            .regla {
+                .regla-titulo {
+                    flex-direction: column;
+                    h2{
+                        font-size: 2em;
+                    }
+                    img{
+                        width: 270px;
+                    }
+                }
+            }
+        }
+        .reglas-promo {
+            width: 100%;
+            margin: 0;
+            .promo-video {
+                background-size: contain;
+            }
+
         }
     }
 
@@ -130,12 +149,17 @@
             &:target {
                 .pupup-abierto {
                     height: 70vh;
+                    width: 90%;
                     .popup-contenido{
                         .pupup-fa {
                             margin: 0;
                         }
                         h4 {
                             margin-top: auto;
+                        }
+                        p {
+                            width: 100%;
+                            padding: 10px;
                         }
                     }
                 }

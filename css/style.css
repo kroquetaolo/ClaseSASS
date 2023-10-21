@@ -186,6 +186,7 @@ header nav img:hover {
 }
 .reglamento .reglas .regla {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 1rem;
   width: 100%;
@@ -196,16 +197,16 @@ header nav img:hover {
 }
 .reglamento .reglas .regla .regla-titulo {
   display: flex;
-  height: 200px;
+  flex-wrap: wrap;
 }
 .reglamento .reglas .regla .regla-titulo h2 {
   font-size: 2.5rem;
-  width: 100%;
+  width: auto;
   align-self: center;
   text-align: center;
 }
 .reglamento .reglas .regla .regla-titulo img {
-  height: 100%;
+  height: 200px;
   padding: 20px;
 }
 .reglamento .reglas .regla p {
@@ -233,6 +234,7 @@ header nav img:hover {
   background: url("../assets/publicidad.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .titulo-reglamento, .body--torneo .titulo-torneos, .titulo-ayuda, .titulo-calendario {
@@ -1876,6 +1878,22 @@ footer .copy {
   .reglamento .reglas {
     width: 100%;
   }
+  .reglamento .reglas .regla .regla-titulo {
+    flex-direction: column;
+  }
+  .reglamento .reglas .regla .regla-titulo h2 {
+    font-size: 2em;
+  }
+  .reglamento .reglas .regla .regla-titulo img {
+    width: 270px;
+  }
+  .reglamento .reglas-promo {
+    width: 100%;
+    margin: 0;
+  }
+  .reglamento .reglas-promo .promo-video {
+    background-size: contain;
+  }
   .info-main-final {
     flex-direction: column;
     gap: 20px 0;
@@ -1889,12 +1907,17 @@ footer .copy {
   }
   .burbujas .pupup:target .pupup-abierto {
     height: 70vh;
+    width: 90%;
   }
   .burbujas .pupup:target .pupup-abierto .popup-contenido .pupup-fa {
     margin: 0;
   }
   .burbujas .pupup:target .pupup-abierto .popup-contenido h4 {
     margin-top: auto;
+  }
+  .burbujas .pupup:target .pupup-abierto .popup-contenido p {
+    width: 100%;
+    padding: 10px;
   }
   .carousel-torneos .swiper {
     width: 100%;
@@ -2021,19 +2044,6 @@ footer .copy {
   }
   .body--torneo main .contenedor-torneos .torneo img, .body--torneo main .contenedor-torneos .concurso img {
     width: 80vw;
-  }
-  .reglamento .reglas .regla .regla-titulo {
-    flex-direction: column;
-  }
-  .reglamento .reglas .regla .regla-titulo h2 {
-    font-size: 2em;
-  }
-  .reglamento .reglas .regla .regla-titulo img {
-    width: 200px;
-  }
-  .reglamento .reglas-promo {
-    width: 100%;
-    margin: 0;
   }
   .titulo-reglamento, .titulo-calendario, .titulo-ayuda, .body--torneo .titulo-torneos {
     margin: 0;
