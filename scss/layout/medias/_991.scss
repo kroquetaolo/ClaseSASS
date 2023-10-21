@@ -206,6 +206,10 @@
                 }
                 p {
                     padding: 15px 10px;
+                    position: relative;
+                    top: -20px;
+                    left: auto;
+                    z-index: 3;
                 }
             }
         }

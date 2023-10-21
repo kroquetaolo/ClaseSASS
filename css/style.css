@@ -1966,6 +1966,10 @@ footer .copy {
   }
   .contenedor-guia .encabezado-guia .encabezado-texto p {
     padding: 15px 10px;
+    position: relative;
+    top: -20px;
+    left: auto;
+    z-index: 3;
   }
   #offcanvas-checkbox:checked + #offcanvas-guias {
     left: 0;
