@@ -909,9 +909,9 @@ footer .copy {
 
 .contenedor-guia {
   display: flex;
-  justify-content: center;
-  height: 550px;
-  background: linear-gradient(180deg, rgb(16, 213, 222) 0%, rgb(16, 213, 222) 80%, rgb(16, 213, 222) 80%, rgb(255, 255, 255) 80%, rgb(255, 255, 255) 100%);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
   width: 100vw;
   margin-top: 30px;
 }
@@ -919,6 +919,9 @@ footer .copy {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background: linear-gradient(180deg, rgb(16, 213, 222) 0%, rgb(16, 213, 222) 80%, rgb(16, 213, 222) 80%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
+  width: 1200px;
+  height: 550px;
 }
 .contenedor-guia .encabezado-guia .imagen-guia {
   position: relative;
@@ -926,6 +929,7 @@ footer .copy {
   width: 400px;
   left: 100px;
   top: 80px;
+  margin-bottom: 20px;
 }
 .contenedor-guia .encabezado-guia .imagen-guia img {
   position: absolute;
@@ -973,8 +977,7 @@ footer .copy {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
-  padding-left: 30px;
+  padding-right: 30px;
   transition: opacity 0.4s linear;
   cursor: pointer;
 }
@@ -1022,7 +1025,7 @@ footer .copy {
   right: -50vw;
   z-index: 5;
   height: 100vh;
-  width: 30vw;
+  width: 40%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -1936,6 +1939,8 @@ footer .copy {
   }
   .contenedor-guia .encabezado-guia {
     flex-direction: column;
+    background: linear-gradient(180deg, rgb(16, 213, 222) 0%, rgb(16, 213, 222) 72%, rgb(16, 213, 222) 72%, rgba(255, 255, 255, 0) 72%, rgba(255, 255, 255, 0) 100%);
+    width: auto;
   }
   .contenedor-guia .encabezado-guia .encabezado-texto {
     width: 100%;

@@ -182,6 +182,8 @@
     .contenedor-guia {
         .encabezado-guia {
             flex-direction: column;
+            background: $bg-guia-mobile;
+            width: auto;
             .encabezado-texto {
                 width: 100%;
                 h1 {
